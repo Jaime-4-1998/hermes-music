@@ -206,7 +206,7 @@ a {
     position: absolute;
     left: 48rem;
     bottom: 10px;
-    background: red;
+    background:var(--yellow);
     text-align: center;
     border-radius: 5px;
     display: block;
