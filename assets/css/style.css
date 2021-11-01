@@ -152,7 +152,22 @@ a {
 		-o-transform: translateY(-8px) rotate(-45deg);
 	}
 }
-
+@media screen and (max-width:848px) {
+	
+	.navbar__logo {
+		color: var(--black);
+		object-fit: cover;
+		width: 20%;
+	}
+}
+@media screen and (max-width:600px) {
+	
+	.navbar__logo {
+		color: var(--black);
+		object-fit: cover;
+		width: 40%;
+	}
+}
 /*BANNERS OF HERMES MUSCI MEXICO*/
 .navigation .previous {
 	position: absolute;
@@ -722,7 +737,7 @@ a {
 .marcas {
     background: transparent;
     color: var(--white);
-    padding: 6rem calc((100vw - 1600px) / 2);
+    padding: 3rem calc((100vw - 1600px) / 2);
     text-align: center;
     display: block;
     margin: auto;
@@ -950,4 +965,62 @@ footer {
 		margin-left: auto;
 		margin-right: auto
 	}
+}
+/***maps of google****/
+iframe {
+    border: 0;
+    width: 87%;
+    height: 30rem;
+    display: block;
+    margin: auto;
+}
+.text {
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid var(--yellow);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+textarea {
+    resize: none;
+}
+::placeholder { color: var(--black); }
+.mensaje{
+		padding: 1.5rem;
+		width: 38rem;
+		border: 1px solid var(--yellow);
+
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+		border-radius: 5px;
+	}
+
+@media screen and (max-width:500px) {
+	.text{
+		width: 100% !important;
+    }
+	.mensaje{
+		padding: 1.5rem;
+		width: 28rem;
+		border: 1px solid var(--yellow);
+		margin: 0px 0px 32px;
+		border-radius: 5px;
+	}
+}
+.botocon {
+    background-color: var(--yellow);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 900;
+    display: block;
 }
