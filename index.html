@@ -43,7 +43,22 @@
                <div class="caption-text">Image caption 1</div>
             </div>
             <div class="image-fade fade">
-               <img loading="lazy" class="imare" src="assets/images/banner.jpeg" alt="Ejemplos de banner">
+               <picture>
+                  <source srcset="assets/images/banner.webp
+                  800w,
+                  assets/images/banner.webp
+                  400w,
+                  assets/images/banner.webp
+                  200w" type="image/webp" sizes="50vw">
+                  <source srcset="assets/images/banner.jpeg
+                  800w,
+                  assets/images/banner.jpeg
+                  400w,
+                  assets/images/banner.jpeg
+                  200w" type="image/jpg" sizes="50vw">
+                  <img loading="lazy" class="imare" src="assets/images/banner.webp" alt="Ejemplos de banner">
+                </picture> 
+             
                <div class="caption-text">Image caption 2</div>
             </div>
             <div class="image-fade fade">
