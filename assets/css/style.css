@@ -991,21 +991,26 @@ textarea {
 		padding: 1.5rem;
 		width: 38rem;
 		border: 1px solid var(--yellow);
-
 		margin-bottom: 2rem;
 		margin-top: 1rem;
 		border-radius: 5px;
 	}
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
+	iframe {
+		border: 0;
+		width: 96% !important;
+		height: 30rem;
+		display: block;
+		margin: 0;
+	}
 	.text{
-		width: 100% !important;
+		width: 90% !important;
     }
 	.mensaje{
 		padding: 1.5rem;
-		width: 28rem;
+		width: 21rem;
 		border: 1px solid var(--yellow);
-		margin: 0px 0px 32px;
 		border-radius: 5px;
 	}
 }
