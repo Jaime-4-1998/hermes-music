@@ -63,8 +63,8 @@ a {
 
 .navbar__logo {
 	color: var(--black);
-	font-size: 1.5rem;
 	object-fit: cover;
+	width: 10%;
 }
 
 .navbar__link {
@@ -83,6 +83,11 @@ a {
 	body.active {
 		overflow-y: hidden;
 		overflow-x: hidden;
+	}
+	.navbar__logo {
+		color: var(--black);
+		object-fit: cover;
+		width: 40%;
 	}
 	.navbar__link {
 		display: flex;
