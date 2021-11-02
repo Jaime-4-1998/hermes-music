@@ -10,13 +10,12 @@
 	--mb-5: 2.5rem;
 	--mb-6: 3rem;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 hr {
 	width: 50%;
@@ -507,8 +506,8 @@ a {
 
 .departamentos__card {
 	padding: 2rem;
-	min-height: 335px;
-	width: 430px;
+	min-height: 500px;
+	width: 400px;
 	background: var(--white);
 	color: var(--black);
 	border-radius: 10px;
@@ -527,8 +526,14 @@ a {
 
 .departamentos__card p {
 	margin-bottom: 1rem;
+	text-align: justify !important;
 }
-
+.margin__parr__one{
+	margin-top: -11rem;
+}
+.margin__parr__two{
+	margin-top: -10rem;
+}
 .card-icon {
 	font-size: 5rem;
 	margin-bottom: 2rem;
@@ -538,6 +543,7 @@ a {
 .departamentos__card h3 {
 	font-size: clamp(0.6rem, 5vw, 2rem);
 	margin-bottom: 2rem;
+	font-weight: inherit;
 }
 
 .boton_depa {
@@ -570,15 +576,18 @@ a {
 	}
 }
 /*PROFESIONALS*/
+
 .profesi {
-	background: transparent;
-	color: var(--white);
-	padding: 6rem calc((100vw - 1470px) / 2);
-	text-align: center;
+    color: var(--white);
+    padding: 4rem calc((100vw - 1470px) / 2);
+    text-align: center;
+    background-image: url(https://www.hermes-music.com.mx/off/upload/back.jpg) !important;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
 }
 
 .profesi h2 {
-	color: var(--black);
+	color: var(--white);
 	margin-bottom: 4rem;
 	font-size: clamp(2rem, 5vw, 3rem);
 	padding: 0 1rem;
@@ -608,7 +617,7 @@ a {
 
 .padre h3 {
 	text-align: center;
-	color: var(--black);
+	color: var(--white);
 	margin: 0 0 10px;
 	-webkit-backface-visibility: hidden;
 	z-index: 100;
@@ -617,7 +626,7 @@ a {
 
 .padre p {
 	text-align: center;
-	color: #000;
+	color: var(--white);
 	margin: 0 0 35px;
 	line-height: 20px;
 	-webkit-backface-visibility: hidden;
@@ -629,6 +638,7 @@ a {
 .ramas h2 {
 	text-align: center;
 	color: var(--black);
+	margin-top: 4rem;
 	margin-bottom: 4rem;
 	font-size: clamp(2rem, 5vw, 3rem);
 	padding: 0 1rem;
@@ -658,16 +668,45 @@ a {
 	font-size: 4rem;
 	text-align: center;
 }
+.services-box {
+    display: inline-block;
+    text-decoration: none;
+    background: #ffc000;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.17s ease-in-out;
+    -moz-transition: all 0.17s ease-in-out;
+    -webkit-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out;
+    position: relative;
+    border: 5px solid transparent;
+    margin-bottom: 30px;
+	object-fit: contain;
+	transition: 0.3s all ease-out;
 
+}
+.services-box:hover{
+	background: gray;
+	transition: 0.3s all ease-in-out;
+}
 .ramas__title {
 	text-align: center !important;
 	text-transform: uppercase;
 }
-
 .ramas__title {
 	font-size: var(--normal-font-size)
 }
-
+.margin__tittle {
+    margin-top: -3.5rem !important;
+}
+.margin__cate {
+    margin-top: -5rem !important;
+}
 .ramas__category {
 	font-size: 1rem;
 	margin-bottom: var(--mb-1);
@@ -732,12 +771,19 @@ a {
 		.ramas__container{
 			grid-template-columns: none !important;
 		}
+		.margin__tittle {
+			margin-top: 0.5rem !important;
+			margin-bottom: 1.5rem;
+		}
+		.margin__cate{
+			margin-top: 0 !important;
+		}
 }
 /**SELECTOR MARCAS**/
 .marcas {
     background: transparent;
     color: var(--white);
-    padding: 3rem calc((100vw - 1600px) / 2);
+    padding: 3rem calc((100vw - 1712px) / 2);
     text-align: center;
     display: block;
     margin: auto;
@@ -796,7 +842,7 @@ a {
 }
 .filters li {
 	display: inline-block;
-	padding: 10px 25px;
+	padding: 10px 10px;
 	font-size: 15px;
 	font-weight: 600;
 	cursor: pointer;
@@ -807,6 +853,7 @@ a {
 	color: var(--black);
 	text-decoration: none;
 	transition: 0.3s all ease-in;
+	padding: 10px 10px;
 }
 
 .filters li:hover {
