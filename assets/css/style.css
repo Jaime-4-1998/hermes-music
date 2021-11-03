@@ -506,7 +506,7 @@ a {
 
 .departamentos__card {
 	padding: 2rem;
-	min-height: 500px;
+	min-height: 515px;
 	width: 400px;
 	background: var(--white);
 	color: var(--black);
