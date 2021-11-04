@@ -9,8 +9,9 @@
       <title>Hermes Music México</title>
       <link rel="preload" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'  as="style" onload="this.rel='stylesheet'">
       <link rel="preload"  href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
+      <link rel="stylesheet" href="assets/css/index.scss">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
    </head>
    <body>
       <nav class="navbar">
@@ -42,7 +43,7 @@
          </div>
          <div class="sarousel-container">
             <div class="image-fade fade">
-               <img loading="lazy" class="imare" src="assets/images/gris.png" alt="Ejemplos de banner">
+               <img loading="lazy" class="imare" src="assets/images/Slide-1.jpg" alt="Ejemplos de banner">
                <div class="caption-text">Image caption 1</div>
             </div>
             <div class="image-fade fade">
@@ -360,424 +361,674 @@
             </div>
          </div>
       </section>
-      <section class="marcas">
+
+      <div class="wrap">
          <h2 class="espe animate-title">Nuestras Marcas</h2>
-         <div class="filters filter-button-group">
-            <ul>
-               <li class="active"><a href="javascript:void(0);" data-filter="digital">Audio Digital</a></li>
-               <li><a href="javascript:void(0);" data-filter="bajos">Guitarras y Bajos</a></li>
-               <li><a href="javascript:void(0);" data-filter="profesional">Audio Profesional</a></li>
-               <li><a href="javascript:void(0);" data-filter="baterias">Baterías y Percusiones</a></li>
-               <li><a href="javascript:void(0);" data-filter="iluminacion">Iluminación</a></li>
-               <li><a href="javascript:void(0);" data-filter="microfonia">Microfonia</a></li>
-               <li><a href="javascript:void(0);" data-filter="dj">Herramientas DJ</a></li>
-               <li><a href="javascript:void(0);" data-filter="teclados">Teclados</a></li>
-               <li><a href="javascript:void(0);" data-filter="acor">Acordeones</a></li>
-               <li><a href="javascript:void(0);" data-filter="viento">Viento y Metales</a></li>
+         <div class="gallery-wrap">
+          
+            <ul id="filters" class="clearfix">
+              <li><span class="filter active" data-filter=".audiodigital">Audio Digital</span></li>
+              <li><span class="filter" data-filter=".bajos">Guitarras y Bajos</span></li>
+              <li><span class="filter" data-filter=".audioprofesional">Audio Profesional</span></li>
+              <li><span class="filter" data-filter=".baterias">Baterías y Percusiones</span></li>
+              <li><span class="filter" data-filter=".iluminacion">Iluminación</span></li>
+              <li><span class="filter" data-filter=".micro">Microfonía</span></li>
+              <li><span class="filter" data-filter=".dj">Herramientas DJ</span></li>
+              <li><span class="filter" data-filter=".teclado">Teclados</span></li>
+              <li><span class="filter" data-filter=".acor">Acordeones</span></li>
+              <li><span class="filter" data-filter=".viento">Viento y Metales</span></li>
             </ul>
-         </div>
-         <div id="container" class="isotope">
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/akai.jpeg" alt="Akai Professional">
-               </a>
-               <div class="overlay">Akai</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/apogee.jpeg" alt="Apogee Interfaces">
-               </a>
-               <div class="overlay">Apogge</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/avid.jpeg" alt="Avid Consolas Digitales e Interfaces">
-               </a>
-               <div class="overlay">Avid Consolas Digitales e Interfaces</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/digico.jpeg" alt="Digico Conslas de Audio Digital">
-               </a>
-               <div class="overlay">Digico Conslas de Audio Digital</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/maudio.jpeg" alt="M-AUDIO">
-               </a>
-               <div class="overlay">M-AUDIO</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/mooer.jpeg" alt="M-AUDIO">
-               </a>
-               <div class="overlay">M-AUDIO</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/mooer.jpeg" alt="MOOER Accesorios">
-               </a>
-               <div class="overlay">MOOER Accesorios</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/mrs.jpeg" alt="MRS Accesorios">
-               </a>
-               <div class="overlay">MRS Accesorios</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/presonus.jpeg" alt="Presouns">
-               </a>
-               <div class="overlay">Presouns</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/rme.jpeg" alt="RME Interfaces">
-               </a>
-               <div class="overlay">RME Interfaces</div>
-            </div>
-            <div class="grid-item" data-filter="digital">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/soundcraft.jpeg" alt="Soundcraft">
-               </a>
-               <div class="overlay">Soundcraft</div>
-            </div>
-            <!--Guitarras y bajos-->
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/alice.jpeg" alt="Alice Accesorios">
-               </a>
-               <div class="overlay">Alice Accesorios</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/ampeg.jpeg" alt="Ampeg">
-               </a>
-               <div class="overlay">Ampeg</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/babilon.jpeg" alt="Babilon Guitarras y Bajos">
-               </a>
-               <div class="overlay">Babilon Guitarras y Bajos</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/digitech.jpeg" alt="DigiTech">
-               </a>
-               <div class="overlay">DigiTech</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/elixir.jpeg" alt="Elixir">
-               </a>
-               <div class="overlay">Elixir</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/godin.jpeg" alt="Godin">
-               </a>
-               <div class="overlay">Godin</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/hartke.jpeg" alt="Hartke Amplificadores">
-               </a>
-               <div class="overlay">Hartke Amplificadores</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/marshall.jpeg" alt="Marshall">
-               </a>
-               <div class="overlay">Marshall</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/peavey.jpeg" alt="Peavy">
-               </a>
-               <div class="overlay">Peavy</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/prolok.jpeg" alt="Pro-lok">
-               </a>
-               <div class="overlay">Pro-lok</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/ultimate.jpeg" alt="Ultimate">
-               </a>
-               <div class="overlay">Ultimate</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/vox.jpeg" alt="Vox">
-               </a>
-               <div class="overlay">Vox</div>
-            </div>
-            <div class="grid-item" data-filter="bajos">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/whirlwind.jpeg" alt="whirlwind">
-               </a>
-               <div class="overlay">whirlwind</div>
-            </div>
-            <!--Audio profesional-->
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasprofesional/bbe.jpeg" alt="BBE Profesionales">
-               </a>
-               <div class="overlay">BBE Profesionales</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasprofesional/crown.jpeg" alt="Crown Amplificadores">
-               </a>
-               <div class="overlay">Crown Amplificadores</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasprofesional/dbx.jpeg" alt="DBX Procesadores de Audio">
-               </a>
-               <div class="overlay">DBX Procesadores de Audio</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasprofesional/jbl.jpeg" alt="JBL">
-               </a>
-               <div class="overlay">JBL</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasprofesional/lexicon.jpeg" alt="Lexicon">
-               </a>
-               <div class="overlay">Lexicon</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasprofesional/mackie.jpeg" alt="Mackie">
-               </a>
-               <div class="overlay">Mackie</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcas/mrs.jpeg" alt="MRS Accesorios">
-               </a>
-               <div class="overlay">MRS Accesorios</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/peavey.jpeg" alt="Peavy">
-               </a>
-               <div class="overlay">Peavy</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasprofesional/rcf.jpeg" alt="RFC">
-               </a>
-               <div class="overlay">RFC</div>
-            </div>
-            <div class="grid-item" data-filter="profesional">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasprofesional/regaltip.jpeg" alt="RegalTip">
-               </a>
-               <div class="overlay">RegalTip</div>
-            </div>
-            <!--baterias y percusiones-->
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/cruztools.jpeg" alt="CruzTools">
-               </a>
-               <div class="overlay">CruzTools</div>
-            </div>
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/ddrum.jpeg" alt="ddrum">
-               </a>
-               <div class="overlay">ddrum</div>
-            </div>
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/dream.jpeg" alt="dream cymbals">
-               </a>
-               <div class="overlay">Dream cymbals</div>
-            </div>
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/dw.jpeg" alt="DW">
-               </a>
-               <div class="overlay">DW</div>
-            </div>
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/klingt.jpeg" alt="KLINGT">
-               </a>
-               <div class="overlay">KLINGT</div>
-            </div>
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/mapex.jpeg" alt="Mapex">
-               </a>
-               <div class="overlay">Mapex</div>
-            </div>
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/pacific.jpeg" alt="Pacific Drums & Percusion">
-               </a>
-               <div class="overlay">Pacific Drums & Percusion</div>
-            </div>
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/pearl.jpeg" alt="Pearl">
-               </a>
-               <div class="overlay">Pearl</div>
-            </div>
-            <div class="grid-item" data-filter="baterias">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasbaterias/zildjian.jpeg" alt="ZILDJIAN">
-               </a>
-               <div class="overlay">ZILDJIAN</div>
-            </div>
-            <!--iluminacion-->
-            <div class="grid-item" data-filter="iluminacion">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasiluminacion/claypacky.jpeg" alt="CLAY PAKY">
-               </a>
-               <div class="overlay">CLAY PAKY</div>
-            </div>
-            <div class="grid-item" data-filter="iluminacion">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasiluminacion/filmgear.jpeg" alt="FILMGEAR">
-               </a>
-               <div class="overlay">FILMGEAR</div>
-            </div>
-            <div class="grid-item" data-filter="iluminacion">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasiluminacion/pr.jpeg" alt="PR LIGHTING">
-               </a>
-               <div class="overlay">PR LIGHTING</div>
-            </div>
-            <div class="grid-item" data-filter="iluminacion">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasiluminacion/prolight.jpeg" alt="PROLIGHT">
-               </a>
-               <div class="overlay">PROLIGHT</div>
-            </div>
-            <div class="grid-item" data-filter="iluminacion">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasguitarras/prolok.jpeg" alt="PRO-LOK">
-               </a>
-               <div class="overlay">PRO-LOK</div>
-            </div>
-            <!--microfonia-->
-            <div class="grid-item" data-filter="microfonia">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasmicro/akg.jpeg" alt="AKG">
-               </a>
-               <div class="overlay">AKG</div>
-            </div>
-            <div class="grid-item" data-filter="microfonia">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasmicro/ath.jpeg" alt="AUDIO TECHNICA">
-               </a>
-               <div class="overlay">AUDIO TECHNICA</div>
-            </div>
-            <div class="grid-item" data-filter="microfonia">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasmicro/ultimate.jpeg" alt="ULTIMATE">
-               </a>
-               <div class="overlay">ULTIMATE</div>
-            </div>
-            <!--dj-->
-            <div class="grid-item" data-filter="dj">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasmicro/akg.jpeg" alt="AKG">
-               </a>
-               <div class="overlay">AKG</div>
-            </div>
-            <div class="grid-item" data-filter="dj">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasdj/alesis.jpeg" alt="ALESIS">
-               </a>
-               <div class="overlay">ALESIS</div>
-            </div>
-            <div class="grid-item" data-filter="dj">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasmicro/ath.jpeg" alt="AUDIO TECHNICA">
-               </a>
-               <div class="overlay">AUDIO TECHNICA</div>
-            </div>
-            <div class="grid-item" data-filter="dj">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasdj/korg.jpeg" alt="KORG">
-               </a>
-               <div class="overlay">KORG</div>
-            </div>
-            <div class="grid-item" data-filter="dj">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasdj/samson.jpeg" alt="SAMSON">
-               </a>
-               <div class="overlay">SAMSON</div>
-            </div>
-            <!--teclados-->
-            <div class="grid-item" data-filter="teclados">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcatecla/kboard.jpeg" alt="KBOARD">
-               </a>
-               <div class="overlay">KBOARD</div>
-            </div>
-            <div class="grid-item" data-filter="teclados">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasdj/korg.jpeg" alt="KORG">
-               </a>
-               <div class="overlay">KORG</div>
-            </div>
-            <div class="grid-item" data-filter="teclados">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcatecla/nord.jpeg" alt="NORD">
-               </a>
-               <div class="overlay">NORD</div>
-            </div>
-            <div class="grid-item" data-filter="teclados">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasmicro/ultimate.jpeg" alt="Ultimate">
-               </a>
-               <div class="overlay">Ultimate</div>
-            </div>
-            <!--acor-->
-            <div class="grid-item" data-filter="acor">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasacor/cantabella.jpeg" alt="CANTABELLA">
-               </a>
-               <div class="overlay">CANTABELLA</div>
-            </div>
-            <div class="grid-item" data-filter="acor">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasacor/sonola.jpeg" alt="SONOLA">
-               </a>
-               <div class="overlay">SONOLA</div>
-            </div>
-            <div class="grid-item" data-filter="acor">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasacor/weltmeister.jpeg" alt="WELTMEISTER">
-               </a>
-               <div class="overlay">WELTMEISTER</div>
-            </div>
-            <!--viento-->
-            <div class="grid-item" data-filter="viento">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasvie/alice.jpeg" alt="ALICE">
-               </a>
-               <div class="overlay">ALICE</div>
-            </div>
-            <div class="grid-item" data-filter="viento">
-               <a href="#">
-               <img loading="lazy" src="assets/images/marcasvie/klingt.jpeg" alt="KLINGT">
-               </a>
-               <div class="overlay">KLINGT</div>
-            </div>
-         </div>
-      </section>
+            
+            <div id="gallery">
+            
+            <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+              <div class="inside">
+                <div class="details">
+                  <div class="texto">
+                    <h2>Client Name</h2>
+                    <p>Logo</p>
+                  </div>
+                </div>
+                <div class="overlay"></div>
+                <img class="imagenest" loading="lazy" src="assets/images/marcas/akai.jpeg" alt="Akai Professional" />
+              </div>
+            </a>
+            <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/avid.jpeg" alt="Akai Professional" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/digico.jpeg" alt="Akai Professional" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/maudio.jpeg" alt="M-AUDIO" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital bajos" href="#" data-cat="audiodigital bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/mooer.jpeg" alt="Mooer" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital bajos audioprofesional" href="#" data-cat="audiodigital bajos audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/mrs.jpeg" alt="MRS Accesorios" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital " href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/presonus.jpeg" alt="Presouns" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/rme.jpeg" alt="RME Interfaces" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/soundcraft.jpeg" alt="Soundcraft" />
+               </div>
+             </a>
+             <!--/bajos-->
+             <a class="gallery-item bajos viento" href="#" data-cat="bajos viento">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/alice.jpeg" alt="Alice Accesorios" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/ampeg.jpeg" alt="AMPEG" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/babilon.jpeg" alt="BABILON" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/digitech.jpeg" alt="DIGITECH" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/elixir.jpeg" alt="Elixir" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/godin.jpeg" alt="Godin" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/hartke.jpeg" alt="Hartke" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/marshall.jpeg" alt="Marshall" />
+               </div>
+             </a>
+             <a class="gallery-item bajos audioprofesional" href="#" data-cat="bajos audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/peavey.jpeg" alt="Peavy" />
+               </div>
+             </a>
+             <a class="gallery-item bajos iluminacion" href="#" data-cat="bajos iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/prolok.jpeg" alt="Prolok" />
+               </div>
+             </a>
+             <a class="gallery-item bajos micro teclado" href="#" data-cat="bajos micro teclado">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/ultimate.jpeg" alt="Ultimate" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/vox.jpeg" alt="Vox" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/whirlwind.jpeg" alt="whirlwind" />
+               </div>
+             </a>
+             <!--/audio profesionalñ-->
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/bbe.jpeg" alt="BBE Profesionales" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/crown.jpeg" alt="CROWN" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/dbx.jpeg" alt="DBX" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/jbl.jpeg" alt="JBL" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/lexicon.jpeg" alt="LEXICON" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/mackie.jpeg" alt="MACKIE" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/rcf.jpeg" alt="RFC" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/regaltip.jpeg" alt="REGALTIP" />
+               </div>
+             </a>
+             <!--/baterias y percusiones-->
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/cruztools.jpeg" alt="CruzTools" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/ddrum.jpeg" alt="DDRUM" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/dream.jpeg" alt="DREAM CYMBALS" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/dw.jpeg" alt="DW BATERIAS" />
+               </div>
+             </a>
+             <a class="gallery-item baterias viento" href="#" data-cat="baterias viento">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/klingt.jpeg" alt="KLINGT" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/mapex.jpeg" alt="MAPEX" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/pacific.jpeg" alt="PACIFIC DRUMS & PERCUSSION" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/pearl.jpeg" alt="PEARL" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/zildjian.jpeg" alt="ZILDJIAN" />
+               </div>
+             </a>
+             <!--/iluminacion-->
+             <a class="gallery-item iluminacion" href="#" data-cat="iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/claypacky.jpeg" alt="CLAY PAKY" />
+               </div>
+             </a>
+             <a class="gallery-item iluminacion" href="#" data-cat="iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/filmgear.jpeg" alt="FILMGEAR" />
+               </div>
+             </a>
+             <a class="gallery-item iluminacion" href="#" data-cat="iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/pr.jpeg" alt="PR LIGHTING" />
+               </div>
+             </a>
+             <a class="gallery-item iluminacion" href="#" data-cat="iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/prolight.jpeg" alt="PROLIGHT" />
+               </div>
+             </a>
+             <!--/micro-->
+             <a class="gallery-item micro dj" href="#" data-cat="micro dj">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasmicro/akg.jpeg" alt="AKG" />
+               </div>
+             </a>
+             <a class="gallery-item micro dj" href="#" data-cat="micro dj">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasmicro/ath.jpeg" alt="AUDIO TECHNICA" />
+               </div>
+             </a>
+             <!--/dj-->
+             <a class="gallery-item dj" href="#" data-cat="dj">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasdj/alesis.jpeg" alt="ALESIS"/>
+               </div>
+             </a>
+             <a class="gallery-item dj teclado" href="#" data-cat="dj teclado">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasdj/korg.jpeg" alt="KORG"/>
+               </div>
+             </a>
+             <a class="gallery-item dj" href="#" data-cat="dj">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasdj/samson.jpeg" alt="SAMSON"/>
+               </div>
+             </a>
+            <!--/teclado-->
+            <a class="gallery-item teclado" href="#" data-cat="teclado">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcatecla/kboard.jpeg" alt="KBOARD"/>
+               </div>
+             </a>
+             <a class="gallery-item teclado" href="#" data-cat="teclado">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcatecla/nord.jpeg" alt="NORD"/>
+               </div>
+             </a>
+             <!--/acordeones-->
+             <a class="gallery-item acor" href="#" data-cat="acor">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasacor/cantabella.jpeg" alt="CANTABELLA" />
+               </div>
+             </a>
+             <a class="gallery-item acor" href="#" data-cat="acor">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasacor/sonola.jpeg" alt="SONOLA" />
+               </div>
+             </a>
+             <a class="gallery-item acor" href="#" data-cat="acor">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasacor/weltmeister.jpeg" alt="WELTMEISTER" />
+               </div>
+             </a>
+            </div><!--/gallery-->
+            
+          </div><!--/gallery-wrap-->
+       </div>
       <section class="whoher">
          <div class="whoher__container">
             
@@ -846,5 +1097,32 @@
       </footer>
       <script type="text/javascript"  src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
       <script src="assets/js/index.js"></script>
+      <script>
+         $(function () {
+     
+     var filterList = {
+     
+         init: function () {
+         
+             // https://mixitup.kunkalabs.com/
+             $('#gallery').mixItUp({
+                 selectors: {
+                 target: '.gallery-item',
+                 filter: '.filter'	
+             },
+             load: {
+               filter: '.audiodigital' // show all items on page load.
+             }     
+             });								
+         
+         }
+   
+     };
+     
+     // Filter ALL the things
+     filterList.init();
+     
+   });
+      </script>
    </body>
 </html>
