@@ -1194,4 +1194,9 @@ textarea {
 	  float: none;
 	  width: 100%;
 	}
+	#filters {
+		
+		width: 100% !important;
+	}
   }
+  
