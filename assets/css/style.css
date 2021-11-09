@@ -78,7 +78,7 @@ a {
 	transition: 0.3s all ease-in-out;
 }
 /**MENU MOBLIE OF HERMES MUSCI MEXICO**/
-@media screen and (max-width:850px) {
+@media screen and (max-width:1800px) {
 	body.active {
 		overflow-y: hidden;
 		overflow-x: hidden;
@@ -149,6 +149,14 @@ a {
 		-moz-transform: translateY(-8px) rotate(-45deg);
 		-ms-transform: translateY(-8px) rotate(-45deg);
 		-o-transform: translateY(-8px) rotate(-45deg);
+	}
+}
+@media screen and (max-width:1290px) {
+	
+	.navbar__logo {
+		color: var(--black);
+		object-fit: cover;
+		width: 20%;
 	}
 }
 @media screen and (max-width:848px) {
@@ -354,8 +362,8 @@ a {
 
 .her {
 	font-size: clamp(2rem, 6vw, 3rem);
-	text-transform: uppercase;
 	padding: 0 1rem 3rem;
+	text-transform: capitalize;
 }
 
 .parher {
@@ -409,6 +417,7 @@ a {
 .whoher__heading {
 	margin-bottom: 1rem;
 	font-size: clamp(2rem, 6vw, 3rem);
+	text-transform: capitalize !important;
 }
 
 .whoher__features {
@@ -487,7 +496,7 @@ a {
 	margin-bottom: 1rem;
 	font-size: clamp(2rem, 5vw, 3rem);
 	padding: 0 1rem;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .departamentos__desc {
@@ -590,7 +599,7 @@ a {
 	margin-bottom: 4rem;
 	font-size: clamp(2rem, 5vw, 3rem);
 	padding: 0 1rem;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .padre {
@@ -641,7 +650,7 @@ a {
 	margin-bottom: 4rem;
 	font-size: clamp(2rem, 5vw, 3rem);
 	padding: 0 1rem;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .ramas__container {
@@ -695,7 +704,7 @@ a {
 }
 .ramas__title {
 	text-align: center !important;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 .ramas__title {
 	font-size: var(--normal-font-size)
@@ -1191,14 +1200,25 @@ textarea {
 	
 	.gallery-item {
 	  float: none;
-	  width: 100%;
+	  width: 49%;
+	  object-fit: cover;
+	  margin: auto;
 	}
 	#filters {
 		
 		width: 100% !important;
 	}
+	#filters li {
+		float: left;
+		width: 10rem;
+		text-align: center;
+	}
   }
-  
+  @media screen and (max-width:1490px) {
+	#filters {
+		width: 100%;
+	}
+  }
 
 
 
