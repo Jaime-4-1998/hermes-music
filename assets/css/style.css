@@ -1258,3 +1258,11 @@ textarea {
 		margin-bottom: 1rem;
 	}
   }
+  @media screen and (max-width:600px){
+	  .contorno{
+		  margin-left: 5rem;
+	  }
+	  .dere__noti{
+		margin-right: 5rem !important;
+	}
+  }
