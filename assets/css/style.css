@@ -366,7 +366,8 @@ a {
 }
 
 .parher {
-	font-size: clamp(1.3rem, 5vw, 1.2rem);
+	font-size: clamp(1rem, 5vw, 1.2rem);
+	text-align: justify;
 }
 
 .boton {
@@ -443,6 +444,7 @@ a {
 @media screen and (max-width:850px) {
 	.whoher {
 		padding: 0rem calc((100vw - 1400px) / 2);
+		margin-top: -2rem;
 	}
 	.whoher__container {
 		grid-template-columns: 1fr;
@@ -464,7 +466,10 @@ a {
 		text-align: center;
 	}
 	.whoher__features {
-		text-align: center;
+		text-align: justify;
+	}
+	.whoher__feature {
+		text-align: justify !important;
 	}
 }
 
@@ -1282,9 +1287,15 @@ textarea {
   @media screen and (max-width:600px){
 	  .contorno{
 		  margin-left: 5rem;
+		  text-align: justify;
+		  margin-top: 0.5rem;
 	  }
 	  .dere__noti{
 		margin-right: 5rem !important;
+	}
+	.desc__noti{
+		text-align: justify !important;
+		margin-top: 0.5rem;
 	}
   }
 
