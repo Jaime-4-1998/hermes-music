@@ -78,7 +78,7 @@ a {
 	transition: 0.3s all ease-in-out;
 }
 /**MENU MOBLIE OF HERMES MUSCI MEXICO**/
-@media screen and (max-width:1800px) {
+@media screen and (max-width:1080px) {
 	body.active {
 		overflow-y: hidden;
 		overflow-x: hidden;
@@ -587,7 +587,7 @@ a {
 
 .profesi {
     color: var(--white);
-    padding: 4rem calc((100vw - 1470px) / 2);
+    padding: 4rem calc((100vw - 1534px) / 2);
     text-align: center;
     background-image: url(https://www.hermes-music.com.mx/off/upload/back.jpg) !important;
     background-repeat:no-repeat;
@@ -615,7 +615,7 @@ a {
 	flex-grow: 0;
 	flex-shrink: 1;
 	flex-basis: 300px;
-	border-radius: 50%;
+	
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -1092,11 +1092,14 @@ textarea {
 
 
 .imagenest {
-	max-width: 100%;
-	height: auto;
-	object-fit: cover !important;
-	border-radius: 5px;
-  }
+    max-width: 60%;
+    height: auto;
+    object-fit: cover !important;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    justify-content: center;
+}
   .wrap {
 	margin: 0 auto;
 	max-width: 1300px;
@@ -1174,7 +1177,6 @@ textarea {
   }
   
   .inside img {
-	float: left;
 	width: 100%;
   }
   
@@ -1286,3 +1288,78 @@ textarea {
 		margin-right: 5rem !important;
 	}
   }
+
+
+
+
+
+
+
+
+
+/*************
+
+.ramas__containere {
+	grid-template-columns: repeat(2, 1fr);
+	padding-bottom: 2rem
+}
+
+.ramas__contente {
+	position: relative;
+	display: grid;
+	padding: .25rem .75rem .75rem;
+}
+
+.ramase__img{
+	width: 100%;
+	object-fit: cover;
+}
+.ramase__title {
+	margin-top: 1rem;
+	text-align: center !important;
+	text-transform: capitalize;
+}
+.ramase__title {
+	font-size: var(--normal-font-size)
+}
+.ramase__category {
+	font-size: 1rem;
+	margin-bottom: var(--mb-1);
+	margin-top: 1rem;
+	list-style: none;
+}
+
+
+
+@media screen and(max-width:500px) {
+	.ramase__category {
+		font-size: 0.8rem !important;
+		margin-bottom: var(--mb-1);
+		margin-top: 1rem;
+		list-style: none;
+		text-align: justify !important;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	.ramas__containere {
+		grid-template-columns: repeat(4, 300px);
+		justify-content: center
+	}
+	.ramas__contente {
+		padding: .5rem 1.5rem 1.5rem
+	}
+	.ramas__img {
+		width: 120px;
+		margin-bottom: var(--mb-1)
+	}
+	.ramase__category,
+	.ramase__title {
+		text-align: initial
+	}
+}
+@media screen and (max-width:600px){
+		.ramase__container{
+			grid-template-columns: none !important;
+		}
+}
