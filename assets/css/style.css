@@ -1262,7 +1262,7 @@ textarea {
 	div.noticia i.derecha {
 		float: right !important; 
 		margin-left: 10px !important;
-		background: #96999e;
+		background: var(--yellow);
 		color: #fff;
 		font-size: 2rem;
 		padding: 1rem;
