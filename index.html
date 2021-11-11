@@ -1,1364 +1,1224 @@
-:root {
-	--red: #f9032f;
-	--black: #000;
-	--white: #fff;
-	--yellow: #f8bb31;
-	--mb-1: .5rem;
-	--mb-2: 1rem;
-	--mb-3: 1.5rem;
-	--mb-4: 2rem;
-	--mb-5: 2.5rem;
-	--mb-6: 3rem;
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto', sans-serif;
-}
-hr {
-	width: 50%;
-	border-color: #f8bb31!important;
-	display: block;
-	margin: auto;
-}
-
-a {
-	text-decoration: none
-}
-
-.section {
-	padding: 4rem 0 2rem
-}
-
-.l-main {
-	overflow: hidden
-}
-
-.bd-container {
-	max-width: 1360px;
-	width: calc(100% - 3rem);
-	margin-left: var(--mb-3);
-	margin-right: var(--mb-3)
-}
-
-.bd-grid {
-	display: grid;
-	gap: 1.5rem
-}
-
-/**MENU OF HERMES MUSCI MEXICO**/
-.navbar {
-	background: var(--white);
-	height: 10vh;
-	padding: 3.5rem calc((100vw - 1400px) / 2);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-}
-
-.navbar__logo {
-	color: var(--black);
-	object-fit: cover;
-	width: 10%;
-}
-
-.navbar__link {
-	color: var(--black);
-	text-decoration: none;
-	padding: 0rem 1rem;
-	transition: 0.3s all ease-in;
-}
-
-.navbar__link:hover {
-	color: var(--yellow);
-	transition: 0.3s all ease-in-out;
-}
-/**MENU MOBLIE OF HERMES MUSCI MEXICO**/
-@media screen and (max-width:1080px) {
-	body.active {
-		overflow-y: hidden;
-		overflow-x: hidden;
-	}
-	.navbar__logo {
-		color: var(--black);
-		object-fit: cover;
-		width: 40%;
-	}
-	.navbar__link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 2rem !important;
-	}
-	.navbar__menu {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(8, 53px);
-		position: absolute;
-		width: 100%;
-		top: -1000px;
-	}
-	.navbar__menu.active {
-		top: 100%;
-		opacity: 1;
-		z-index: 99;
-		height: 100vh;
-		font-size: 20px;
-		background: var(--white);
-	}
-	.navbar__toggle .bar {
-		width: 25px;
-		height: 3px;
-		margin: 5px auto;
-		transition: all 0.3s ease-in-out;
-		-webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-ms-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		background: var(--black);
-		display: block;
-		cursor: pointer;
-	}
-	#mobile-menu {
-		position: absolute;
-		top: 35%;
-		right: 5%;
-		transform: translate(5%, 20%);
-		-webkit-transform: translate(5%, 20%);
-		-moz-transform: translate(5%, 20%);
-		-ms-transform: translate(5%, 20%);
-		-o-transform: translate(5%, 20%);
-	}
-	#mobile-menu.is-active .bar:nth-child(2) {
-		opacity: 0;
-	}
-	#mobile-menu.is-active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
-		-webkit-transform: translateY(8px) rotate(45deg);
-		-moz-transform: translateY(8px) rotate(45deg);
-		-ms-transform: translateY(8px) rotate(45deg);
-		-o-transform: translateY(8px) rotate(45deg);
-	}
-	#mobile-menu.is-active .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
-		-webkit-transform: translateY(-8px) rotate(-45deg);
-		-moz-transform: translateY(-8px) rotate(-45deg);
-		-ms-transform: translateY(-8px) rotate(-45deg);
-		-o-transform: translateY(-8px) rotate(-45deg);
-	}
-}
-@media screen and (max-width:1290px) {
-	
-	.navbar__logo {
-		color: var(--black);
-		object-fit: cover;
-		width: 20%;
-	}
-}
-@media screen and (max-width:848px) {
-	
-	.navbar__logo {
-		color: var(--black);
-		object-fit: cover;
-		width: 20%;
-	}
-}
-@media screen and (max-width:600px) {
-	
-	.navbar__logo {
-		color: var(--black);
-		object-fit: cover;
-		width: 40%;
-	}
-}
-/*BANNERS OF HERMES MUSCI MEXICO*/
-.navigation .previous {
-	position: absolute;
-	top: 40%;
-	left: 10px;
-	font-size: 15px;
-	font-weight: 700px;
-	z-index: 5;
-	color: var(--white);
-}
-
-.navigation .next {
-	position: absolute;
-	top: 40%;
-	right: 10px;
-	font-size: 15px;
-	font-weight: 700px;
-	z-index: 5;
-	color: var(--white);
-}
-
-.navigation .btn-nav {
-	background: var(--black);
-	cursor: pointer;
-	border-radius: 50%;
-	width: 25px;
-	height: 25px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 5px;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.imare {
-	width: 100% !important;
-	height: 710px;
-	object-fit: cover !important;
-	margin: auto;
-}
-
-.image-fade {
-	display: none;
-}
-.container {
-	max-width: 100%;
-	position: relative;
-	margin: auto;
-}
-
-.caption-text {
-    width: 20%;
-    color: #fff;
-    font-size: 12px;
-    padding: 15px 10px;
-    position: absolute;
-    left: 48rem;
-    bottom: 10px;
-    background:var(--yellow);
-    text-align: center;
-    border-radius: 5px;
-    display: block;
-    margin: auto;
-}
-
-.dot {
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: transparent;
-	border-color: var(--yellow);
-	border-width: 5 px;
-	border-style: solid;
-	border-radius: 50%;
-	display: inline-block;
-	transition: border-color 0.6s ease;
-}
-
-.active {
-	border-color: var(--black);
-	background: var(--black);
-}
-
-
-/* ANIMATION OF HERMES MUSIC MEXICO */
-
-.fade {
-	-webkit-animation-name: fade-image;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade-image;
-	animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade-image {
-	from {
-		opacity: 0.5;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes fade-image {
-	from {
-		opacity: 0.5;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-
-/*MOBLIE OF BANNERS HERMES MUSCI MEXICO*/
-
-@media only screen and (max-width: 300px) {
-	.caption-text {
-		font-size: 10px;
-	}
-}
-
-@media screen and (max-width:1370px) {
-	.imare {
-		height: 510px;
-	}
-	.caption-text {
-		left: 34rem;
-	}
-}
-@media screen and (max-width:1050px) {
-	.caption-text {
-		left: 26rem;
-	}
-}
-@media screen and (max-width:900px) {
-	.caption-text {
-		left: 19rem;
-	}
-}
-@media screen and (max-width:500px) {
-	.imare {
-		height: 210px;
-		object-fit: cover !important;
-	}
-	.caption-text {
-		left: 9rem;
-		width: 30% !important;
-	}
-}
-@media screen and (max-width:380px) {
-	.caption-text {
-		left: 8rem;
-		width: 31% !important;
-	}
-}
-
-.button {
-	background-color: #4CAF50 !important;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	font-size: 16px;
-	margin: auto;
-	cursor: pointer;
-	border-radius: 5px;
-	margin-top: -4rem;
-	z-index: 900;
-}
-
-.butlike {
-	color: #fff;
-	text-decoration: none;
-}
-
-
-/*PRESENTATION OF HERMES MUSIC MEXICO*/
-
-.hermes {
-	color: var(--black);
-	padding: 4rem calc((100vw - 1100px) / 2);
-	text-align: center;
-}
-
-.her {
-	font-size: clamp(2rem, 6vw, 3rem);
-	padding: 0 1rem 3rem;
-	text-transform: capitalize;
-}
-
-.parher {
-	font-size: clamp(1.3rem, 5vw, 1.2rem);
-}
-
-.boton {
-	background-color: var(--yellow);
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: left;
-	text-decoration: none;
-	font-size: 16px;
-	margin: auto;
-	cursor: pointer;
-	border-radius: 5px;
-	z-index: 900;
-}
-
-@media screen and (max-width:768px) {
-	.hermes {
-		padding: 3rem calc((100vw - 1100px) / 2);
-	}
-	.her__container {
-		padding: 0.7rem;
-		margin-top: -2rem;
-	}
-}
-/*SECTION OF QUIENES SOMOS*/
-
-.whoher {
-	padding: 2rem calc((100vw - 1400px) / 2);
-}
-
-.whoher__container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding: 1rem;
-}
-
-.whoher__img {
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	margin-left: 4rem;
-	box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
-	object-fit: cover !important;
-}
-
-.whoher__heading {
-	margin-bottom: 1rem;
-	font-size: clamp(2rem, 6vw, 3rem);
-	text-transform: capitalize !important;
-}
-
-.whoher__features {
-	list-style: none;
-}
-
-.whoher__feature {
-	margin-top: 2.5rem;
-	margin-bottom: 1.5rem;
-	font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
-.bxs-check-circle {
-	margin-right: 0.5rem;
-	color: #f8bb31 !important;
-}
-
-@media screen and (max-width:1400px) {
-	.whoher__img {
-		margin-left: 0rem;
-	}
-}
-
-@media screen and (max-width:850px) {
-	.whoher {
-		padding: 0rem calc((100vw - 1400px) / 2);
-	}
-	.whoher__container {
-		grid-template-columns: 1fr;
-	}
-	.whoher__img {
-		width: 80% !important;
-		height: 80% !important;
-		border-radius: 10px;
-		margin-left: 0rem !important;
-		object-fit: cover !important;
-		margin: auto !important;
-		display: block !important;
-	}
-	.espacio {
-		height: 2rem;
-		display: inline-block;
-	}
-	.whoher__heading {
-		text-align: center;
-	}
-	.whoher__features {
-		text-align: center;
-	}
-}
-
-@media screen and (max-width:500px) {
-	.whoher__img {
-		width: 80% !important;
-		height: 80% !important;
-		border-radius: 10px;
-		margin-left: 0rem !important;
-		object-fit: cover !important;
-		margin: auto !important;
-		display: block !important;
-	}
-	.espacio {
-		height: 2rem;
-		display: inline-block;
-	}
-}
-/*DEPARYAMENTS OF HERMES MUSIC MEXICO*/
-.departamentos {
-	background: var(--black);
-	color: var(--white);
-	padding: 6rem calc((100vw - 1470px) / 2);
-	text-align: center;
-}
-
-.departamentos h2 {
-	margin-bottom: 1rem;
-	font-size: clamp(2rem, 5vw, 3rem);
-	padding: 0 1rem;
-	text-transform: capitalize;
-}
-
-.departamentos__desc {
-	padding: 3rem;
-	font-size: clamp(1rem, 3vw, 1.5rem);
-	padding: 1rem;
-}
-
-.departamentos__wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	padding: 1rem;
-}
-
-.departamentos__card {
-	padding: 2rem;
-	min-height: 515px;
-	width: 400px;
-	background: var(--white);
-	color: var(--black);
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.departamentos__perks {
-	min-height: 150px;
-}
-
-.departamentos__card p {
-	margin-bottom: 1rem;
-	text-align: justify !important;
-}
-.margin__parr__one{
-	margin-top: -11rem;
-}
-.margin__parr__two{
-	margin-top: -10rem;
-}
-.card-icon {
-	font-size: 5rem;
-	margin-bottom: 2rem;
-	color: #f8bb31 !important;
-}
-
-.departamentos__card h3 {
-	font-size: clamp(0.6rem, 5vw, 2rem);
-	margin-bottom: 2rem;
-	font-weight: inherit;
-}
-
-.boton_depa {
-	background-color: transparent;
-	border: 2px solid #000;
-	color: var(--black);
-	padding: 15px 32px;
-	text-align: left;
-	text-decoration: none;
-	box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
-	font-size: 16px;
-	margin: auto;
-	cursor: pointer;
-	border-radius: 5px;
-	z-index: 900;
-}
-
-.boton_depa:nth-child(1) {
-	margin-bottom: 4rem !important;
-}
-
-@media screen and (max-width:1100px) {
-	.departamentos__wrapper {
-		flex-direction: column;
-		align-items: center;
-	}
-	.departamentos__card {
-		width: 90%;
-		margin-bottom: 2rem;
-	}
-}
-/*PROFESIONALS*/
-
-.profesi {
-    color: var(--white);
-    padding: 4rem calc((100vw - 1534px) / 2);
-    text-align: center;
-    background-image: url(../images/back.jpeg) !important;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-}
-
-.profesi h2 {
-	color: var(--white);
-	margin-bottom: 4rem;
-	font-size: clamp(2rem, 5vw, 3rem);
-	padding: 0 1rem;
-	text-transform: capitalize;
-}
-
-.padre {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-.padre img {
-	width: 100%;
-	height: 300px;
-	flex-grow: 0;
-	flex-shrink: 1;
-	flex-basis: 300px;
-	
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	object-fit: cover;
-}
-
-.padre h3 {
-	text-align: center;
-	color: var(--white);
-	margin: 0 0 10px;
-	-webkit-backface-visibility: hidden;
-	z-index: 100;
-	padding: 2rem 0 1rem 0;
-}
-
-.padre p {
-	text-align: center;
-	color: var(--white);
-	margin: 0 0 35px;
-	line-height: 20px;
-	-webkit-backface-visibility: hidden;
-	max-height: 57px;
-	overflow: hidden;
-	padding-top: 2rem;
-}
-/**END OF PROFESIONALS**/
-.ramas h2 {
-	text-align: center;
-	color: var(--black);
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-	font-size: clamp(2rem, 5vw, 3rem);
-	padding: 0 1rem;
-	text-transform: capitalize;
-}
-
-.ramas__container {
-	grid-template-columns: repeat(2, 1fr);
-	padding-bottom: 2rem
-}
-
-.ramas__content {
-	position: relative;
-	display: grid;
-	padding: .25rem .75rem .75rem;
-	background-color: var(--container-color);
-	box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
-	border-radius: 1rem;
-}
-
-.iconos {
-	width: 100%;
-	justify-self: center;
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
-	color: var(--yellow);
-	font-size: 4rem;
-	text-align: center;
-}
-.services-box {
-    display: inline-block;
-    text-decoration: none;
-    background: #ffc000;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    transition: all 0.17s ease-in-out;
-    -moz-transition: all 0.17s ease-in-out;
-    -webkit-transition: all 0.17s ease-in-out;
-    -o-transition: all 0.17s ease-in-out;
-    position: relative;
-    border: 5px solid transparent;
-    margin-bottom: 30px;
-	object-fit: contain;
-	transition: 0.3s all ease-out;
-
-}
-.services-box:hover{
-	background: gray;
-	transition: 0.3s all ease-in-out;
-}
-.ramas__title {
-	text-align: center !important;
-	text-transform: capitalize;
-}
-.ramas__title {
-	font-size: var(--normal-font-size)
-}
-.margin__tittle {
-    margin-top: -3.5rem !important;
-}
-.margin__cate {
-    margin-top: -5rem !important;
-}
-.ramas__category {
-	font-size: 1rem;
-	margin-bottom: var(--mb-1);
-	margin-top: 1rem;
-	list-style: none;
-}
-
-.ramas__preci {
-	font-weight: var(--font-semi-bold);
-	color: var(--title-color)
-}
-
-.ramas__button {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	display: flex;
-	font-size: 1.25rem;
-	padding: .5rem .625rem;
-	border-radius: 1rem 0 1rem 0
-}
-
-@media screen and (min-width:576px) {
-	.section-title-center,
-	.send__description,
-	.share__data {
-		text-align: initial
-	}
-}
-
-@media screen and(max-width:500px) {
-	.ramas__category {
-		font-size: 0.8rem !important;
-		margin-bottom: var(--mb-1);
-		margin-top: 1rem;
-		list-style: none;
-		text-align: justify !important;
-	}
-}
-
-@media screen and (min-width:1200px) {
-	.ramas__container {
-		grid-template-columns: repeat(4, 300px);
-		justify-content: center
-	}
-	.ramas__content {
-		padding: .5rem 1.5rem 1.5rem
-	}
-	.ramas__img {
-		width: 120px;
-		margin-bottom: var(--mb-1)
-	}
-	.ramas__category,
-	.ramas__title {
-		text-align: initial
-	}
-	.ramas__button {
-		padding: .75rem
-	}
-}
-@media screen and (max-width:600px){
-		.ramas__container{
-			grid-template-columns: none !important;
-		}
-		.margin__tittle {
-			margin-top: 0.5rem !important;
-			margin-bottom: 1.5rem;
-		}
-		.margin__cate{
-			margin-top: 0 !important;
-		}
-}
-/**SELECTOR MARCAS**/
-.marcas {
-    background: transparent;
-    color: var(--white);
-    padding: 3rem calc((100vw - 1712px) / 2);
-    text-align: center;
-    display: block;
-    margin: auto;
-}
-.marcas h2 {
-	color: var(--black);
-	margin-bottom: 4rem;
-	font-size: clamp(2rem, 5vw, 3rem);
-	padding: 0 1rem;
-	text-transform: uppercase;
-}
-
-#container {
-	margin: auto;
-}
-
-.grid-item {
-	display: inline-block;
-	height: 259px;
-	overflow: hidden;
-	text-align: center;
-	width: 400px;
-}
-
-.grid-item img {
-	width: 100%;
-	height: auto;
-	object-fit: cover !important;
-	filter: url(filters.svg#grayscale);
-	filter: gray;
-	-webkit-filter: grayscale(1);
-	transition: 0.9s;
-}
-
-.grid-item img:hover {
-	filter: none;
-}
-
-.isotope-pager .pager {
-	display: inline-block;
-}
-
-.filters {
-	width: 100%;
-	text-align: center;
-	padding-bottom: 35px;
-	padding-top: 20px;
-}
-
-.filters ul {
-	list-style: none;
-	padding: 20px 10px;
-	margin: 0 40px;
-	border-radius: 30px;
-	background-color: #fff;
-}
-.filters li {
-	display: inline-block;
-	padding: 10px 10px;
-	font-size: 15px;
-	font-weight: 600;
-	cursor: pointer;
-	border-radius: 10px !important;
-}
-
-.filters li a {
-	color: var(--black);
-	text-decoration: none;
-	transition: 0.3s all ease-in;
-	padding: 10px 10px;
-}
-
-.filters li:hover {
-	box-shadow: 0 2px 6px rgb(65 11 16 / 15%);
-	background: var(--yellow);
-	color: #fff !important;
-	transition: 0.3s all ease-in-out;
-}
-
-.filters li.active a {
-	color: #fff !important;
-}
-
-.isotope-pager a {
-	margin: 6px 1px;
-	display: inline-block;
-	width: 50px;
-	line-height: 31px;
-	color: var(--white);
-	font-weight: 600;
-	transition: 0.3s;
-	border-radius: 25px;
-	background-color: var(--black);
-	text-decoration: none;
-}
-
-.isotope-pager .active {
-	color: var(--yellow) !important;
-	border-radius: 25px;
-	background-color: var(--black);
-}
-
-.isotope-pager .prev {
-	border-radius: 30px 0 0 30px;
-}
-
-.isotope-pager .next {
-	border-radius: 0 30px 30px 0;
-}
-
-.isotope-pager a::before,
-.isotope-pager a:after {
-	content: "";
-	position: absolute;
-	border-top: 30px solid transparent;
-	border-bottom: 30px solid transparent;
-}
-
-.isotope-pager .num::before,
-.next::before {
-	border-right: 20px solid #2c3e50;
-	right: 100%;
-}
-
-.isotope-pager .num:after,
-.prev:after {
-	border-right: 20px solid #f1f1f1;
-	right: 0;
-}
-
-.overlay {
-	position: absolute;
-	bottom: 0;
-	color: var(--black);
-	width: 100%;
-	transition: .5s ease;
-	opacity: 0;
-	font-size: 20px;
-	padding: 20px;
-	text-align: center;
-	cursor: pointer;
-}
-
-.grid-item:hover .overlay {
-	opacity: 1;
-}
-/**MOBLIE OF LOGOS***/
-@media screen and (max-width:600px) {
-    .marcas {
-		padding: 2rem calc((100vw - 1470px) / 2);
-	}
-	.filters {
-		padding-bottom: 0;
-		padding-top: 0;
-	}
-	.filters ul {
-		padding: 0;
-		margin: 0;
-	}
-	#container {
-		margin: auto;
-		width: 100% !important;
-	}
-	.grid-item {
-		display: inline-block;
-		height: 259px;
-		overflow: hidden;
-		text-align: center;
-		width: 100% !important;
-	}
-}
-/**FOOTER HERMES MUSIC MEXICO**/
-footer {
-	background-color: var(--black);
-}
-
-.footer__container {
-	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
-}
-
-.footer__logo {
-	color: #fff;
-}
-
-.footer__description,
-.footer__title {
-	color: #fff;
-	margin-bottom: var(--mb-2);
-}
-
-.footer__logo,
-.footer__title {
-	font-size: 1.125rem;
-	color: var(--yellow);
-}
-
-.footer__link {
-	display: inline-block;
-	margin-bottom: .75rem;
-	color: #fff;
-	transition: 0.3s all ease-in;
-}
-
-.footer__link:hover {
-	color: var(--yellow);
-	transition: 0.3s all ease-in-out;
-}
-
-.footer__social {
-	font-size: 1.5rem;
-	color: #fff;
-	margin-right: var(--mb-3);
-}
-
-.footer__social:hover {
-	color: #fff;
-}
-
-.footer__copy {
-	text-align: center;
-	color: #ccc;
-	margin-top: 2rem
-}
-@media screen and (min-width:968px) {
-	.bd-container {
-		margin-left: auto;
-		margin-right: auto
-	}
-}
-/***maps of google****/
-iframe {
-    border: 0;
-    width: 87%;
-    height: 30rem;
-    display: block;
-    margin: auto;
-}
-.text {
-    width: 90%;
-    margin: auto;
-    border-radius: 5px;
-    border: 1px solid var(--yellow);
-    padding: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-textarea {
-    resize: none;
-}
-::placeholder { color: var(--black); }
-.mensaje{
-		padding: 1.5rem;
-		width: 38rem;
-		border: 1px solid var(--yellow);
-		margin-bottom: 2rem;
-		margin-top: 1rem;
-		border-radius: 5px;
-	}
-
-@media screen and (max-width:600px) {
-	iframe {
-		border: 0;
-		width: 96% !important;
-		height: 30rem;
-		display: block;
-		margin: 0;
-	}
-	.text{
-		width: 90% !important;
-    }
-	.mensaje{
-		padding: 1.5rem;
-		width: 21rem;
-		border: 1px solid var(--yellow);
-		border-radius: 5px;
-	}
-}
-.botocon {
-    background-color: var(--yellow);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
-    font-size: 16px;
-    margin: auto;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 900;
-    display: block;
-}
-
-
-
-
-
-
-
-.imagenest {
-    max-width: 60%;
-    height: auto;
-    object-fit: cover !important;
-    border-radius: 5px;
-    display: block;
-    margin: auto;
-    justify-content: center;
-}
-  .wrap {
-	margin: 0 auto;
-	max-width: 1300px;
-	width: 100%;
-  }
-  .wrap h2 {
-	margin-top: 2.5rem;
-	  margin-bottom: 2.5rem;
-	  font-size: clamp(2rem, 5vw, 3rem);
-	  padding: 0 1rem;
-	  text-transform: capitalize;
-	text-align: center;
-  }
-  .gallery-wrap,
-  #gallery {
-	overflow: hidden;
-  }
-  #filters {
-	  margin: 1%;
-	  padding: 0;
-	  list-style: none;
-	  width: 1500px;
-	overflow: hidden;
-  }
-  #filters li {
-	float: left;
-  }
-  #filters li span {
-	display: block;
-	padding: 20px 20px;		
-	text-decoration: none;
-	color: #000;
-	cursor: pointer;
-	transition: all ease-in-out 0.25s;
-  }
-  #filters li:hover span {
-	color: #000;
-  }
-  #filters li span.active {
-	background: #f8bb31;
-	color:#000;
-	border-radius: 5px;
-  }
-  .gallery-item {
-	float: left;
-	width: 33.333%;
-	padding: 10px;
-	position: relative;
-	z-index: 10;
-	display: none;
-  }
-  .inside {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-  }
-  .details,
-  .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	opacity: 0;
-  }
-  .details {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 2;
-	transition: all 0.3s ease-in-out;
-	
-	
-  }
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Hermes Music es una empresa formada por músicos y profesionales de la industria del entretenimiento, dedicada a la distribución por mayoreo de las mejores marcas de equipos y sistemas de audio">
+      <meta name="theme-color" content="#f6b132">
+      <title>Hermes Music México</title>
+      <link rel="preload" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'  as="style" onload="this.rel='stylesheet'">
+      <link rel="preload"  href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar">
+         <img class="navbar__logo" loading="lazy" src="assets/images/Hermes.png" alt="Hermes Music" 
+         sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 3979px) 49vw, 1950px" srcset="assets/images/Hermes.png 500w, assets/images/Hermes.png 1080w, assets/images/Hermes.png 1600w, assets/images/Hermes.png 1950w"
+         > 
+         
+         <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
+         <div class="navbar__menu">
+            <a href="/" class="navbar__link">Inicio</a>
+            <a href="/" class="navbar__link">Nosotros</a>
+            <a href="/" class="navbar__link">Departamentos</a>
+            <a href="/" class="navbar__link">Especialistas</a>
+            <a href="/" class="navbar__link">Marcas</a>
+            <a href="http://fundacionhermesmusic.org/" target="_blank" rel="noopener" class="navbar__link">Fundación</a>
+            <a href="https://en.hermesmusic.com/" target="_blank" rel="noopener" class="navbar__link">Hermes Music USA</a>
+            <a href="https://hermesmusicclub.mx/" target="_blank" rel="noopener" class="navbar__link">Tienda en Linea</a>
+            <a href="/" class="navbar__link">Contacto</a>
+         </div>
+      </nav>
+      <section class="container">
+         <div class="navigation">
+            <div class="previous btn-nav"><i class='bx bx-chevron-left' ></i></div>
+            <div class="next btn-nav"><i class='bx bx-chevron-right'></i></div>
+         </div>
+         <div class="sarousel-container">
+            <div class="image-fade fade">
+              <picture>
+                <source srcset="assets/images/pru-1.webp
+                800w,
+                assets/images/pru-1.webp
+                400w,
+                assets/images/pru-1.webp
+                200w" type="image/webp" sizes="50vw" />
+                <source srcset="assets/images/pru-1.jpg
+                800w,
+                assets/images/pru-1.jpg
+                400w,
+                assets/images/pru-1.jpg
+                200w" type="image/jpg" sizes="50vw" />
+                <img loading="lazy" class="imare" src="assets/images/pru-1.jpg" alt="Hermes Music Mexico">
+              </picture> 
+               <!--<div class="caption-text">Image caption 1</div>-->
+            </div>
+            <div class="image-fade fade">
+              <picture>
+                <source srcset="assets/images/Slide-2.webp
+                800w,
+                assets/images/Slide-2.webp
+                400w,
+                assets/images/Slide-2.webp
+                200w" type="image/webp" sizes="50vw" />
+                <source srcset="assets/images/Slide-2.jpg
+                800w,
+                assets/images/Slide-2.jpg
+                400w,
+                assets/images/Slide-2.jpg
+                200w" type="image/jpg" sizes="50vw" />
+                <img loading="lazy" class="imare" src="assets/images/Slide-2.jpg" alt="Fundacion Hermes Music Mexico">
+              </picture> 
+              <!--<div class="caption-text">Image caption 2</div>-->
+           </div>
+           
+           <div class="image-fade fade">
+            <picture>
+              <source srcset="assets/images/Slide-3.webp
+              800w,
+              assets/images/Slide-3.webp
+              400w,
+              assets/images/Slide-3.webp
+              200w" type="image/webp" sizes="50vw" />
+              <source srcset="assets/images/Slide-3.jpg
+              800w,
+              assets/images/Slide-3.jpg
+              400w,
+              assets/images/Slide-3.jpg
+              200w" type="image/jpg" sizes="50vw" />
+              <img loading="lazy" class="imare" src="assets/images/Slide-3.jpg" alt="Fundacion Hermes Music Mexico">
+            </picture> 
+            <!--<div class="caption-text">Image caption 2</div>-->
+         </div>
+         </div>
+      </section>
+      <br>
+      <div style="text-align:center">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+      </div>
+      <section class="hermes">
+         <h1 class="her animate-title">Hermes Music Mexico</h1>
+         <div class="her__container">
+            <p class="parher">Es una empresa formada por músicos y profesionales de la industria del entretenimiento, dedicada a la distribución por mayoreo de las mejores marcas de equipos y sistemas de audio e iluminación profesional, así como instrumentos musicales y audio digital.</p>
+         </div>
+      </section>
+      <section class="whoher">
+         <div class="whoher__container">
+            <div>
+               <h2 class="whoher__heading animate-title">¿Quiénes Somos?</h2>
+               <div class="whoher__features">
+                  <p class="whoher__feature">
+                     <i class='bx bxs-check-circle'></i>Hermes Music es la empresa de distribución más grande para la industria del espectáculo de habla hispana. 
+                  </p>
+                  <p class="whoher__feature">
+                     <i class='bx bxs-check-circle'></i>Ofrecemos la más alta calidad en productos y servicios así como garantía y apoyo a todos nuestros clientes.
+                     Por esta razón nuestro slogan es “Porque amamos la música”.
+                  </p>
+                  <button class="boton"><a class="butlike" target="_blank" download="Folleto Coorporativo Hermes Music" href="https://www.hermes-music.com.mx//off/upload/FolletoCorporativoHermesMusic.pdf" rel="noopener">Ver Folleto Coorporativo</a></button>
+                  
+               </div>
+            </div>
+            <div>
+               <span class="espacio"></span>
+               <picture>
+                  <source srcset="assets/images/Hermesvallejo.webp
+                  800w,
+                  assets/images/Hermesvallejo.webp
+                  400w,
+                  assets/images/Hermesvallejo.webp
+                  200w" type="image/webp" sizes="50vw">
+                  <source srcset="assets/images/Hermesvallejo.png
+                  800w,
+                  assets/images/Hermesvallejo.png
+                  400w,
+                  assets/images/Hermesvallejo.png
+                  200w" type="image/jpg" sizes="50vw">
+                  <img loading="lazy" src="assets/images/Hermesvallejo.webp" alt="Hermes Music Distribuidora" class="whoher__img animate-img">
+
+                </picture> 
+
+            </div>
+            <div class="noticia">
+              <i class='izquierda bx bxs-trophy'></i>
+              <h3>Distribuidores</h3>
+              <p class="contorno">Contamos con una red de distribuidores en toda la República Mexicana y nos esforzamos por brindar siempre un excelente servicio.</p>
+              <div class="reset"></div>
+            </div>
+            
+            <div class="noticia">
+              <i class='derecha bx bxs-like'></i>
+              <h3 class="dere__noti">Servicio Técnico Hermes Music</h3>
+              <p class="dere__noti">Contamos con un departamento de servicio técnico desde el nacimiento de la empresa, especialistas certificados y con elevados estándares al servicio de nuestros clientes.</p>
+              <div class="reset"></div>
+            </div>
+
+            <div class="noticia">
+              <i class='izquierda bx bxs-user'></i>
+              <h3 >Equipo de Especialistas</h3>
+              <p  class="contorno">Hermes se compromete a brindar el soporte y apoyo que sus clientes requieren, resolviendo cualquier duda.</p>
+              
+    
+              <div class="reset"></div>
+            </div>
+            
+            <div class="noticia">
+              <i class='derecha bx bx-bookmark'></i>
+              <h3 class="dere__noti">Garantía Hermes Music</h3>
+              <p class="dere__noti">Además de ser la mayor cadena de tiendas al por menor en el estado de Texas, Hermes Music es la empresa lider en distribución de toda América Latina.</p>
+              <div class="reset"></div>
+            </div>
+
+            <div class="noticia">
+              <i class='izquierda bx bxs-wrench'></i>
+              <h3>Experiencia</h3>
+              <p class="contorno">Somos una empresa con mas de 30 años que nos respaldan asi como el prestigio de nuestras marcas.</p>
+    
+              <div class="reset"></div>
+            </div>
+            
+            <div class="noticia">
+              <i class='derecha bx bxs-heart'></i>
+              <h3 class="dere__noti">RESPONSABILIDAD SOCIAL</h3>
+              <p class="dere__noti">La Fundación Hermes Music ha participado en numerosos eventos y actividades altruistas, realizando donaciones y en los casos de desastres naturales en México ofreciendo ayuda humanitaria.</p>
+              <div class="reset"></div>
+            </div>
+            
+         </div>
+      </section>
+      <section class="departamentos">
+         <h2 class="animate-title">Departamentos</h2>
+         <div class="departamentos__wrapper">
+            <div class="departamentos__card animate-card">
+               <div class="departamentos__title">
+                  <!--<i class='bx bx-speaker card-icon' ></i>-->
+
+               <img class="services-box" src="assets/images/HP.png" loading="lazy" alt="Hermes Profesional">
+                  <h3>Hermes Profesional</h3>
+               </div>
+               <div class="departamentos__parr">
+                  <p class="margin__parr__one">Proporciona a nuestros clientes la experiencia en el terreno que cada uno de sus 
+                     miembros ha tenido en la industria en al menos 10 años, estructurada de la siguiente manera: <br/><br/>
+                     Contractor, Touring, Iluminación, Redes de difusión y Estudios de grabación</p>
+               </div>
+            </div>
+            <div class="departamentos__card animate-card">
+               <div class="departamentos__title">
+                  <!--<i class='bx bxs-box card-icon'></i>-->
+                  <img class="services-box" src="assets/images/GA.png" loading="lazy" alt="Hermes Grandes Alamacenes">
+                  <h3>Grandes Almacenes</h3>
+               </div>
+               <div class="departamentos__parr">
+                  <p>Hoy en día ofrecemos a las mayores cadenas de tiendas en México las mejores opciones de instrumentos musicales, equipos profesionales y audio digital. Este mercado ha crecido en el interior de nuestra propia empresa y es apoyado por una plantilla de ejecutivos. Somos la única empresa que cuenta con espacios exclusivos con nuestro nombre dentro de las cadenas de tiendas causando impacto a millones de personas.</p>
+               </div>
+            </div>
+            <div class="departamentos__card animate-card">
+               <div class="departamentos__title">
+                  <!--<i class='bx bxs-guitar-amp card-icon' ></i>-->
+                  <img class="services-box" src="assets/images/MI.png" loading="lazy" alt="Distribución a tiendas especializadas M.I.">
+                  <h3>Distribución a tiendas especializadas M.I.</h3>
+               </div>
+               <div class="departamentos__parr">
+                  <p class="margin__parr__two">M.I. es uno de nuestros departamentos de cobertura más grandes, ya que asiste a cada tienda de instrumentos musicales que se encuentra en nuestro territorio nacional.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="profesi">
+         <h2 class="espe">Los Especialistas</h2>
+         <div class="padre">
+            <div class="inner-team">
+              <picture>
+                <source srcset="assets/images/profe/alex-diaz.webp
+                800w,
+                assets/images/profe/alex-diaz.webp
+                400w,
+                assets/images/profe/alex-diaz.webp
+                200w" type="image/webp" sizes="50vw">
+                <source srcset="assets/images/profe/alex-diaz.png
+                800w,
+                assets/images/profe/alex-diaz.png
+                400w,
+                assets/images/profe/alex-diaz.png
+                200w" type="image/jpg" sizes="50vw">
+                <img loading="lazy" src="assets/images/profe/alex-diaz.png" alt="Alex Diaz Hermes Music" class="animate-img">
   
-  .inside img {
-	width: 100%;
-  }
+              </picture> 
+              <h3 class="animate-img">Alex Diaz</h3>
+               <hr>
+               <p class="animate-img">Especialista de Baterías</p>
+            </div>
+            <div class="inner-team">
+              <picture>
+                <source srcset="assets/images/profe/alex-diaz-drums-transparente.webp
+                800w,
+                assets/images/profe/alex-diaz-drums-transparente.webp
+                400w,
+                assets/images/profe/alex-diaz-drums-transparente.webp
+                200w" type="image/webp" sizes="50vw">
+                <source srcset="assets/images/profe/alex-diaz-drums-transparente.png
+                800w,
+                assets/images/profe/alex-diaz-drums-transparente.png
+                400w,
+                assets/images/profe/alex-diaz-drums-transparente.png
+                200w" type="image/jpg" sizes="50vw">
+                <img loading="lazy" src="assets/images/profe/alex-diaz-drums-transparente.png" alt="Alex Diaz Hermes Music" class="animate-img">
   
-  .overlay {
-	z-index: 1;
-	transition: all 0.7s ease-in-out;
-  }
+              </picture> 
+              <h3 class="animate-img">Alex Diaz</h3>
+               <hr>
+               <p class="animate-img">Especialista en Baterías</p>
+            </div>
+            <div class="inner-team">
+              <picture>
+                <source srcset="assets/images/profe/salvador-png-transparente.webp
+                800w,
+                assets/images/profe/salvador-png-transparente.webp
+                400w,
+                assets/images/profe/salvador-png-transparente.webp
+                200w" type="image/webp" sizes="50vw">
+                <source srcset="assets/images/profe/salvador-png-transparente.png
+                800w,
+                assets/images/profe/salvador-png-transparente.png
+                400w,
+                assets/images/profe/salvador-png-transparente.png
+                200w" type="image/jpg" sizes="50vw">
+                <img loading="lazy" src="assets/images/profe/salvador-png-transparente.png" alt="Salvador Hermes Music" class="animate-img">
   
-  .gallery-item:hover .details,
-  .gallery-item:hover .overlay {
-	opacity: 1;
-  
-	filter: none !important;
-  }
-  .texto{
-	display: none !important;
-  }
-  @media (max-width: 30em) {
-	.wrap {
-	  padding-left: 1em;
-	  padding-right: 1em;
-	}
-	
-	.gallery-item {
-	  float: none;
-	  width: 49%;
-	  object-fit: cover;
-	  margin: auto;
-	}
-	#filters {
-		
-		width: 100% !important;
-	}
-	#filters li {
-		float: left;
-		width: 10rem;
-		text-align: center;
-	}
-  }
-  @media screen and (max-width:1490px) {
-	#filters {
-		width: 100%;
-	}
-  }
+              </picture> 
+              <h3 class="animate-img">Salvador Góngora</h3>
+               <hr>
+               <p class="animate-img">Especialista en Teclados</p>
+            </div>
+            
+         </div>
+         
+      </section>
+    <!--
+      <section class="profesi">
+        <h2 class="espe">Los Especialistas</h2>
+        <div class="ramas__containere bd-grid">
+          <div class="ramas__contente animate-left">
+            <picture>
+              <source srcset="assets/images/profe/alex-diaz-drums-transparente.webp
+              800w,
+              assets/images/profe/alex-diaz-drums-transparente.webp
+              400w,
+              assets/images/profe/alex-diaz-drums-transparente.webp
+              200w" type="image/webp" sizes="50vw">
+              <source srcset="assets/images/profe/alex-diaz-drums-transparente.png
+              800w,
+              assets/images/profe/alex-diaz-drums-transparente.png
+              400w,
+              assets/images/profe/alex-diaz-drums-transparente.png
+              200w" type="image/jpg" sizes="50vw">
+              <img loading="lazy" src="assets/images/profe/alex-diaz-drums-transparente.png" alt="Alexi Diaz Hermes Music" class="ramase__img" >
 
+            </picture> 
+           
+           
+             
+             <h3 class="ramase__title">Audio Profesional</h3>
+             <hr>
+             <ul class="ramase__category">
+                <center><li></i> Especiales en Baterías</li></center>
+             </ul>
+          </div>
+          <div class="ramas__contentw animate-left">
+            <picture>
+              <source srcset="assets/images/profe/salvador-png-transparente.webp
+              800w,
+              assets/images/profe/salvador-png-transparente.webp
+              400w,
+              assets/images/profe/salvador-png-transparente.webp
+              200w" type="image/webp" sizes="50vw">
+              <source srcset="assets/images/profe/salvador-png-transparente.png
+              800w,
+              assets/images/profe/salvador-png-transparente.png
+              400w,
+              assets/images/profe/salvador-png-transparente.png
+              200w" type="image/jpg" sizes="50vw">
+              <img loading="lazy" src="assets/images/profe/salvador-png-transparente.png" alt="Alexi Diaz Hermes Music" class="ramase__img">
 
+            </picture> 
+           
+           
+             
+             <h3 class="ramase__title">Audio Profesional</h3>
+             <hr>
+             <ul class="ramase__category">
+                <center><li></i> Especiales en Baterías</li></center>
+             </ul>
+          </div>
+          
+          
+       </div>
+        
+     </section>
+    -->
+      <section class="ramas bd-container">
+         <h2 class="espe animate-title">Ramas de Distribución</h2>
+         <div class="ramas__container bd-grid">
+            <div class="ramas__content animate-left">
+               <i class='bx bxs-speaker iconos'></i>
+               <h3 class="ramas__title">Audio Profesional</h3>
+               <ul class="ramas__category">
+                  <li><i class='bx bxs-check-circle'></i> Amplificadores</li>
+                  <li><i class='bx bxs-check-circle'></i> Bocinas</li>
+                  <li><i class='bx bxs-check-circle'></i> Procesadores</li>
+                  <li><i class='bx bxs-check-circle'></i> Ecualizadores</li>
+               </ul>
+            </div>
+            <div class="ramas__content animate-left">
+               <i class='bx bxs-guitar-amp iconos' ></i>
+               <h3 class="ramas__title">Guitarras y Bajos</h3>
+               <ul class="ramas__category">
+                  <li><i class='bx bxs-check-circle'></i>Guitarras Eléctricas</li>
+                  <li><i class='bx bxs-check-circle'></i>Guitarras Acústicas</li>
+                  <li><i class='bx bxs-check-circle'></i>Guitarras Electro-Acústicas</li>
+                  <li><i class='bx bxs-check-circle'></i>Bajos Eléctricos / Acústicos</li>
+                  <li><i class='bx bxs-check-circle'></i>Pedales y Efectos</li>
+                  <li><i class='bx bxs-check-circle'></i>Accesorios</li>
+               </ul>
+            </div>
+            <div class="ramas__content animate-left">
+               <i class='bx bx-equalizer iconos'></i>
+               <h3 class="ramas__title">Audio Digital</h3>
+               <ul class="ramas__category">
+                  <li><i class='bx bxs-check-circle'></i>Interfaces de Audio</li>
+                  <li><i class='bx bxs-check-circle'></i>Interfaces MIDI</li>
+                  <li><i class='bx bxs-check-circle'></i>Controladores</li>
+                  <li><i class='bx bxs-check-circle'></i>Software</li>
+                  <li><i class='bx bxs-check-circle'></i>Monitores</li>
+                  <li><i class='bx bxs-check-circle'></i>DJ Digital</li>
+               </ul>
+            </div>
+            <div class="ramas__content animate-left">
+               <i class='bx bxs-cylinder iconos'></i>
+               <h3 class="ramas__title">Baterías y Percusiones</h3>
+               <ul class="ramas__category">
+                  <li><i class='bx bxs-check-circle'></i>Baterías Acústicas</li>
+                  <li><i class='bx bxs-check-circle'></i>Baterías Electrónicos</li>
+                  <li><i class='bx bxs-check-circle'></i>Tarolas</li>
+                  <li><i class='bx bxs-check-circle'></i>Hardware y Herrajes</li>
+                  <li><i class='bx bxs-check-circle'></i>Accesorios</li>
+                  <li><i class='bx bxs-check-circle'></i>Platillos Profesionales, Intermedios y Principiantes</li>
+               </ul>
+            </div>
+            <div class="ramas__content animate-right">
+               <i class='bx bx-broadcast iconos'></i>
+               <h3 class="ramas__title">Iluminación Profesional</h3>
+               <ul class="ramas__category">
+                  <li><i class='bx bxs-check-circle'></i>Arquitectónica</li>
+                  <li><i class='bx bxs-check-circle'></i>Robótica e Inteligencia</li>
+                  <li><i class='bx bxs-check-circle'></i>Escenográfica</li>
+                  <li><i class='bx bxs-check-circle'></i>Decorativa y Ambiental</li>
+                  <li><i class='bx bxs-check-circle'></i>Audioritmia y DJ</li>
+                  <li><i class='bx bxs-check-circle'></i>Efectos de luz</li>
+                  <li><i class='bx bxs-check-circle'></i>Consolas</li>
+                  <li><i class='bx bxs-check-circle'></i>Pantallas de Led´s HD</li>
+                  <li><i class='bx bxs-check-circle'></i>Efectos Especiales</li>
+               </ul>
+            </div>
+            <div class="ramas__content animate-right">
+               <i class='bx bxs-microphone-alt iconos'></i>
+               <h3 class="ramas__title margin__tittle">Microfonía</h3>
+               <ul class="ramas__category margin__cate">
+                  <li><i class='bx bxs-check-circle'></i>Micrófonos Alámbricos</li>
+                  <li><i class='bx bxs-check-circle'></i>Micrófonos Inalámbricos</li>
+                  <li><i class='bx bxs-check-circle'></i>Micrófonos Pro-Audio</li>
+                  <li><i class='bx bxs-check-circle'></i>Audífonos DJ</li>
+                  <li><i class='bx bxs-check-circle'></i>Audífonos para Estudio</li>
+                  <li><i class='bx bxs-check-circle'></i>Accesorios</li>
+               </ul>
+            </div>
+            <div class="ramas__content animate-right">
+               <i class='bx bx-headphone iconos' ></i>
+               <h3 class="ramas__title">Herramientas DJ</h3>
+               <ul class="ramas__category">
+                  <li><i class='bx bxs-check-circle'></i>Controladores e Interfaces</li>
+                  <li><i class='bx bxs-check-circle'></i>Reproductores CD y MP3</li>
+                  <li><i class='bx bxs-check-circle'></i>Estaciones de Trabajo DS</li>
+                  <li><i class='bx bxs-check-circle'></i>Tornamesas y Mezcladoras</li>
+                  <li><i class='bx bxs-check-circle'></i>Producción Musical DJ y SW</li>
+                  <li><i class='bx bxs-check-circle'></i>Iluminación DJ</li>
+                  <li><i class='bx bxs-check-circle'></i>Procesadores de Efectos</li>
+                  <li><i class='bx bxs-check-circle'></i>Accesorios</li>
+               </ul>
+            </div>
+            <div class="ramas__content animate-right">
+               <i class='bx bx-ruler iconos' ></i>
+               <h3 class="ramas__title">Teclados y Sintetizadores</h3>
+               <ul class="ramas__category">
+                  <li><i class='bx bxs-check-circle'></i>Teclados</li>
+                  <li><i class='bx bxs-check-circle'></i>Sintetizadores</li>
+                  <li><i class='bx bxs-check-circle'></i>WorkStations</li>
+                  <li><i class='bx bxs-check-circle'></i>Pianos Digitales</li>
+                  <li><i class='bx bxs-check-circle'></i>Pianos Electromecánicos</li>
+                  <li><i class='bx bxs-check-circle'></i>Órganos</li>
+                  <li><i class='bx bxs-check-circle'></i>Controladores MIDI y USB</li>
+                  <li><i class='bx bxs-check-circle'></i>Amplificadores</li>
+                  <li><i class='bx bxs-check-circle'></i>Accesorios</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <div class="wrap">
+         <h2 class="espe animate-title">Nuestras Marcas</h2>
+         <div class="gallery-wrap">
+          
+            <ul id="filters" class="clearfix">
+              <li><span class="filter active" data-filter=".audiodigital">Audio Digital</span></li>
+              <li><span class="filter" data-filter=".audioprofesional">Audio Profesional</span></li>
+              <li><span class="filter" data-filter=".iluminacion">Iluminación</span></li>
+              <li><span class="filter" data-filter=".micro">Microfonía</span></li>
+              <li><span class="filter" data-filter=".teclado">Teclados</span></li>
+              <li><span class="filter" data-filter=".acor">Acordeones</span></li>
+              <li><span class="filter" data-filter=".dj">Herramientas DJ</span></li>
+              <li><span class="filter" data-filter=".baterias">Baterías y Percusiones</span></li>
+              <li><span class="filter" data-filter=".viento">Viento y Metales</span></li>
+              <li><span class="filter" data-filter=".bajos">Guitarras y Bajos</span></li>
+            </ul>
+            
+            <div id="gallery">
+            
+            <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+              <div class="inside">
+                <div class="details">
+                  <div class="texto">
+                    <h2>Client Name</h2>
+                    <p>Logo</p>
+                  </div>
+                </div>
+                <div class="overlay"></div>
+                <img class="imagenest" loading="lazy" src="assets/images/marcas/akai.jpg" alt="Akai Professional" />
+              </div>
+            </a>
+            <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/avid.jpg" alt="Akai Professional" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/digico.jpg" alt="Akai Professional" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/m-audio.jpg" alt="M-AUDIO" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital bajos" href="#" data-cat="audiodigital bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/mooer.jpg" alt="Mooer" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital bajos audioprofesional" href="#" data-cat="audiodigital bajos audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/mrs.jpg" alt="MRS Accesorios" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital " href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/presonus.jpg" alt="Presouns" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/rme.jpg" alt="RME Interfaces" />
+               </div>
+             </a>
+             <a class="gallery-item audiodigital" href="#" data-cat="audiodigital">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p>Logo</p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcas/soundcraft.jpg" alt="Soundcraft" />
+               </div>
+             </a>
+             <!--/bajos-->
+             <a class="gallery-item bajos viento" href="#" data-cat="bajos viento">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/alice.jpg" alt="Alice Accesorios" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/ampeg.jpeg" alt="AMPEG" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/babilon.jpg" alt="BABILON" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/digitech.jpeg" alt="DIGITECH" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/elixir.jpeg" alt="Elixir" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/godin.jpg" alt="Godin" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/hartke.jpg" alt="Hartke" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/marshall.jpg" alt="Marshall" />
+               </div>
+             </a>
+             <a class="gallery-item bajos audioprofesional" href="#" data-cat="bajos audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/pevey.jpg" alt="Peavy" />
+               </div>
+             </a>
+             <a class="gallery-item bajos iluminacion" href="#" data-cat="bajos iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/prolok.jpeg" alt="Prolok" />
+               </div>
+             </a>
+             <a class="gallery-item bajos micro teclado" href="#" data-cat="bajos micro teclado">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/ultimate.jpg" alt="Ultimate" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/vox.jpg" alt="Vox" />
+               </div>
+             </a>
+             <a class="gallery-item bajos" href="#" data-cat="bajos">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/whirldwind.jpg" alt="whirlwind" />
+               </div>
+             </a>
+             <!--/audio profesionalñ-->
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/bbe.jpg" alt="BBE Profesionales" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/crown.jpg" alt="CROWN" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/dbx.jpg" alt="DBX" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/jbl.jpg" alt="JBL" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/lexicon.jpeg" alt="LEXICON" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/mackie.jpg" alt="MACKIE" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/rcf.jpg" alt="RFC" />
+               </div>
+             </a>
+             <a class="gallery-item audioprofesional" href="#" data-cat="audioprofesional">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/regaltip.jpeg" alt="REGALTIP" />
+               </div>
+             </a>
+             <!--/baterias y percusiones-->
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/cruztools.jpg" alt="CruzTools" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/dw-drums.jpg" alt="DDRUM" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/dream.jpg" alt="DREAM CYMBALS" />
+               </div>
+             </a>
+             <a class="gallery-item baterias viento" href="#" data-cat="baterias viento">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/klingt.jpg" alt="KLINGT" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/mapex.jpg" alt="MAPEX" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/pacific.jpg" alt="PACIFIC DRUMS & PERCUSSION" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/pearl.jpg" alt="PEARL" />
+               </div>
+             </a>
+             <a class="gallery-item baterias" href="#" data-cat="baterias">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/zildijan.jpg" alt="ZILDJIAN" />
+               </div>
+             </a>
+             <!--/iluminacion-->
+             <a class="gallery-item iluminacion" href="#" data-cat="iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/claypa.jpg" alt="CLAY PAKY" />
+               </div>
+             </a>
+             <a class="gallery-item iluminacion" href="#" data-cat="iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/filmgear.jpeg" alt="FILMGEAR" />
+               </div>
+             </a>
+             <a class="gallery-item iluminacion" href="#" data-cat="iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/pr-li.jpg" alt="PR LIGHTING" />
+               </div>
+             </a>
+             <a class="gallery-item iluminacion" href="#" data-cat="iluminacion">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/prolight.jpg" alt="PROLIGHT" />
+               </div>
+             </a>
+             <!--/micro-->
+             <a class="gallery-item micro dj" href="#" data-cat="micro dj">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasmicro/akg.jpg" alt="AKG" />
+               </div>
+             </a>
+             <a class="gallery-item micro dj" href="#" data-cat="micro dj">
+              <div class="inside">
+                <div class="details">
+                  <div class="texto">
+                    <h2>Client Name</h2>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="overlay"></div>
+                <img class="imagenest" loading="lazy" src="assets/images/marcasmicro/audiotec.jpg" alt="Audio Technica" />
+              </div>
+            </a>
+             <!--/dj-->
+             <a class="gallery-item dj" href="#" data-cat="dj">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasdj/alesis.jpeg" alt="ALESIS"/>
+               </div>
+             </a>
+             <a class="gallery-item dj teclado" href="#" data-cat="dj teclado">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasdj/korg.jpg" alt="KORG"/>
+               </div>
+             </a>
+             <a class="gallery-item dj" href="#" data-cat="dj">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasdj/samson.jpg" alt="SAMSON"/>
+               </div>
+             </a>
+            <!--/teclado-->
+            <a class="gallery-item teclado" href="#" data-cat="teclado">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcatecla/kboard.jpeg" alt="KBOARD"/>
+               </div>
+             </a>
+             <a class="gallery-item teclado" href="#" data-cat="teclado">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcatecla/nord.jpeg" alt="NORD"/>
+               </div>
+             </a>
+             <!--/acordeones-->
+             <a class="gallery-item acor" href="#" data-cat="acor">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasacor/cantabella.jpg" alt="CANTABELLA" />
+               </div>
+             </a>
+             <a class="gallery-item acor" href="#" data-cat="acor">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasacor/sonola.jpg" alt="SONOLA" />
+               </div>
+             </a>
+             <a class="gallery-item acor" href="#" data-cat="acor">
+               <div class="inside">
+                 <div class="details">
+                   <div class="texto">
+                     <h2>Client Name</h2>
+                     <p></p>
+                   </div>
+                 </div>
+                 <div class="overlay"></div>
+                 <img class="imagenest" loading="lazy" src="assets/images/marcasacor/welt.jpg" alt="WELTMEISTER" />
+               </div>
+             </a>
+            </div><!--/gallery-->
+            
+          </div><!--/gallery-wrap-->
+       </div>
+      <section class="whoher">
+         <div class="whoher__container">
+            
+            <div>
+               
+               <iframe title="Ubicación de Hermes Music" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.2214777734334!2d-99.16166764922669!3d19.44601558681233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c50818d2b9%3A0x7528be1c92bc013e!2sHermes%20Music%2C%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1635795973881!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               <span class="espacio"></span>
+            </div>
+            <div>
+               <h2 class="whoher__heading animate-title">Contáctanos</h2>
+               <div class="whoher__features">
+                  <input class="text" type="text" name="" id="" placeholder="Nombre Completo">
 
-  div.noticia {
-	margin: 60px auto;
-	color: #000;
-	padding: 15px;
-  }
-  div.noticia, h3{
-	  margin-bottom: 0.5rem;
-  }
-  div.noticia i.izquierda {
-	float: left !important;
-	margin-right: 15px !important;
-	background: var(--yellow);
-	color: #fff;
-	font-size: 2rem;
-	padding: 1rem;
-	border-radius: 50px;
+                  <input class="text" type="text" name="" id="" placeholder="Correo Electrónico">
 
-  }
-  div.noticia i.derecha {
-	float: left !important; 
-	margin-left: 10px !important;
-	background: var(--yellow);
-	color: #fff;
-	font-size: 2rem;
-	padding: 1rem;
-	border-radius: 50px;
-  }
-  .dere__noti{
-	  margin-left: 6rem;
-  }
-  @media screen and (max-width:1200px) {
-	div.noticia {
-		margin: 20px auto;
-		color: #000;
-		padding: 15px;
-	  }
-	div.noticia i.derecha {
-		float: right !important; 
-		margin-left: 10px !important;
-		background: #96999e;
-		color: #fff;
-		font-size: 2rem;
-		padding: 1rem;
-		border-radius: 50px;
-	  }
-	  .dere__noti{
-		margin-left: 0rem !important;
-	}
-
-	div.noticia, h3{
-		margin-bottom: 0rem;
-	}
-	div.noticia, p{
-		margin-bottom: 1rem;
-	}
-  }
-  @media screen and (max-width:600px){
-	  .contorno{
-		  margin-left: 5rem;
-	  }
-	  .dere__noti{
-		margin-right: 5rem !important;
-	}
-  }
-
-
-
-
-
-
-
-
-
-/*************
-
-.ramas__containere {
-	grid-template-columns: repeat(2, 1fr);
-	padding-bottom: 2rem
-}
-
-.ramas__contente {
-	position: relative;
-	display: grid;
-	padding: .25rem .75rem .75rem;
-}
-
-.ramase__img{
-	width: 100%;
-	object-fit: cover;
-}
-.ramase__title {
-	margin-top: 1rem;
-	text-align: center !important;
-	text-transform: capitalize;
-}
-.ramase__title {
-	font-size: var(--normal-font-size)
-}
-.ramase__category {
-	font-size: 1rem;
-	margin-bottom: var(--mb-1);
-	margin-top: 1rem;
-	list-style: none;
-}
-
-
-
-@media screen and(max-width:500px) {
-	.ramase__category {
-		font-size: 0.8rem !important;
-		margin-bottom: var(--mb-1);
-		margin-top: 1rem;
-		list-style: none;
-		text-align: justify !important;
-	}
-}
-
-@media screen and (min-width:1200px) {
-	.ramas__containere {
-		grid-template-columns: repeat(4, 300px);
-		justify-content: center
-	}
-	.ramas__contente {
-		padding: .5rem 1.5rem 1.5rem
-	}
-	.ramas__img {
-		width: 120px;
-		margin-bottom: var(--mb-1)
-	}
-	.ramase__category,
-	.ramase__title {
-		text-align: initial
-	}
-}
-@media screen and (max-width:600px){
-		.ramase__container{
-			grid-template-columns: none !important;
-		}
-}
+                  <textarea class="mensaje" name="" id="" placeholder="Escribe aqui tu mensaje"></textarea>
+                  <br>
+                  <button class="botocon"><a class="butlike" href="#">Enviar</a></button>
+                  
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer section">
+         <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+               <h3 class="footer__title">
+                  Hermes Music México
+               </h3>
+               <p class="footer__description">Empresa formada por músicos y profesionales de la industria del entretenimiento</p>
+            </div>
+            <div class="footer__content">
+               <h3 class="footer__title">Contactos</h3>
+               <ul>
+                  <li><a href="#" class="footer__link"><i class="bx bx-time"></i> Horario: 10 AM A 19 PM </a></li>
+                  <li><a href="tel:5" class="footer__link"><i class="bx bxs-phone"></i> 55-1234-5678</a></li>
+                  <li><a href="tel:5" class="footer__link"><i class="bx bxs-phone"></i> 55-1234-5678</a></li>
+               </ul>
+            </div>
+            <div class="footer__content">
+               <h3 class="footer__title">Mapa del Sitio</h3>
+               <ul>
+                  <li><a href="#" class="footer__link">Inicio</a></li>
+                  <li><a href="#" class="footer__link">Nosotros</a></li>
+                  <li><a href="#" class="footer__link">Departamentos</a></li>
+                  <li><a href="#" class="footer__link">Especialistas</a></li>
+               </ul>
+            </div>
+            <div class="footer__content">
+               <h3 class="footer__title">Mapa del Sitio</h3>
+               <ul>
+                  <li><a href="#" class="footer__link">Marcas</a></li>
+                  <li><a href="#" class="footer__link">Fundación</a></li>
+                  <li><a href="#" class="footer__link">Hermes Music USA</a></li>
+                  <li><a href="#" class="footer__link">Tienda en Linea</a></li>
+               </ul>
+            </div>
+            <div class="footer__content">
+               <h3 class="footer__title">Redes Sociales</h3>
+               <a href="https://www.facebook.com/HermesMusicMex" target="_blank" class="footer__social" rel="noopener" aria-label="Facebook"><i class="bx bxl-facebook-circle"></i></a>
+               <a href="https://www.youtube.com/user/HermesMusicOficial/videos" target="_blank" class="footer__social" rel="noopener" aria-label="Youtube"><i class='bx bxl-youtube'></i></a>
+               <a href="https://www.instagram.com/hermesmusicmx/" target="_blank" class="footer__social" rel="noopener" aria-label="Instagram"><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+         </div>
+         <p class="footer__copy">© Copyright 2021, Hermes Music México</p>
+      </footer>
+      <script type="text/javascript"  src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+      <script src="assets/js/index.js"></script>
+      <script>
+         $(function () {
+     
+     var filterList = {
+     
+         init: function () {
+         
+             // https://mixitup.kunkalabs.com/
+             $('#gallery').mixItUp({
+                 selectors: {
+                 target: '.gallery-item',
+                 filter: '.filter'	
+             },
+             load: {
+               filter: '.audiodigital' // show all items on page load.
+             }     
+             });								
+         
+         }
+   
+     };
+     
+     // Filter ALL the things
+     filterList.init();
+     
+   });
+      </script>
+   </body>
+</html>

@@ -588,7 +588,7 @@ a {
     color: var(--white);
     padding: 4rem calc((100vw - 1534px) / 2);
     text-align: center;
-    background-image: url(https://www.hermes-music.com.mx/off/upload/back.jpg) !important;
+    background-image: url(../images/back.jpeg) !important;
     background-repeat:no-repeat;
     background-attachment: fixed;
 }
@@ -1234,7 +1234,7 @@ textarea {
   div.noticia i.izquierda {
 	float: left !important;
 	margin-right: 15px !important;
-	background: #96999e;
+	background: var(--yellow);
 	color: #fff;
 	font-size: 2rem;
 	padding: 1rem;
@@ -1244,7 +1244,7 @@ textarea {
   div.noticia i.derecha {
 	float: left !important; 
 	margin-left: 10px !important;
-	background: #96999e;
+	background: var(--yellow);
 	color: #fff;
 	font-size: 2rem;
 	padding: 1rem;
