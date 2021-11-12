@@ -580,6 +580,12 @@ ul{
 		padding: 0.7rem;
 		margin-top: -2rem;
 	}
+	.her {
+		font-size: clamp(2rem, 6vw, 3rem);
+		padding: 0 1rem 3rem;
+		text-transform: capitalize;
+		margin-top: -2rem;
+	}
 }
 /*SECTION OF QUIENES SOMOS*/
 
