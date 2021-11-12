@@ -13,28 +13,31 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
    </head>
    <body>
-      <nav class="navbar">
-         <img class="navbar__logo" loading="lazy" src="assets/images/Hermes.png" alt="Hermes Music" 
-         sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 3979px) 49vw, 1950px" srcset="assets/images/Hermes.png 500w, assets/images/Hermes.png 1080w, assets/images/Hermes.png 1600w, assets/images/Hermes.png 1950w"
-         > 
-         
-         <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-         </div>
-         <div class="navbar__menu">
-            <a href="/" class="navbar__link">Inicio</a>
-            <a href="/" class="navbar__link">Nosotros</a>
-            <a href="/" class="navbar__link">Departamentos</a>
-            <a href="/" class="navbar__link">Especialistas</a>
-            <a href="/" class="navbar__link">Marcas</a>
-            <a href="http://fundacionhermesmusic.org/" target="_blank" rel="noopener" class="navbar__link">Fundación</a>
-            <a href="https://en.hermesmusic.com/" target="_blank" rel="noopener" class="navbar__link">Hermes Music USA</a>
-            <a href="https://hermesmusicclub.mx/" target="_blank" rel="noopener" class="navbar__link">Tienda en Linea</a>
-            <a href="/" class="navbar__link">Contacto</a>
-         </div>
-      </nav>
+      <header class="l-header" id="header">
+        <nav class="nav bd-container">
+           <a href="https://lammsolucionesdigitales.com.mx/" class="nav__logo">
+             <img class="nav__imagen" loading="lazy" src="assets/images/Hermes.png" alt="Hermes Music" 
+             sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 3979px) 49vw, 1950px" srcset="assets/images/Hermes.png 500w, assets/images/Hermes.png 1080w, assets/images/Hermes.png 1600w, assets/images/Hermes.png 1950w"
+            >
+            </a>
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item"><a href="/" class="nav__link ">Inicio</a></li>
+               <li class="nav__item">  <a href="#nosotros" class="nav__link ">Nosotros</a></li>
+                 <li class="nav__item"><a href="#departamentos" class="nav__link">Departamentos</a></li>
+                 <li class="nav__item"><a href="#especialistas" class="nav__link">Especialistas</a></li>
+                <li class="nav__item"> <a href="#marcas" class="nav__link">Marcas</a></li>
+                <li class="nav__item"> <a href="http://fundacionhermesmusic.org/" target="_blank" rel="noopener" class="nav__link">Fundación</a></li>
+                <li class="nav__item"><a href="https://en.hermesmusic.com/" target="_blank" rel="noopener" class="nav__link">Hermes Music USA</a></li>
+                 <li class="nav__item"><a href="https://hermesmusicclub.mx/" target="_blank" rel="noopener" class="nav__link">Tienda en Linea</a></li>
+            <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+              </ul>
+           </div>
+           <div class="nav__toggle" id="nav-toggle">
+           <i class='bx bx-menu-alt-right'></i>
+           </div>
+        </nav>
+     </header> 
       <section class="container">
          <div class="navigation">
             <div class="previous btn-nav"><i class='bx bx-chevron-left' ></i></div>
@@ -99,12 +102,12 @@
          </div>
       </section>
       <br>
-      <div style="text-align:center">
+      <div style="display: none;">
          <span class="dot"></span>
          <span class="dot"></span>
          <span class="dot"></span>
       </div>
-      <section class="hermes">
+      <section class="hermes" id="nosotros">
          <h1 class="her animate-title">Hermes Music Mexico</h1>
          <div class="her__container">
             <p class="parher">Es una empresa formada por músicos y profesionales de la industria del entretenimiento, dedicada a la distribución por mayoreo de las mejores marcas de equipos y sistemas de audio e iluminación profesional, así como instrumentos musicales y audio digital.</p>
@@ -193,7 +196,7 @@
             
          </div>
       </section>
-      <section class="departamentos">
+      <section class="departamentos" id="departamentos">
          <h2 class="animate-title">Departamentos</h2>
          <div class="departamentos__wrapper">
             <div class="departamentos__card animate-card">
@@ -231,7 +234,7 @@
             </div>
          </div>
       </section>
-      <section class="profesi">
+      <section class="profesi" id="especialistas">
          <h2 class="espe">Nuestros Especialistas</h2>
          <div class="padre">
             <div class="inner-team">
@@ -408,7 +411,7 @@
             </div>
          </div>
       </section>
-      <div class="wrap">
+      <section class="wrap" id="marcas">
          <h2 class="espe animate-title">Nuestras Marcas</h2>
          <div class="gallery-wrap">
           
@@ -1051,8 +1054,8 @@
             </div><!--/gallery-->
             
           </div><!--/gallery-wrap-->
-       </div>
-      <section class="whoher">
+       </section>
+      <section class="whoher" id="contacto">
          <div class="whoher__container">
             
             <div>

@@ -17,6 +17,9 @@
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior:smooth
+}
 hr {
 	width: 50%;
 	border-color: #f8bb31!important;
@@ -48,7 +51,7 @@ a {
 	gap: 1.5rem
 }
 
-/**MENU OF HERMES MUSCI MEXICO**/
+/**MENU OF HERMES MUSCI MEXICO
 .navbar {
 	background: var(--white);
 	height: 10vh;
@@ -76,7 +79,7 @@ a {
 	color: var(--yellow);
 	transition: 0.3s all ease-in-out;
 }
-/**MENU MOBLIE OF HERMES MUSCI MEXICO**/
+/**MENU MOBLIE OF HERMES MUSCI MEXIC
 @media screen and (max-width:1080px) {
 	body.active {
 		overflow-y: hidden;
@@ -174,12 +177,185 @@ a {
 		width: 40%;
 	}
 }
+*******************************************************************/
+
+a{
+    text-decoration:none
+}
+ul{
+    padding:0;
+    list-style:none
+}
+.l-main{
+    overflow:hidden
+}
+.bd-container{
+    width:calc(100% - 3rem);
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+}
+.l-header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    background-color:#fff;
+	border-bottom: 2px var(--black) solid;
+}
+.nav{
+    height:4rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+@media screen and (max-width:1080px){
+    .nav__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		right: 0;
+		width: 95%;
+		margin: 0 auto;
+		padding: 2.5rem 0 0;
+		text-align: center;
+		background-color: #fff;
+		transition: .4s;
+		box-shadow: 0 0 4px rgba(0,0,0,.1);
+		border-radius: 2rem;
+		z-index: 100;
+	}
+	.l-header{
+		border-bottom: none;
+	}
+	.nav__logo {
+		width:30px;
+		margin-top:3%;
+ }
+}
+@media screen and (max-width:1030px) {
+	.nav__imagen {
+		width: 5rem;
+		display: block;
+		margin: auto;
+		object-fit: cover;
+		margin-bottom: 1.5rem;
+	}
+	.nav__toggle {
+		margin-top: 1rem !important;
+	}
+}
+@media screen and (max-width:600px) {
+	.nav__imagen {
+		width: 5rem;
+		display: block;
+		margin: auto;
+		object-fit: cover;
+		margin-bottom: 1rem;
+	}
+}
+.nav__item{
+    color:var(--black);
+    margin-bottom:1.5rem;
+}
+.nav__link,.nav__logo,.nav__toggle{
+    width:40px;
+    color:var(--black);
+    font-weight:700;
+}
+.nav__link{
+    color:var(--black);
+    transition:.3s
+}
+.nav__link:hover{
+    color:var(--yellow);
+}
+.nav__toggle {
+    color: var(--black);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.show-menu{
+    top:calc(4rem + 1rem)
+}
+.active-link{
+    position:relative
+}
+.active-link::before{
+    content:'';
+    position:absolute;
+    bottom:-.75rem;
+    left:45%;
+    width:5px;
+    height:5px;
+    background-color:var(--black);
+    border-radius:50%
+}
+.scroll-header{
+    box-shadow:0 1px 4px rgba(0,0,0,.1)
+}
+.scrolltop{
+    position:fixed;
+    right:1rem;
+    bottom:-20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:.3rem;
+    background:#143f2e;
+    border-radius:.4rem;
+    z-index:10;
+    transition:.4s;
+    visibility:hidden
+}
+.scrolltop:hover{
+    background-color:#143f2e
+}
+.scrolltop__icon{
+    font-size:1.5rem;
+    color:red;
+}
+.show-scroll{
+    visibility:visible;
+    bottom:1.5rem;
+}
+@media screen and (min-width:1080px){
+    body{
+        margin:0
+    }
+    .nav{
+        height:calc(3rem + 1.5rem)
+    }
+    .nav__list{
+        display:flex;
+        align-items:center
+    }
+    .nav__item{
+        margin-left:2.5rem;
+        margin-bottom:0
+    }
+    .nav__toggle{
+        display:none
+    }
+    .change-theme{
+        position:initial;
+        margin-left:2rem;
+    }
+}
+@media screen and (min-width:968px){
+    .bd-container{
+        margin-left:auto;
+        margin-right:auto
+    }
+}
+
 /*BANNERS OF HERMES MUSCI MEXICO*/
 .navigation .previous {
 	position: absolute;
 	top: 40%;
 	left: 10px;
-	font-size: 15px;
+	font-size: 3rem;
 	font-weight: 700px;
 	z-index: 5;
 	color: var(--white);
@@ -189,7 +365,7 @@ a {
 	position: absolute;
 	top: 40%;
 	right: 10px;
-	font-size: 15px;
+	font-size: 3rem;
 	font-weight: 700px;
 	z-index: 5;
 	color: var(--white);
@@ -199,15 +375,14 @@ a {
 	background: var(--black);
 	cursor: pointer;
 	border-radius: 50%;
-	width: 25px;
-	height: 25px;
+	width: 3rem;
+	height: 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 5px;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
-
 .imare {
 	width: 100% !important;
 	height: 710px;
@@ -222,6 +397,7 @@ a {
 	max-width: 100%;
 	position: relative;
 	margin: auto;
+	margin-top: 4rem;
 }
 
 .caption-text {
@@ -321,6 +497,17 @@ a {
 		left: 9rem;
 		width: 30% !important;
 	}
+	.navigation .previous {
+		font-size: 2rem;
+	}
+	
+	.navigation .next {
+		font-size: 2rem;
+	}
+	.navigation .btn-nav {
+		width: 2rem;
+		height: 2rem;
+	}
 }
 @media screen and (max-width:380px) {
 	.caption-text {
@@ -382,6 +569,7 @@ a {
 	cursor: pointer;
 	border-radius: 5px;
 	z-index: 900;
+	margin-top: 2.5rem;
 }
 
 @media screen and (max-width:768px) {
@@ -1218,6 +1406,7 @@ textarea {
 	.wrap {
 	  padding-left: 1em;
 	  padding-right: 1em;
+	  margin-bottom: 3rem;
 	}
 	
 	.gallery-item {
