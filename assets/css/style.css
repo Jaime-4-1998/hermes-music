@@ -51,6 +51,35 @@ a {
 	gap: 1.5rem
 }
 
+.scroll-header{
+    box-shadow:0 1px 4px rgba(0,0,0,.1)
+}
+.scrolltop{
+    position:fixed;
+    right:1rem;
+    bottom:-20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:.3rem;
+    background: #f8bb31 !important;
+    border-radius:.4rem;
+    z-index:var(--z-tooltip);
+    transition:.4s;
+    visibility:hidden
+}
+.scrolltop:hover{
+    background-color:var(--yellow);
+}
+.scrolltop__icon{
+    font-size:1.5rem;
+    color:#000 !important;
+}
+.show-scroll{
+    visibility:visible;
+    bottom:1.5rem
+}
+
 /**MENU OF HERMES MUSCI MEXICO
 .navbar {
 	background: var(--white);
