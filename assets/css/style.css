@@ -196,7 +196,6 @@ ul{
 }
 .l-header{
     width:100%;
-    position:fixed;
     top:0;
     left:0;
     z-index:100;
@@ -208,6 +207,12 @@ ul{
     display:flex;
     justify-content:space-between;
     align-items:center
+}
+.nav__imagen {
+	width: 6rem;
+	display: block;
+	margin: auto;
+	object-fit: cover;
 }
 @media screen and (max-width:1080px){
     .nav__menu {
@@ -228,10 +233,9 @@ ul{
 	.l-header{
 		border-bottom: none;
 	}
-	.nav__logo {
-		width:30px;
-		margin-top:3%;
- }
+	.nav__toggle{
+        display:block !important;
+    }
 }
 @media screen and (max-width:1030px) {
 	.nav__imagen {
@@ -239,7 +243,6 @@ ul{
 		display: block;
 		margin: auto;
 		object-fit: cover;
-		margin-bottom: 1.5rem;
 	}
 	.nav__toggle {
 		margin-top: 1rem !important;
@@ -251,7 +254,6 @@ ul{
 		display: block;
 		margin: auto;
 		object-fit: cover;
-		margin-bottom: 1rem;
 	}
 }
 .nav__item{
@@ -259,7 +261,7 @@ ul{
     margin-bottom:1.5rem;
 }
 .nav__link,.nav__logo,.nav__toggle{
-    width:40px;
+   
     color:var(--black);
     font-weight:700;
 }
@@ -325,7 +327,7 @@ ul{
         margin:0
     }
     .nav{
-        height:calc(3rem + 1.5rem)
+        height:calc(4rem + 1.5rem)
     }
     .nav__list{
         display:flex;
@@ -397,7 +399,7 @@ ul{
 	max-width: 100%;
 	position: relative;
 	margin: auto;
-	margin-top: 4rem;
+	margin-top: 0rem;
 }
 
 .caption-text {
@@ -702,11 +704,12 @@ ul{
 .departamentos {
 	background: var(--black);
 	color: var(--white);
-	padding: 6rem calc((100vw - 1470px) / 2);
+	padding: 5rem calc((100vw - 1470px) / 2);
 	text-align: center;
 }
 
 .departamentos h2 {
+	margin-top: -1rem;
 	margin-bottom: 1rem;
 	font-size: clamp(2rem, 5vw, 3rem);
 	padding: 0 1rem;
