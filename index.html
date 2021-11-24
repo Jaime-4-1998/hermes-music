@@ -22,9 +22,26 @@
       <header class="l-header" id="header">
         <nav class="nav bd-container">
            <a href="https://jaime-4-1998.github.io/hermes-music/" class="nav__logo">
-             <img class="nav__imagen" src="assets/images/Hermes_Music.png" alt="Hermes Music" loading="lazy"
-             sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 3979px) 49vw, 1950px" srcset="assets/images/Hermes_Music.png 500w, assets/images/Hermes_Music.png 1080w, assets/images/Hermes_Music.png 1600w, assets/images/Hermes_Music.png 1950w"
-            >
+             
+            <picture>
+              <source srcset="assets/images/Hermes_Music.png.webp
+              800w,
+              assets/images/Hermes_Music.png.webp
+              400w,
+              assets/images/Hermes_Music.png.webp
+              200w" type="image/webp" sizes="50vw">
+              <source srcset="assets/images/Hermes_Music.png.png
+              800w,
+              assets/images/Hermes_Music.png.png
+              400w,
+              assets/images/Hermes_Music.png.png
+              200w" type="image/jpg" sizes="50vw">
+              <img class="nav__imagen" src="assets/images/Hermes_Music.png" alt="Hermes Music" loading="lazy">
+
+            </picture> 
+
+
+
             </a>
            <div class="nav__menu" id="nav-menu">
               <ul class="nav__list">
