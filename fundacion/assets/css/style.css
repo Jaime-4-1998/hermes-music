@@ -140,6 +140,10 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+.link__alt{
+  color: var(--black);
+  font-weight: 700;
+}
 h1,h2,h3,h4,h5,h6,p,a,span,input{
   font-family: 'Allerta', sans-serif;
 }
@@ -166,6 +170,14 @@ ul {
   font-weight: normal;
   font-size: 40px;
   align-items: center;
+}
+.section-title-center-head{
+  font-weight: normal;
+  font-size: 60px;
+  margin-bottom: 2rem;
+}
+.color__head{
+  color: var(--yellow);
 }
 .nav {
 	height: 4rem;
@@ -257,7 +269,7 @@ ul {
 		margin: 0
 	}
 	.nav {
-		height: calc(4rem + 1.5rem)
+		height: calc(3rem + 1.5rem)
 	}
 	.nav__list {
 		display: flex;
@@ -356,6 +368,12 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 }
+.bd-containeren {
+  max-width: 1390px !important;
+	width: calc(100% - 3rem);
+	margin-left: auto;
+	margin-right: auto;
+}
 .bd-grid {
 	display: grid;
 	gap: 1.5rem;
@@ -370,6 +388,29 @@ ul {
 	justify-content: center;
 	letter-spacing: -0.015em;
 	color: #000000;
+}
+.fundacion__nos {
+	margin-top: 4rem;
+	font-size: 50px;
+	line-height: 92px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	letter-spacing: -0.015em;
+	color: #000000;
+}
+.nos__bar{
+  border: 1px solid #F8BB31;
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+.esp__nos{
+  margin-left: 2rem;
+}
+.nos__esp{
+  margin-right: 2rem;
 }
 /**we never**/
 .wenever__description,.inmi__description{
@@ -417,7 +458,19 @@ ul {
 @media screen and (max-width:600px){
   .fundacion__title {
     text-align: justify !important;
-    font-size: 60px;
+    font-size: 50px;
+    margin-top: 0.5rem !important;
+  }
+  .fundacion__nos {
+    text-align: justify !important;
+    font-size: 50px;
+    margin-top: 0.5rem !important;
+  }
+  .nos__bar{
+    border: 1px solid #F8BB31;
+    width: 80%;
+    display: block;
+    margin: auto;
   }
   .wenever__description,.inmi__description{
     font-size: 15px;
@@ -426,7 +479,7 @@ ul {
   }
   .section-title-center{
     font-weight: normal;
-    font-size: 40px;
+    font-size: 35px;
     align-items: center;
     margin-top: 2rem;
   }
@@ -448,7 +501,7 @@ ul {
   .wenever__container,.inmi__container{
       grid-template-columns:repeat(2,1fr);
   }
-  .section-title-center,.wenever__data,.inmi__data{
+  .section-title-center,.wenever__data,.inmi__data,.section-title-center-head{
       text-align:initial;
   }
   .wenever__img{
@@ -566,6 +619,9 @@ ul {
 .whoher__par span{
   font-weight: 800;
 }
+.whoher__par a{
+  color: var(--black);
+}
 .contac__colu{
   display: grid;
   grid-template-columns:repeat(2,1fr);
@@ -645,6 +701,16 @@ ul {
   .top{
     margin-top: 4rem !important;
   }
+  .swiper-pagination-bullet {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  .esp__nos{
+    margin-left: 0rem;
+  }
+  .nos__esp{
+    margin-right: 0rem;
+  }
 }
 .mapa{
   border:0;
@@ -662,6 +728,7 @@ ul {
   display: block;
   object-fit: cover;
   border-radius: 0.2rem;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 .text{
   width:100%;
@@ -718,7 +785,62 @@ textarea{
   .imagenes{
     width: 100%;
   }
+  .imagenes__nos{
+    width: 23rem;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  }
  
+}
+/**nos**/
+.nos__container{
+  row-gap:.5rem
+}
+.nos__container{
+      column-gap:5rem
+}
+
+.nos__img{
+      order:-1;
+}
+.nos__imagen {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover !important;
+  margin: auto !important;
+  display: block !important;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+@media screen and (min-width:576px){
+  .nos__container{
+      grid-template-columns:repeat(2,1fr);
+      align-items:center
+  }
+  .nos__container{
+      padding:5rem 0 0
+  }
+  .imagenes__nos{
+    width: 100%;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  }
+}
+@media screen and (max-width:968px){
+  .nos__img{
+      order:1;
+  }
+}
+@media screen and (max-width:390px) {
+  .imagenes__nos{
+    width: 20rem;
+  }
+  .fundacion__nos {
+    text-align: justify !important;
+    font-size: 40px;
+    margin-top: 0.5rem !important;
+}
+  
 }
 /**footer**/
 footer{
