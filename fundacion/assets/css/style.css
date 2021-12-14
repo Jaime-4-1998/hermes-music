@@ -318,7 +318,7 @@ ul {
 	top: 50%;
 	z-index: 10;
 	color: #fff !important;
-	background-image: url(../img/slides/elip.png) !important;
+  background-color: var(--yellow);
 	background-position: center;
 	cursor: pointer;
 	border-radius: 50%;
@@ -336,8 +336,8 @@ ul {
 }
 .swiper-pagination-bullet {
 	background: #fff !important;
-	width: 1rem !important;
-	height: 1rem !important;
+  width: 2rem !important;
+  height: 2rem !important;
 }
 .swiper-pagination-bullet-active {
 	opacity: var(--swiper-pagination-bullet-opacity, 1);
