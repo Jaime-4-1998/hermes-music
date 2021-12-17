@@ -440,7 +440,7 @@ ul {
   margin-top: 3rem;
 }
 .btn__mas{
-  background-image: url(../img/deta/txt.png);
+  background:var(--yellow);
   border: none;
   padding: 1rem;
   border-radius: 10px;
@@ -1077,6 +1077,6 @@ footer{
   text-align:center;
   height: 3rem;
   padding: 1rem;
-  background-image: url(../img/deta/foot__copy.png);
+  background:var(--yellow);
   object-fit: cover;
 }
