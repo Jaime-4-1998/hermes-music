@@ -481,6 +481,9 @@ ul {
   height: 485px;
   margin-top: 2rem;
 }
+.bg__fon{
+  margin-top: -8rem;
+}
 /**responsive ofical**/
 @media screen and (max-width:600px){
   .fundacion__title {
@@ -515,7 +518,7 @@ ul {
   }
   .section-title-center{
     font-weight: normal;
-    font-size: 35px;
+    font-size: 35px !important;
     align-items: center;
     margin-top: 2rem;
   }
@@ -581,9 +584,10 @@ ul {
 @media screen and (min-width:576px){
   .first__container,.second__container{
       grid-template-columns:repeat(2,1fr);
+      align-items: center;
   }
   .first__container{
-      padding:5rem 0 0
+      padding:5rem 0 0;
   }
   .section-title-center,.second__data{
       text-align:initial
@@ -618,8 +622,17 @@ ul {
   .second__img {
     justify-self: inherit;
 }
+.bg__fon {
+  margin-top: -1rem !important;
+}
 }
 @media screen and (max-width:810px) {
+  .section-title-center{
+    font-weight: normal;
+    font-size: 34px !important;
+    align-items: center;
+    margin-top: 2rem;
+  }
   .barr {
     width: auto;
 }
@@ -674,13 +687,15 @@ ul {
 }
 .fondo__title{
   color: var(--white);
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 54px;
+  text-align: center;
 }
 .fondo__parr{
   color: var(--white);
   margin-top: 3rem;
-  font-size: 15px;
+  font-size: 17px;
+  text-align: center;
 }
 .fondo__parre{
   color: var(--white);
@@ -735,6 +750,10 @@ text-align: center;
     color: var(--white);
     font-size: 30px;
     margin-top: 0rem !important;
+    text-align: center !important;
+  }
+  .bg__fon{
+    margin-top: -5rem;
   }
   .video{
     width: 100%;
@@ -974,6 +993,11 @@ margin: auto;
   .cuadro{
     width: 90% !important;
   }
+  .imagenes{
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
 }
 @media screen and (min-width:576px){
   .nos__container{
@@ -1013,23 +1037,45 @@ margin: auto;
   .cuadro{
     width: 100% !important;
   }
+  .imagenes{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .fundacion__title {
+    margin-top: 2rem;
+    font-size: 50px;
+    line-height: 92px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+  }
 }
 @media screen and (max-width:390px) {
   .imagenes__nos{
     width: 20rem;
   }
-  .fundacion__nos {
-    text-align: justify !important;
-    font-size: 40px;
-    margin-top: 0.5rem !important;
+.section-title-center{
+  font-weight: normal;
+  font-size: 30px !important;
+  align-items: center;
+  margin-top: 2rem;
 }
-  
 }
 @media screen and (max-width:550px) {
   .card__container{
     margin-top: 3rem;
   }
-  
+  .fundacion__title {
+    text-align: justify !important;
+    font-size: 40px;
+    margin-top: 0.5rem !important;
+    line-height: inherit;
+    margin-top: 2rem !important;
+  }
 }
 /**footer**/
 footer{
