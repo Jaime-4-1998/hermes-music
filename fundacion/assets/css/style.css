@@ -640,8 +640,14 @@ ul {
   }
   .first__description, .second__description {
     text-align: justify !important;
-  }
-  
+  } 
+}
+@media screen and (max-width:400px) {
+  .fundacion__title {
+    margin-top: 2rem;
+    font-size: 25px !important;
+    line-height: inherit;
+}
 }
 /**contact**/
 .whoher{
