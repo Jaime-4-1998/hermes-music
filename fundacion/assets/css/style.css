@@ -563,8 +563,9 @@ ul {
     font-size: 29px !important;
   }
   .fundacion__nos {
-    font-size: 50px;
+    font-size: 40px !important;
     margin-top: 0.5rem !important;
+    line-height: inherit;
   }
   .fundacion__noso {
     font-size: 40px;
@@ -937,19 +938,25 @@ text-align: center;
     grid-gap: 1rem;
   }
   .fondo__orgu {
-    background-image: url(../img/orgu/Textura-2.png);
-    height: 485px;
+    background:#000 !important;
+    height: auto !important;
     margin-top: 2rem;
   }
   .fondo__parre {
     margin-top: 1rem;
     font-size: 28px;
   }
+  .amor{ 
+      font-size: 24px !important;
+      margin-top: 2rem !important;
+      line-height: inherit;
+    
+  }
 }
 @media screen and (max-width:600px) {
   .fondo__parre {
-    margin-top: 4rem;
-    font-size: 21px;
+    margin-top: 1rem;
+    font-size: 20px;
   }
 }
 /*wenever*/
@@ -1011,7 +1018,12 @@ text-align: center;
     font-size: 25px;
     color: var(--black);
     margin-top: 2rem;
+  }
 }
+@media screen and (max-width:500px) {
+  .wen__imagen {
+    width: 50% !important; 
+  }
 }
 /**footer**/
 footer{
