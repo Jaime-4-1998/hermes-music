@@ -146,6 +146,15 @@ ul {
 	background-image: url(../img/deta/foot__copy.png);
 	border-bottom: 2px var(--black) solid;
 }
+.l-header-webp {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-image: url(../img/deta/foot__copy.webp);
+  background-color: var(--yellow);
+	border-bottom: 2px var(--black) solid;
+}
 .nav {
 	height: 4rem;
 	display: flex;
@@ -586,6 +595,13 @@ ul {
   background-image: url(../img/hm/boxed-bg.png);
   height: 485px;
   margin-top: 2rem;
+  background-color: #32084a;
+}
+.fondo__webp{
+  background-image: url(../img/hm/boxed-bg.webp);
+  height: 485px;
+  margin-top: 2rem;
+  background-color: #32084a;
 }
 .fondo__title{
   color: var(--white);
@@ -1029,6 +1045,10 @@ text-align: center;
 footer{
   background-color:var(--black);
   background-image: url(../img/orgu/Textura-2.png);
+}
+.footer{
+  background-color:var(--black);
+  background-image: url(../img/orgu/Textura-2.webp);
 }
 .footer__container{
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
