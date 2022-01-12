@@ -1,13 +1,23 @@
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
-const navLogo = document.querySelector('#navbar__logo');
-const body = document.querySelector('body');
+//menu visibilty
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId)
 
-const mobileMenu = () =>{
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-    body.classList.toggle('active');
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show-menu')
+        })
+    }
 }
+showMenu('nav-toggle', 'nav-menu')
 
-menu.addEventListener('click',mobileMenu);
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+const sections = document.querySelectorAll('section[id]')
 
