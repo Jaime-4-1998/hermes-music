@@ -62,7 +62,7 @@ const carouselSlider = (function () {
     _slideIndex++;
     _checkSlideIndexBoundary(_slideIndex, _slides);
     // Change image every 5 seconds
-    setTimeout(slide, 5000);
+    setTimeout(slide, 7000);
   };
 
   return {
@@ -168,4 +168,49 @@ var filterList = {
 // Filter ALL the things
 filterList.init();
 
+});
+
+//correo
+
+$("#submit").click(function(e){
+e.preventDefault();
+$("#err_nom").html('');
+$("#err_tel").html('');
+$("#err_tex").html('');
+$("#err_corr").html('');
+if($("#nombre").val() == ''){
+  $("#err_nom").html('* Tu Nombre Requerido');
+  return false;
+}else if($("#tel").val()== ''){
+      $("#err_tel").html('* El Telefono Requerido');
+      return false;
+}else if($("#tel").val().length < 9){
+      $("#err_tel").html('* Te hacen falta más numeros');
+      return false;
+}else if($("#tex").val()== ''){
+      $("#err_tex").html('* Mensaje Requerido');
+      return false;    
+}else if($("#corr").val()== ''){
+      $("#err_corr").html('* Correo Requerido');
+      return false;    
+}else{
+  $.ajax({
+      url:'https://hermes-music.com.mx/assets/js/corr.php',
+      method:'post',
+      data:$("#form-data").serialize(),
+      success:function(response){
+        document.getElementById("form-data").reset();
+        Swal.fire({
+          icon: 'success',
+          title: 'Hermes Music México',
+          text: 'Te da las !Gracias¡ por ponerte en contacto con nosotros',
+          confirmButtonColor: '#fdc416',
+          confirmButtonText:
+          '<a class="text-white"  href="https://hermes-music.com.mx/Agradecimiento">Entiendo</a>'
+                                     
+        })
+      }
+  });
+}
+      
 });
