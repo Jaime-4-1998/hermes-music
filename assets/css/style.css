@@ -558,7 +558,7 @@ ul{
 }
 .hermes{
     color:var(--black);
-    padding:4rem calc((100vw - 1100px)/ 2);
+    padding:0rem calc((100vw - 1100px)/ 2);
     text-align:center
 }
 .her{
@@ -700,7 +700,7 @@ ul{
 .departamentos{
     background:var(--black);
     color:var(--white);
-    padding:5rem calc((100vw - 1470px)/ 2);
+    padding: 5rem calc((100vw - 1600px)/ 2);
     text-align:center
 }
 .departamentos h2{
@@ -719,7 +719,8 @@ ul{
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    padding:1rem
+    padding:1rem;
+    column-gap: 1rem;
 }
 .departamentos__card{
     padding:2rem;
@@ -734,20 +735,31 @@ ul{
     -o-border-radius:10px;
     display:flex;
     flex-direction:column;
-    justify-content:space-between
+    justify-content:space-between;
 }
 .departamentos__perks{
     min-height:150px
 }
 .departamentos__card p{
-    margin-bottom:1rem;
+    margin-bottom:2rem;
     text-align:justify!important
+}
+.btn__depa{
+background: var(--yellow);
+border: none;
+padding: 1rem;
+border-radius: 10px;
+width: 10rem;
+font-size: 1rem;
+}
+.btn__depa:hover{
+    cursor: pointer;
 }
 .margin__parr__one{
     margin-top:-11rem
 }
 .margin__parr__two{
-    margin-top:-10rem
+    margin-top:-12rem
 }
 .card-icon{
     font-size:5rem;
@@ -1477,3 +1489,4 @@ div.noticia i.derecha{
 .text-white{
     color: #000 !important;
 }
+/***modales**/
