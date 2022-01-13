@@ -1,143 +1,744 @@
-<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-<button id="open-modal">Open Modal</button>
-
-
-<div id="myModal" class="modal">
-  
-  <!-- Modal content -->
-  <div id="modal-content" class="modal-content animation-1" >
-      <!-- Modal header -->
-    <header class="modal-header">
-      <p class="modal-header-title">
-        Card header
-      </p>
-      <button id="close" class="modal-header-icon">
-        <span class="icon">
-          <i class='bx bx-x'></i>
-        </span>
-      </button>
-    </header>
-    <!-- Modal body -->
-    <div class="modal-body">
-      <p>Some text in the Modal..</p>
-    </div>
+<link rel="preload"  href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+<section class="wrap" id="marcas">
+  <h2 class="espe animate-title">Nuestras Marcas</h2>
+  <div class="gallery-wrap">
    
-    <!-- Modal footer -->
-    <footer class="modal-footer">
+     <ul id="filters" class="clearfix">
+       <li><span class="filter active" data-filter=".audiodigital">Audio Digital</span></li>
+       <li><span class="filter" data-filter=".audioprofesional">Audio Profesional</span></li>
+       <li><span class="filter" data-filter=".iluminacion">Iluminación</span></li>
+       <li><span class="filter" data-filter=".micro">Microfonía</span></li>
+       <li><span class="filter" data-filter=".teclado">Teclados</span></li>
+       <li><span class="filter" data-filter=".acor">Acordeones</span></li>
+       <li><span class="filter" data-filter=".dj">Herramientas DJ</span></li>
+       <li><span class="filter" data-filter=".baterias">Baterías y Percusiones</span></li>
+       <li><span class="filter" data-filter=".viento">Viento y Metales</span></li>
+       <li><span class="filter" data-filter=".bajos">Guitarras y Bajos</span></li>
+     </ul>
+     
+     <div id="gallery">
+     
+     <a class="gallery-item audiodigital" href="https://www.akaipro.com/" rel="noopener" target="_blank" data-cat="audiodigital">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Akai Professional</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcas/AKAI_789.jpg" alt="Akai Professional" title="Akai Professional" />
+       </div>
+     </a>
+     
+      <a class="gallery-item audiodigital" href="https://digico.biz/" rel="noopener" target="_blank" data-cat="audiodigital">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Digico</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcas/digico.jpg" alt="Digico" title="Digico" />
+        </div>
+      </a>
+      <a class="gallery-item audiodigital" href="http://whirlwindusa.com/" rel="noopener" target="_blank" data-cat="audiodigital">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Whirlwhind</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/whirldwind.jpg" alt="Whirlwhind" title="Whirlwhind" />
+       </div>
+     </a>
+      <a class="gallery-item audiodigital" href="https://m-audio.com/" rel="noopener" target="_blank" data-cat="audiodigital">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>M-Audio</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcas/m-audio.jpg" alt="M-AUDIO" title="M-AUDIO" />
+        </div>
+      </a>
+      <a class="gallery-item audiodigital bajos" href="http://www.mooeraudio.com/" rel="noopener" target="_blank" data-cat="audiodigital bajos">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Mooer</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcas/mooer.jpg" alt="Mooer" title="Mooer" />
+        </div>
+      </a>
+      <a class="gallery-item audiodigital bajos audioprofesional micro" href="https://hermesmusicclub.mx/collections/morrison" rel="noopener" target="_blank" data-cat="audiodigital bajos audioprofesional micro">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>MRS Accesorios</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcas/MRSAC.jpg" alt="MRS Accesorios" title="MRS Accesorios" />
+        </div>
+      </a>
+      <a class="gallery-item audiodigital" href="https://www.ikmultimedia.com/" rel="noopener" target="_blank" data-cat="audiodigital">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>IK MULTIMEDIA</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcanue/IK-Multimedia.jpg" alt="IK MULTIMEDIA" title="IK MULTIMEDIA" />
+       </div>
+     </a>
+      <a class="gallery-item audioprofesional " href="https://www.adamsonsystems.com/" rel="noopener" target="_blank" data-cat="audioprofesional">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Adamson</h2>
+             
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcas/Adamson.jpg" alt="Adamson" title="Adamson" />
+       </div>
+     </a>
+     <a class="gallery-item audioprofesional " href="https://www.dasaudio.com/" rel="noopener" target="_blank" data-cat="audioprofesional">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>D.A.S</h2>
+             
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcanue/DAS.jpg" alt="D.A.S" title="D.A.S" />
+       </div>
+     </a>
+      <a class="gallery-item audiodigital " href="https://www.presonus.com/" rel="noopener" target="_blank" data-cat="audiodigital">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Presouns</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcas/presonus.jpg" alt="Presouns" title="Presouns" />
+        </div>
+      </a>
+     
+      <a class="gallery-item audiodigital" href="https://www.soundcraft.com/en" rel="noopener" target="_blank" data-cat="audiodigital">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Soundcraft</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcas/soundcraft.jpg" alt="Soundcraft" title="Soundcraft" />
+        </div>
+      </a>
+      <!--/bajos-->
+         
+      <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/alvarez" rel="noopener" target="_blank" data-cat="bajos">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Alvarez</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcanue/Alvarez.jpg" alt="Alvarez" title="Alvarez" />
+       </div>
+     </a>
+     <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/vendors?q=WARWICK" rel="noopener" target="_blank" data-cat="bajos">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Warwick</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcanue/Warwick.jpg" alt="Warwick" title=Warwick" />
+       </div>
+     </a>
       
-    </footer>
-  </div>
-  
-</div>
-<style>
-  /* The Modal (background) */
-.modal {
-  display:none;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  top:50%;
-  left:50%;
-  color: #4a4a4a;
-  max-width: 100%;
-  position: relative;
-  border-radius:10px;
-  border: 1px solid #ccc;
-  width: 80%; /* Could be more or less, depending on screen size */
-  transform: translate(-50% , -50%);
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: hidden; 
-}
-
-.modal-header{
-  align-items: stretch;
-  box-shadow: 0 1px 1px rgb(10 10 10 / 10%);
-  display: flex;
-}
-
-.modal-header-title{
-  align-items: center;
-  color: #363636;
-  display: flex;
-  flex-grow: 1;
-  font-weight: 700;
-  padding: 5px 15px;
-}
-.modal-header-icon{
-
-    background: 0 0;
-    border: none;
-    color: currentColor;
-    font-family: inherit;
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-}
-
-#modal-content.animation-1{
-  animation: animation-1 0.5s forwards;
-}
-.modal-body{
-  padding: 5px 15px;
-}
-@keyframes animation-1{
-  0% {
-    transform: translate(-50%,-50%) scale(0);
-  }
-  50% {
-    transform: translate(-50%,-50%) scale(1.2);
-  }
-  70% {
-    transform: translate(-50%,-50%) scale(0.9);
-  }
-  100% {
-    transform: translate(-50%,-50%) scale(1);
-  }
-}
-</style>
-
-<script>
-  // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("open-modal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementById("close");
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+      
+      <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/babilon" rel="noopener" target="_blank" data-cat="bajos">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>BABILON</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/babilon.jpg" alt="BABILON" title="BABILON" />
+        </div>
+      </a>
+      <a class="gallery-item bajos" href="https://www.digitech.com/" rel="noopener" data-cat="bajos">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>DIGITECH</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/digite.jpg" alt="DIGITECH" title="DIGITECH" />
+        </div>
+      </a>
+      <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/elixir" rel="noopener" target="_blank" data-cat="bajos">
+        <div class="inside"> 
+          <div class="details">
+            <div class="texto">
+              <h2>Elixir</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/elixir.jpg" alt="Elixir" title="Elixir" />
+        </div>
+      </a>
+      <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/vendors?q=TAKAMINE" rel="noopener" target="_blank" data-cat="bajos">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Takamine</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/taka.jpg" alt="Takamine" title="Takamine" />
+       </div>
+     </a>
+      <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/vendors?q=GODIN" rel="noopener" target="_blank" data-cat="bajos">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Godin</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/godin.jpg" alt="Godin" title="Godin" />
+        </div>
+      </a>
+      <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/vendors?q=HARTKE" rel="noopener" target="_blank" data-cat="bajos">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Hartke</h2>
+              <p></p>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/hartke.jpg" alt="Hartke" title="Hartke" />
+        </div>
+      </a>
+      <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/vendors?q=MARSHALL" rel="noopener" target="_blank" data-cat="bajos">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Marshall</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/marshall.jpg" alt="Marshall" title="Marshall" />
+        </div>
+      </a>
+      <a class="gallery-item bajos audioprofesional" href="https://peavey.com/" rel="noopener" target="_blank" data-cat="bajos audioprofesional">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Peavy</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/pevey.jpg" alt="Peavy" title="Peavy" />
+        </div>
+      </a>
+      <a class="gallery-item bajos iluminacion" href="https://hermesmusicclub.mx/collections/prolock" rel="noopener" target="_blank" data-cat="bajos iluminacion">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Prolok</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/prolock.jpg" alt="Prolok" title="Prolok" />
+        </div>
+      </a>
+      <a class="gallery-item bajos micro teclado" href="http://www.ultimatesupport.com/" rel="noopener" target="_blank" data-cat="bajos micro teclado">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Ultimate</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/ultimate.jpg" alt="Ultimate" title="Ultimate" />
+        </div>
+      </a>
+      <a class="gallery-item bajos" href="https://hermesmusicclub.mx/collections/vox" rel="noopener" target="_blank" data-cat="bajos">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Vox</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasguitarras/vox.jpg" alt="Vox" title="Vox"/>
+        </div>
+      </a>
+      <a class="gallery-item teclado " href="https://www.arturia.com/" rel="noopener" target="_blank" data-cat="teclado">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>ARTURIA</h2>
+             
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcas/Anturia.jpg" alt="ARTURIA" title="ARTURIA" />
+       </div>
+     </a>
+      
+      <!--/audio profesionalñ-->
+     
+      <a class="gallery-item audioprofesional" href="https://www.crownaudio.com/en" rel="noopener" target="_blank" data-cat="audioprofesional">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>CROWN</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/crown.jpg" alt="CROWN" title="CROWN" />
+        </div>
+      </a>
+      <a class="gallery-item audioprofesional" href="https://euro-acoustic.com/" rel="noopener" target="_blank" data-cat="audioprofesional">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>EuroAcoustic</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/euroacus.jpg" alt="EuroAcoustic" title="EuroAcoustic"/>
+       </div>
+     </a>
+      <a class="gallery-item audioprofesional" href="https://dbxpro.com/en" rel="noopener" target="_blank" data-cat="audioprofesional">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>DBX</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/DBXX.jpg" alt="DBX" title="DBX" />
+        </div>
+      </a>
+      <a class="gallery-item audioprofesional" href="https://www.jbl.com.mx/" rel="noopener" target="_blank" data-cat="audioprofesional">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>JBL</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/JBLL.jpg" alt="JBL" title="JBL" />
+        </div>
+      </a>
+      <a class="gallery-item audioprofesional" href="https://www.lexicon.com/" rel="noopener" target="_blank" data-cat="audioprofesional">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>LEXICON</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/lexicon.jpg" alt="LEXICON" title="LEXICON" />
+        </div>
+      </a>
+      <a class="gallery-item audioprofesional" href="https://mackie.com/" rel="noopener" target="_blank" data-cat="audioprofesional">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>MACKIE</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/mackie.jpg" alt="MACKIE" title="MACKIE" />
+        </div>
+      </a>
+      <a class="gallery-item audioprofesional" href="https://www.rcf.it/" rel="noopener" target="_blank" data-cat="audioprofesional">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>RCF</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/RCFF.jpg" alt="RCF" title="RCF" />
+        </div>
+      </a>
+      
+      <!--/baterias y percusiones-->
+    
+      <a class="gallery-item baterias" href="https://hermesmusicclub.mx/collections/dw" rel="noopener" target="_blank" data-cat="baterias">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>DW Drums</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/DW.jpg" alt="DDRUM" title="DDRUM" />
+        </div>
+      </a>
+      <a class="gallery-item baterias" href="https://hermesmusicclub.mx/collections/vendors?q=DRUMCO" rel="noopener" target="_blank" data-cat="baterias">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Drumco</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/Drumco.jpg" alt="Drumco" title="Drumco" />
+        </div>
+      </a>
+      <a class="gallery-item baterias" href="http://www.topmusic.com.mx/mx/42+greggs-percussion" rel="noopener" target="_blank" data-cat="baterias">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Greggs</h2>
+             
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/Greggs.jpg" alt="Greggs" title="Greggs" />
+       </div>
+     </a>
+     <a class="gallery-item baterias" href="http://www.regaltip.com/" rel="noopener" target="_blank" data-cat="baterias">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>RegalTip</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasprofesional/regaltip.jpeg" alt="RegalTip" title="RegalTip"/>
+       </div>
+     </a>
+     <a class="gallery-item baterias" href="https://hermesmusicclub.mx/collections/latin-percussion" rel="noopener" target="_blank" data-cat="baterias">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>LATIN PERCUSSION</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/LP.jpg" alt="LATIN PERCUSSION" title="LATIN PERCUSSION" />
+       </div>
+     </a>
+      <a class="gallery-item baterias viento" href="https://hermesmusicclub.mx/collections/vendors?q=KLINGT" rel="noopener" target="_blank" data-cat="baterias viento">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>KLINGT</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/klingt.jpg" alt="KLINGT" title="KLINGT" />
+        </div>
+      </a>
+      <a class="gallery-item baterias" href="https://hermesmusicclub.mx/collections/mapex" rel="noopener" target="_blank" data-cat="baterias">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>MAPEX</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/Mapexx.jpg" alt="MAPEX" title="MAPEX" />
+        </div>
+      </a>
+      <a class="gallery-item baterias" href="https://hermesmusicclub.mx/collections/pacific" rel="noopener" target="_blank" data-cat="baterias">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>PACIFIC DRUMS & PERCUSSION</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/PDP.jpg" alt="PACIFIC DRUMS & PERCUSSION" title="PACIFIC DRUMS & PERCUSSION" />
+        </div>
+      </a>
+      <a class="gallery-item baterias" href="https://pearldrum.com/global/" rel="noopener" target="_blank" data-cat="baterias">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>PEARL</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/pearl.jpg" alt="PEARL" title="PEARL" />
+        </div>
+      </a>
+      <a class="gallery-item baterias" href="https://zildjian.com/" rel="noopener" target="_blank" data-cat="baterias">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>ZILDJIAN</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasbaterias/zildijan.jpg" alt="ZILDJIAN" title="ZILDJIAN" />
+        </div>
+      </a>
+      <!--/iluminacion-->
+      <a class="gallery-item iluminacion" href="https://www.claypaky.it/en/home/" rel="noopener" target="_blank" data-cat="iluminacion">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>CLAY PAKY</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/claypa.jpg" alt="CLAY PAKY" title="CLAY PAKY" />
+        </div>
+      </a>
+    
+      <a class="gallery-item iluminacion" href="https://hermesmusicclub.mx/collections/pr-lighting" rel="noopener" target="_blank" data-cat="iluminacion">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>PR LIGHTING</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/pr-li.jpg" alt="PR LIGHTING" title="PR LIGHTING" />
+        </div>
+      </a>
+      <a class="gallery-item iluminacion" href="#" target="_blank" data-cat="iluminacion">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>PROLIGHT</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasiluminacion/prolight.jpg" alt="PROLIGHT" title="PROLIGHT" />
+        </div>
+      </a>
+      <!--/micro-->
+      <a class="gallery-item micro dj" href="https://www.akg.com/" rel="noopener" target="_blank" data-cat="micro dj">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>AKG</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasmicro/akg.jpg" alt="AKG" title="AKG" />
+        </div>
+      </a>
+      <a class="gallery-item micro" href="https://global.beyerdynamic.com/" rel="noopener" target="_blank" data-cat="micro">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>beyerdynamic</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcanue/beyerdynamic.jpg" alt="beyerdynamic" title="beyerdynamic" />
+       </div>
+     </a>
+      <a class="gallery-item micro" href="https://www.dpamicrophones.com/" rel="noopener" target="_blank" data-cat="micro">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>DPA</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasmicro/dpa.jpg" alt="DPA" title="DPA" />
+       </div>
+     </a>
+     
+      <a class="gallery-item micro dj" href="https://www.audio-technica.com/es-mx/" rel="noopener" target="_blank" data-cat="micro dj">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Audio Technica</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasmicro/AT.jpg" alt="Audio Technica" title="Audio Technica" />
+       </div>
+     </a>
+      <!--/dj-->
+      <a class="gallery-item dj" href="https://www.numark.com/" rel="noopener" target="_blank" data-cat="dj">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Numark</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcas/Numark.jpg" alt="Numark" title="Numark" />
+       </div>
+     </a>
+     <a class="gallery-item dj" href="https://hermesmusicclub.mx/collections/vendors?q=ABLETON" rel="noopener" target="_blank" data-cat="dj">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>ABLETON</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcanue/Ableton.jpg" alt="ABLETON" title="ABLETON" />
+       </div>
+     </a>
+     <a class="gallery-item viento" href="https://hermesmusicclub.mx/collections/albert" rel="noopener" target="_blank" data-cat="viento">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Albert</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcasvie/Albert.jpg" alt="Albert" title="Albert" />
+       </div>
+     </a>
+     <a class="gallery-item viento" href="https://hermesmusicclub.mx/collections/vendors?q=LIZT" rel="noopener" target="_blank" data-cat="viento">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Lizt</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcanue/Lizt.jpg" alt="Lizt" title="Lizt" />
+       </div>
+     </a>
+      <a class="gallery-item dj" href="https://hermesmusicclub.mx/collections/alesis" rel="noopener" target="_blank" data-cat="dj">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>ALESIS</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasdj/alesis.jpg" alt="ALESIS" title="ALESIS" />
+        </div>
+      </a>
+      <a class="gallery-item dj teclado" href="http://www.korgmexico.com/" rel="noopener" target="_blank" data-cat="dj teclado">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>Korg</h2>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasdj/Korgg.jpg" alt="KORG" title="KORG" />
+        </div>
+      </a>
+      <a class="gallery-item audioprofesional micro" href="http://www.samson.com.mx/" rel="noopener" target="_blank" data-cat="audioprofesional micro">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>SAMSON</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasdj/samson.jpg" alt="SAMSON" title="SAMSON" />
+        </div>
+      </a>
+      <a class="gallery-item audioprofesional" href="https://leaprofessional.com/" rel="noopener" target="_blank" data-cat="audioprofesional">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>LEA PROFESIONAL</h2>
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest lea__pro" loading="lazy" src="assets/images/marcanue/LEA.png" alt="LEA Profesional" title="LEA Profesional" />
+       </div>
+     </a>
+     <!--/teclado-->
+     <a class="gallery-item teclado" href="https://hermesmusicclub.mx/collections/vendors?q=KEYBOARD" rel="noopener" target="_blank" data-cat="teclado">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>KBOARD</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcatecla/kboard.jpg" alt="KBOARD" title="KBOARD" />
+        </div>
+      </a>
+      <a class="gallery-item teclado" href="http://www.topmusic.com.mx/mx/76+nord" rel="noopener" target="_blank" data-cat="teclado">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>NORD</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcatecla/nord.jpg" alt="NORD" title="NORD" />
+        </div>
+      </a>
+      <!--/acordeones-->
+      <a class="gallery-item acor" href="https://hermesmusicclub.mx/collections/cantabella" rel="noopener" target="_blank" data-cat="acor">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>CANTABELLA</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasacor/cantabella.jpg" alt="CANTABELLA" title="CANTABELLA" />
+        </div>
+      </a>
+      <a class="gallery-item acor" href="https://hermesmusicclub.mx/collections/montanari" rel="noopener" target="_blank" data-cat="acor">
+       <div class="inside">
+         <div class="details">
+           <div class="texto">
+             <h2>Montanari</h2>
+             
+           </div>
+         </div>
+         <div class="overlay"></div>
+         <img class="imagenest" loading="lazy" src="assets/images/marcanue/Montanari.jpg" alt="Montanari" title="Montanari" />
+       </div>
+     </a>
+      <a class="gallery-item acor" href="https://hermesmusicclub.mx/collections/sonola" rel="noopener" target="_blank" data-cat="acor">
+        <div class="inside">
+          <div class="details">
+            <div class="texto">
+              <h2>SONOLA</h2>
+              
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <img class="imagenest" loading="lazy" src="assets/images/marcasacor/sonola.jpg" alt="SONOLA" title="SONOLA" />
+        </div>
+      </a>
+     
+     </div><!--/gallery-->
+     
+   </div><!--/gallery-wrap-->
+</section>
