@@ -170,16 +170,87 @@ filterList.init();
 
 });
 //modales
-const open = document.getElementById('open');
-const modal_container = document.getElementById('modal_container');
-const close = document.getElementById('close');
-
-open.addEventListener('click', () => {
-  modal_container.classList.add('show');  
-});
-close.addEventListener('click', () => {
-  modal_container.classList.remove('show');
-});
+  // Get the modal--4
+  var modal = document.getElementById("myModal");
+  // Get the button that opens the modal
+  var btn = document.getElementById("open-modal");
+  // Get the <span> element that closes the modal
+  var span = document.getElementById("close");
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  // Get the modal--4
+   // Get the modal--3
+   var modale = document.getElementById("myModale");
+   // Get the button that opens the modal
+   var btne = document.getElementById("open-modale");
+   // Get the <span> element that closes the modal
+   var span = document.getElementById("closee");
+   // When the user clicks on the button, open the modal
+   btne.onclick = function() {
+     modale.style.display = "block";
+   }
+   // When the user clicks on <span> (x), close the modal
+   span.onclick = function() {
+     modale.style.display = "none";
+   }
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+     if (event.target == modale) {
+       modale.style.display = "none";
+     }
+   }
+   // Get the modal--2
+   var modaler = document.getElementById("myModaler");
+   // Get the button that opens the modal
+   var btner = document.getElementById("opene-modal");
+   // Get the <span> element that closes the modal
+   var span = document.getElementById("closeer");
+   // When the user clicks on the button, open the modal
+   btner.onclick = function() {
+     modaler.style.display = "block";
+   }
+   // When the user clicks on <span> (x), close the modal
+   span.onclick = function() {
+     modaler.style.display = "none";
+   }
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+     if (event.target == modaler) {
+       modaler.style.display = "none";
+     }
+   }
+   // Get the modal--1
+   var modalere = document.getElementById("myModalere");
+   // Get the button that opens the modal
+   var btnere = document.getElementById("opene-modale");
+   // Get the <span> element that closes the modal
+   var span = document.getElementById("closeere");
+   // When the user clicks on the button, open the modal
+   btnere.onclick = function() {
+     modalere.style.display = "block";
+   }
+   // When the user clicks on <span> (x), close the modal
+   span.onclick = function() {
+     modalere.style.display = "none";
+   }
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+     if (event.target == modalere) {
+       modalere.style.display = "none";
+     }
+   }
 
 //correo
 
