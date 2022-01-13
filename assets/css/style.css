@@ -744,6 +744,10 @@ ul{
     margin-bottom:2rem;
     text-align:justify!important
 }
+.departamentos__modales{
+    margin-bottom: 0.5rem !important;
+}
+
 .btn__depa{
 background: var(--yellow);
 border: none;
@@ -767,7 +771,7 @@ font-size: 1rem;
     color:#f8bb31!important
 }
 .departamentos__card h3{
-    font-size:clamp(.6rem,5vw,2rem);
+    font-size:clamp(.6rem,5vw,1.5rem);
     margin-bottom:2rem;
     font-weight:inherit
 }
@@ -1518,10 +1522,29 @@ div.noticia i.derecha{
     scrollbar-width: none; /* for Firefox */
     overflow-y: hidden; 
   }
+  @media screen and (max-width:600px) {
+      .modal-contentere,.modal-contente{
+        background-color: #fefefe;
+        top: 45%;
+        left: 50%;
+        color: #4a4a4a;
+        max-width: 100%;
+        position: relative;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        width: 80%;
+        transform: translate(-50% , -50%);
+        -ms-overflow-style: none;
+        scrollbar-width: thin;
+        overflow-y: scroll;
+        height: 30rem;
+      }
+      
+  }
   .modal-header{
     align-items: stretch;
-    box-shadow: 0 1px 1px rgb(10 10 10 / 10%);
     display: flex;
+    border-bottom: 1px solid #ccc;
   }
   .modal-header-title{
     align-items: center;
@@ -1531,6 +1554,11 @@ div.noticia i.derecha{
     font-weight: 700;
     margin-left: 2rem;
     margin-top: 2rem;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .modal-header-icon{
       background: 0 0;
@@ -1545,6 +1573,9 @@ div.noticia i.derecha{
       display: flex;
       justify-content: center;
       padding: 1rem;
+      color: var(--yellow);
+      
+      text-shadow: #ffc000 0.1em 0.1em 0.1em;
   }
   #modal-content.animation-1{
     animation: animation-1 0.5s forwards;
@@ -1561,9 +1592,19 @@ div.noticia i.derecha{
   .modal-body{
     padding: 2rem;
   }
+  .modal-body p{
+      color: #000;
+  }
+  .modal__par__tite{
+      color: var(--black) !important;
+      font-weight: 700;
+      margin-bottom: 0.5rem !important;
+      text-shadow: #ccc 0.1em 0.1em 0.1em;
+}
   .lista__modal{
       text-align: left;
       margin: 1rem !important;
+      color: #000 !important;
   }
   @keyframes animation-1{
     0% {
