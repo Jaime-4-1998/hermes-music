@@ -1,0 +1,148 @@
+<div class="button">
+    <button class="show-modal">Show Modal 1</button>
+</div>
+  <div class="modal hidden">
+    <div class="header">
+      <h3 class="title">I am a Modal</h3>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="info">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim eos odit
+      facilis omnis voluptatibus ea veritatis nobis a aliquam eveniet, sunt
+      praesentium similique unde delectus at pariatur sed! Iste illo saepe
+      nihil suscipit? Culpa reprehenderit harum aliquam dignissimos,
+      accusantium blanditiis enim alias unde perferendis nostrum totam eos
+      possimus magni, quas aut distinctio a excepturi pariatur in ab, beatae
+      maiores. Commodi beatae maxime atque placeat aliquid ad, libero impedit.
+      Quod, illo.
+    </div>
+  </div>
+  <div class="overlay hidden"></div>
+  <style>
+  
+
+
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.show-modal {
+  border: none;
+  background-color: white;
+  padding: 0.7em 1em;
+  margin: 0.2em;
+  border-radius: 1em;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.show-modal:hover {
+  box-shadow: 0px 0px 10px #28b485;
+}
+
+.show-modal:active {
+  background-color: rgb(238, 238, 238);
+}
+
+.modal {
+  background-color: white;
+  width: 25em;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  left: 0;
+  padding: 0.5em;
+  z-index: 200;
+  margin: auto;
+  border-radius: 0.5em;
+  box-shadow: 0px 10px 75px 2px #28b485;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.3em;
+}
+
+.close-modal {
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3em;
+  background-color: white;
+}
+
+.close-modal:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.close-modal:active {
+  background-color: rgb(223, 222, 222);
+}
+
+.info {
+  padding: 1em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 101;
+}
+
+@media (max-width: 510px) {
+  .show-modal {
+    font-size: 0.8em;
+  }
+  .modal {
+    width: 20em;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+  </style>
+  <script>
+      let modal = document.querySelector(".modal");
+let overlay = document.querySelector(".overlay");
+let btnCloseModal = document.querySelector(".close-modal");
+let btnOpenModal = document.querySelectorAll(".show-modal");
+
+let hideModal = function () {
+  overlay.classList.add("hidden");
+  modal.classList.add("hidden");
+};
+
+let showModal = function () {
+  overlay.classList.remove("hidden");
+  modal.classList.remove("hidden");
+};
+
+for (let i = 0; i < btnOpenModal.length; i++) {
+  btnOpenModal[i].addEventListener("click", showModal);
+}
+
+btnCloseModal.addEventListener("click", hideModal);
+
+overlay.addEventListener("click", hideModal);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !showModal()) {
+    hideModal();
+  }
+});
+
+  </script>
