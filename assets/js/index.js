@@ -72,7 +72,81 @@ const carouselSlider = (function () {
 
 carouselSlider.slide();
 
+//carr mov
 
+const carouselSlidermov = (function () {
+  let _slideIndexmov = 1;
+
+  const _slidesmov = document.querySelectorAll(".image-fade-mov");
+  const _dotsmov = document.querySelectorAll(".dot__mov");
+
+  function _sliderInitStatemov(slidesmov, dotsmov) {
+    for (let i = 0; i < slidesmov.length; i++) {
+      slidesmov[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dotsmov.length; i++) {
+      dotsmov[i].classList.remove("activemov");
+    }
+  }
+
+  function _checkSlideIndexBoundarymov(slideIndexmov, slidesmov) {
+    if (slideIndexmov > slidesmov.length) {
+      _slideIndexmov = 1;
+    }
+    if (slideIndexmov === 0) {
+      _slideIndexmov = slidesmov.length;
+    }
+  }
+
+  function _slideSelectionIndecatormov(dotsmov, slideIndexmov) {
+    dotsmov[slideIndexmov - 1].classList.add("activemov");
+  }
+
+  function _activateSlidemov(slidesmov, slideIndexmov) {
+    slidesmov[slideIndexmov - 1].style.display = "block";
+    _slideSelectionIndecatormov(_dotsmov, _slideIndexmov);
+  }
+
+  function _imageDirectionmov(directionmov) {
+    _sliderInitStatemov(_slidesmov, _dotsmov);
+    if (directionmov == "next") {
+      _activateSlidemov(_slidesmov, _slideIndexmov);
+      _slideIndexmov++;
+      _checkSlideIndexBoundarymov(_slideIndexmov, _slidesmov);
+    } else {
+      _slideIndexmov--;
+      _checkSlideIndexBoundarymov(_slideIndexmov, _slidesmov);
+      _activateSlidemov(_slidesmov, _slideIndexmov);
+    }
+  }
+
+  const _previousButtonmov = document.querySelector(".previous__mov");
+  const _nextButtonmov = document.querySelector(".next__mov");
+
+  _previousButtonmov.addEventListener("click", function () {
+    _imageDirectionmov("previous__mov");
+  });
+
+  _nextButtonmov.addEventListener("click", function () {
+    _imageDirectionmov("next__mov");
+  });
+
+  const slidemov = function () {
+    _sliderInitStatemov(_slidesmov, _dotsmov);
+    _activateSlidemov(_slidesmov, _slideIndexmov);
+    _slideIndexmov++;
+    _checkSlideIndexBoundarymov(_slideIndexmov, _slidesmov);
+    // Change image every 5 seconds
+    setTimeout(slidemov, 7000);
+  };
+
+  return {
+    slidemov
+  };
+})();
+
+carouselSlidermov.slidemov();
 //menu visibilty
 const showMenu = (toggleId, navId) => {
 const toggle = document.getElementById(toggleId),

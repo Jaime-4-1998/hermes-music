@@ -5,394 +5,138 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preload" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'  as="style" onload="this.rel='stylesheet'">
+  <link rel="preload"  href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+ 
 </head>
 <body>
-  <div class="controls">
-  
-    <button class="filter all" data-filter="all">Show All</button>
-    <button class="filter" data-filter=".motion-graphics">Motion Graphics</button>
-    <button class="filter" data-filter=".live-action">Live Action</button>
-     <button class="filter" data-filter=".multimedia">Multimedia</button>
-    <button class="filter" data-filter=".stop-motion">Stop Motion</button>
-    <button class="filter" data-filter=".experiential">Experiential</button>
-  </div>
-  
-  <div class="pager-list">
-    <!-- Pagination buttons will be generated here -->
-  </div>
-  
-  
-  
-  <div id="Container" class="container">
-    
-    <a class="mix rockbox motion-graphics live-action" href="http://www.rockbox.tv/rockbox">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59650b97ff7c507f4711da8e/1499794329066/New-RockboxReel.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-            2017 Reel
-          </div>
-        </div>
-    </a>
-  
-    <a class="mix forevercar stop-motion" href="http://www.rockbox.tv/forevercar">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593819b73a041152da73ee61/1496848826655/New-FOREVERCAR.jpg" >
-        <div class="overlay">
-          <div class="hover-text">
-          Brand Video
-          </div>
-        </div>
-    </a>
-  
-    <a class="mix stackify live-action" href="http://www.rockbox.tv/stackify">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59386d9e37c581aa87f67b6a/1496870304023/New-STACKIFY.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-           Brand Video
-          </div>
-        </div>
-    </a>
-  
-    <a class="mix vikings motion-graphics experiential" href="http://www.rockbox.tv/vikings">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593812cb37c581a5f59d8ded/1496848974849/New-VIKINGS.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-           US bank Stadium Fan Experience
-          </div>
-        </div>
-    </a>
-    
-    <a class="mix dimin multimedia" href="http://www.rockbox.tv/dimensional-innovations">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593868d5bebafb5a891bd9c5/1496869078894/New-DI.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Brand Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix mylo motion-graphics" href="http://www.rockbox.tv/mylo">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59386d9af5e2311d32d770a3/1496870300200/New-MYLO2.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-            "You Be You" Content Campaign
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix helzberg live-action" href="http://www.rockbox.tv/helzberg">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593819ba725e25b78ccfc5c7/1496848828212/New-HELZBERG.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-            "We Propose You Propose" Campaign
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix action-pact live-action" href="http://www.rockbox.tv/actionpact">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593812b5ebbd1a37bb599eb2/1496850588555/New-ACTIONPACT.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "Kids" Awareness Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix skydiving live-action multimedia" href="http://www.rockbox.tv/skydiving">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59386d9bc534a5099dc50abe/1496870302882/New-SKYDIVING.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "The Turning Point" Brand Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix hr-block motion-graphics multimedia" href="http://www.rockbox.tv/hrblock">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593819b986e6c0c673b29ae3/1496848827863/New-H%26RBLOCK.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          SEO Video Campaign
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix surface motion-graphics multimedia stop-motion" href="http://www.rockbox.tv/surface">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59386d99be65948c775d16e2/1496870299262/New-MICROSOFT-SURFACE.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Microsoft Surface "Infodoodles"
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix flexferm multimedia" href="http://www.rockbox.tv/flexferm">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593819b7a5790a9793be3c37/1496849019370/New-FLEXFERM.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "You're Good" Product Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix xbox motion-graphics experiential stop-motion" href="http://www.rockbox.tv/xboxone">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593812cb1b10e311bfa0b0e9/1496848967573/New-XBOX-ONE.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Xbox Case Study
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix azura motion-graphics" href="http://www.rockbox.tv/azura-1">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593868cb46c3c45036a29a7d/1496869068972/New-AZURA.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "Bright Side" Video Content Campaign
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix bing multimedia" href="http://www.rockbox.tv/bing">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593868d1b8a79bf92b391187/1496869076493/New-BING.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Search App Videos
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix sunlighten live-action" href="http://www.rockbox.tv/sunlighten">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59387068ff7c50de093b662d/1496871018983/New-SUNLIGHTEN.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "Invitation" Brand Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix trabon live action multimedia" href="http://www.rockbox.tv/trabon">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59387068b8a79bf92b399dc5/1496871019377/New-TRABON.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "Marketing Guru" Product Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix lincoln-bridge live-action" href="http://www.rockbox.tv/lincoln-bridge">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59386d995016e1124f0564da/1496870299603/New-LINCOLNBRIDGE.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "Haymarket" Case Study Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix kansas-historical live-action experiential" href="http://www.rockbox.tv/khf">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593819bb3e00be5495b854d6/1496848830233/New-KHF.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Brand Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix billen-bros live-action" href="http://www.rockbox.tv/billen-bros">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593868cdebbd1a3e18b2ab21/1496869071765/New-BILLENBROS.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "Musical Sentences"
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix spx multimedia" href="http://www.rockbox.tv/spx">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59386d9ce4fcb5dc218447cb/1496870303171/New-SPX.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          "Day One" Brand Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix ku live-action" href="http://www.rockbox.tv/pageku">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593868da414fb51219193e06/1496869085404/New-KU.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Jayhawk
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix shield motion-graphics" href="http://www.rockbox.tv/shield">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/59386d9a17bffcad27e8d001/1496870304763/New-SHIELD.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Brand Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix travois motion-graphics" href="http://www.rockbox.tv/travois">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/5938706a2e69cf5e64efcb9f/1496871024071/New-TRAVOIS.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Process Video
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix aws motion-graphics multimedia" href="http://www.rockbox.tv/aws">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593868c920099e865ce1d39e/1496869067282/New-AWS.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-          Austin Walsh Studio Reel
-          </div>
-        </div>
-    </a>
-  
-  <a class="mix stop-motion" href="http://www.rockbox.tv/lily-stork">
-        <img class="image" src="https://static1.squarespace.com/static/57b8bd3946c3c47fea20bf71/593812a01e5b6c832fe2c0c4/593868dd6a49631217604066/1496869087445/New-LILYSTORK.jpg">
-        <div class="overlay">
-          <div class="hover-text">
-         "Letters"
-          </div>
-        </div>
-    </a>
-   
-  </div>
-  <style>
-    *{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  <section class="container__mov movil__slide">
+    <div class="navigation__mov">
+       <div class="previous__mov btn-nav-mov"><i class='bx bx-chevron-left' ></i></div>
+       <div class="next__mov btn-nav-mov"><i class='bx bx-chevron-right'></i></div>
+    </div>
+    <div class="sarousel-container-mov ">
+      <!--movil-->
+      <div class="image-fade-mov fade">
+        <picture>
+          <source srcset="assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_220414.webp
+              800w,
+              assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_220414.webp
+              400w,
+              assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_220414.webp
+              200w" type="image/webp" sizes="50vw" />
+          <source srcset="assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_220414.jpg
+              800w,
+              assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_220414.jpg
+              400w,
+              assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_220414.jpg
+              200w" type="image/jpg" sizes="50vw" />
+          <img loading="lazy" class="imare" src="assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_220414.jpg" alt="Hermes Music Mexico" title="Hermes Music Mexico" />
+        </picture>
+        <!--<div class="caption-text">Image caption 2</div>-->
+      </div>
+      <div class="image-fade-mov fade">
+        <picture>
+          <source srcset="assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_140122.webp
+              800w,
+              assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_140122.webp
+              400w,
+              assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_140122.webp
+              200w" type="image/webp" sizes="50vw" />
+          <source srcset="assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_140122.jpg
+              800w,
+              assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_140122.jpg
+              400w,
+              assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_140122.jpg
+              200w" type="image/jpg" sizes="50vw" />
+          <img loading="lazy" class="imare" src="assets/images/9ad46d2d4f10955abfc9ca97565bba87/3c9d8b2f90256f212adece99cc679a6e/hermes_movil_140122.jpg" alt="Hermes Music Mexico" title="Hermes Music Mexico" />
+        </picture>
+      </div>
+      <!--endmovil-->
+    </div>
+ </section>
+ <br>
+ <div style="display: none;">
+    <span class="dot__mov"></span>
+    <span class="dot__mov"></span>
+    <span class="dot__mov"></span>
+ </div>
+ <script>
+   const carouselSlidermov = (function () {
+  let _slideIndexmov = 1;
 
-body, button{
-  font-family: 'Helvetica Neue', arial, sans-serif;
-}
+  const _slidesmov = document.querySelectorAll(".image-fade-mov");
+  const _dotsmov = document.querySelectorAll(".dot__mov");
 
-.controls{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2%;
-}
+  function _sliderInitStatemov(slidesmov, dotsmov) {
+    for (let i = 0; i < slidesmov.length; i++) {
+      slidesmov[i].style.display = "none";
+    }
 
-
-label{
-  font-weight: 300;
-  margin: 0 .4em 0 0;
-}
-  button.filter{
-  margin: 0px;
+    for (let i = 0; i < dotsmov.length; i++) {
+      dotsmov[i].classList.remove("activemov");
+    }
   }
-button{
-   padding: 10px;
-  margin: 10px;
-  font-family: "adobe-garamond-pro";
-  font-style: italic;
-  border: none;
-  border-radius: 3px;
-  background-color: transparent;
-  color: #b3b0ab;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: capitalize;
-  letter-spacing: 3px;
-  cursor: pointer;
-}
 
-button.active{
-  color: #C51D36;
-}
-
-button:focus{
-  outline: 0 none;
-}
-
-button + label{
-  margin-left: 1em;
-}
-
-
-
-
-
-
-
-
-.container .mix{
-  display: none;
-}
-
-.container .mix:after{
-  content: attr(data-myorder);
-  color: white;
-  font-size: 16px;
-  display: none;
-  vertical-align: top;
-/*  padding: 4% 6%; */
-  font-weight: 700;
-}
-
-.container .mix:before{
-  content: '';
-  display: none;
- /* padding-top: 60%; */
-}
-
-
-@media all and (min-width: 900px){
-  .container .mix,
-  .container .gap{
-    width: 32.5%;
+  function _checkSlideIndexBoundarymov(slideIndexmov, slidesmov) {
+    if (slideIndexmov > slidesmov.length) {
+      _slideIndexmov = 1;
+    }
+    if (slideIndexmov === 0) {
+      _slideIndexmov = slidesmov.length;
+    }
   }
-}
 
-a{
-  cursor: pointer;
-}
+  function _slideSelectionIndecatormov(dotsmov, slideIndexmov) {
+    dotsmov[slideIndexmov - 1].classList.add("activemov");
+  }
 
-img.image{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.mix:hover .overlay{
-  opacity: .75;
-}
+  function _activateSlidemov(slidesmov, slideIndexmov) {
+    slidesmov[slideIndexmov - 1].style.display = "block";
+    _slideSelectionIndecatormov(_dotsmov, _slideIndexmov);
+  }
 
-  </style>
-  <script>
-$(function () {
- 
- var filterList = {
- 
-   init: function () {
-   
-       // https://mixitup.kunkalabs.com/
-       $('#Container').mixItUp({
-           selectors: {
-           target: '.mix',
-           filter: '.filter'	
-       },
-       load: {
-         filter: '.stop-motion' // show all items on page load.
-       }     
-       });								
-   
-   }
- 
- };
- 
- // Filter ALL the things
- filterList.init();
- 
- });
-  </script>
+  function _imageDirectionmov(directionmov) {
+    _sliderInitStatemov(_slidesmov, _dotsmov);
+    if (directionmov == "next") {
+      _activateSlidemov(_slidesmov, _slideIndexmov);
+      _slideIndexmov++;
+      _checkSlideIndexBoundarymov(_slideIndexmov, _slidesmov);
+    } else {
+      _slideIndexmov--;
+      _checkSlideIndexBoundarymov(_slideIndexmov, _slidesmov);
+      _activateSlidemov(_slidesmov, _slideIndexmov);
+    }
+  }
+
+  const _previousButtonmov = document.querySelector(".previous__mov");
+  const _nextButtonmov = document.querySelector(".next__mov");
+
+  _previousButtonmov.addEventListener("click", function () {
+    _imageDirectionmov("previous__mov");
+  });
+
+  _nextButtonmov.addEventListener("click", function () {
+    _imageDirectionmov("next__mov");
+  });
+
+  const slidemov = function () {
+    _sliderInitStatemov(_slidesmov, _dotsmov);
+    _activateSlidemov(_slidesmov, _slideIndexmov);
+    _slideIndexmov++;
+    _checkSlideIndexBoundarymov(_slideIndexmov, _slidesmov);
+    // Change image every 5 seconds
+    setTimeout(slidemov, 7000);
+  };
+
+  return {
+    slidemov
+  };
+})();
+
+carouselSlidermov.slidemov();
+ </script>
 </body>
 </html>
