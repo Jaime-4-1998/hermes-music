@@ -178,7 +178,7 @@ ul{
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 .ver__blank{
     color: var(--black);
@@ -188,7 +188,7 @@ ul{
     -ms-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;
     background-color: var(--yellow);
-    padding: 1rem;
+    padding: 0.5rem;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -308,7 +308,7 @@ ul{
     }
     .redes__nav {
         display: inline-flex !important;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-left: 0rem;
         margin-bottom: 0rem !important;
     }
@@ -380,7 +380,7 @@ ul{
         display:none
     }
     .redes__nav{
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 }
 @media screen and (min-width:968px){
@@ -397,7 +397,6 @@ ul{
     font-weight:700px;
     z-index:5;
     color:var(--white);
-    display: none !important;
 }
 .navigation .next{
     position:absolute;
@@ -407,7 +406,6 @@ ul{
     font-weight:700px;
     z-index:5;
     color:var(--white);
-    display: none !important;
 }
 .navigation .btn-nav{
     background:var(--black);
@@ -742,7 +740,7 @@ ul{
 }
 .departamentos__card p{
     margin-bottom:2rem;
-    text-align:justify!important
+    text-align:justify;
 }
 .departamentos__modales{
     margin-bottom: 0.5rem !important;
@@ -760,10 +758,14 @@ font-size: 1rem;
     cursor: pointer;
 }
 .margin__parr__one{
-    margin-top:-11rem
+    margin-top:-11rem;
+    
+    text-align: center !important;
 }
 .margin__parr__two{
-    margin-top:-12rem
+    margin-top:-12rem;
+    
+    text-align: center !important;
 }
 .card-icon{
     font-size:5rem;
