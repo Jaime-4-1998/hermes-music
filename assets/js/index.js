@@ -219,30 +219,23 @@ distance: '90%'
 
 //marcas
 $(function () {
- 
-var filterList = {
-
-  init: function () {
-  
-      // https://mixitup.kunkalabs.com/
-      $('#gallery').mixItUp({
-          selectors: {
-          target: '.gallery-item',
-          filter: '.filter'	
-      },
-      load: {
-        filter: '.audiodigital' // show all items on page load.
-      }     
-      });								
-  
-  }
-
-};
-
-// Filter ALL the things
-filterList.init();
-
-});
+  var filterList = {
+    init: function () {
+        // https://mixitup.kunkalabs.com/
+        $('#Container').mixItUp({
+            selectors: {
+            target: '.item',
+            filter: '.filter'	
+        },
+        load: {
+          filter: '.audiodigital' // show all items on page load.
+        }     
+        });								
+    }
+  };
+  // Filter ALL the things
+  filterList.init();
+  });
 //modales
   // Get the modal--4
   var modal = document.getElementById("myModal");

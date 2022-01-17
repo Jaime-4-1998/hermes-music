@@ -535,9 +535,15 @@ ul{
         text-transform:capitalize;
         margin-top:-2rem
     }
+    .marg{
+        margin-top: -5rem !important;
+    }
 }
 .whoher{
     padding:2rem calc((100vw - 1400px)/ 2)
+}
+.marg{
+    margin-top: -2rem !important;
 }
 .whoher__container{
     display:grid;
@@ -1208,7 +1214,7 @@ textarea{
 .botocon{
     background-color:var(--yellow);
     border:none;
-    color:#fff;
+    color:#000;
     padding:15px 32px;
     text-align:center;
     text-decoration:none;
@@ -1238,119 +1244,105 @@ textarea{
     margin:auto;
     justify-content:center
 }
-.wrap{
-    margin:0 auto;
-    max-width:1450px;
-    width:100%
-}
-.wrap h2{
-    margin-top:2.5rem;
-    margin-bottom:2.5rem;
+
+.marcas h2{
     font-size:clamp(2rem,5vw,3rem);
     padding:0 1rem;
     text-transform:capitalize;
     text-align:center
 }
-#gallery,.gallery-wrap{
-    overflow:hidden
+.container__marc{
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    width: 90%;
+    grid-template-rows: repeat(3, minmax(150px, min-content));
+    grid-template-columns: repeat(auto-fill,100px);
+    grid-template-columns: repeat(auto-fit,100px);
+    grid-template-columns: repeat(4,minmax(auto, 1fr));
+    grid-gap:0rem;
+    grid-auto-rows: 150px;
+}
+.image__mark{
+    width: 100%;
+    object-fit: cover !important;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+.item{
+    padding: 0.5rem;
+    border-radius: 5px;
+    /*border: 1px solid #000;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    .container__marc{
+        grid-template-columns: repeat(2,minmax(20%, 1fr));
+   }
+   .margen__arriba{
+    margin-top: 0rem !important;
+}
+.filter{
+    float: left;
+width: 50% !important;
+text-align: center;
+}
+.controls{
+    margin-top: -2rem !important;
+}
+}
+/**************************************************************************************************/
+.controls{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+    margin-top: -3rem;
+}
+.container__marc .item{
+    display: none;
 }
 #filters{
     padding:0;
     list-style:none;
     width:1500px;
-    overflow:hidden
+    overflow:hidden 
 }
-#filters li{
-    float:left
+#filters{
+    float:left 
 }
-#filters li span{
-    display:block;
-    padding:20px 20px;
-    text-decoration:none;
-    color:#000;
-    cursor:pointer;
-    transition:all ease-in-out .25s
+button.filter{
+    margin: 0px;
+    font-size: 16px;
 }
-#filters li:hover span{
-    color:#000
+button{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
 }
-#filters li span.active{
-    background:#f8bb31;
-    color:#000;
-    border-radius:5px
+button.active{
+    background-color: #f8bb31;
+    color: #000;
 }
-.gallery-item{
-    float:left;
-    width:33.333%;
-    padding:10px;
-    position:relative;
-    display:none;
+button:focus{
+    outline: 0 none;
 }
-.inside{
-    position:relative;
-    overflow:hidden;
-    width:100%;
-    height:100%
-}
-.details,.overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    opacity:0
-}
-.details{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index:2;
-    transition:all .3s ease-in-out
-}
-.inside img{
-    width:100%
-}
-.overlay{
-    z-index:1;
-    transition:all .7s ease-in-out
-}
-.gallery-item:hover .details,.gallery-item:hover .overlay{
-    opacity:1;
-    filter:none!important
-}
-.texto{
-    display:none!important
-}
-@media (max-width:30em){
-    .wrap{
-        padding-left:1em;
-        padding-right:1em;
-        margin-bottom:3rem
-    }
-    .gallery-item{
-        float:none;
-        width:49%;
-        object-fit:cover;
-        margin:auto
-    }
-    #filters{
-        width:100%!important
-    }
-    #filters li{
-        float:left;
-        width:50% !important;
-        text-align:center
-    }
-}
+
+
+
+
 @media screen and (max-width:1490px){
-    #filters{
-        width:100%
-    }
-    .wrap {
-        margin: auto;
-        max-width: 1200px;
-        width: 100%;
-    }
+ 
     .whoher {
         padding: 2rem calc((100vw - 1290px)/ 2);
     }
