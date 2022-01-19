@@ -758,7 +758,15 @@ font-size: 1rem;
     color:var(--white);
     padding:4rem calc((100vw - 1534px)/ 2);
     text-align:center;
-    background-image:url(../images/back.png)!important;
+    background-image:url(../images/back.png);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.profesi__webp{
+    color:var(--white);
+    padding:4rem calc((100vw - 1534px)/ 2);
+    text-align:center;
+    background-image:url(../images/back.webp);
     background-repeat:no-repeat;
     background-attachment:fixed;
 }
