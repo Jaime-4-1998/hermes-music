@@ -1482,7 +1482,7 @@ div.noticia i.derecha{
       justify-content: center;
       padding: 1rem;
       color: var(--yellow);
-      
+      margin-top: -9rem;
       text-shadow: #ffc000 0.1em 0.1em 0.1em;
   }
   #modal-content.animation-1{
