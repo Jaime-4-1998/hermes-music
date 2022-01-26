@@ -62,7 +62,7 @@ const carouselSlider = (function () {
     _slideIndex++;
     _checkSlideIndexBoundary(_slideIndex, _slides);
     // Change image every 5 seconds
-    setTimeout(slide, 7000);
+    setTimeout(slide, 9000);
   };
 
   return {
@@ -318,6 +318,87 @@ $(function () {
        modalere.style.display = "none";
      }
    }
+   // modales biografias jorge
+   var modalbio = document.getElementById("myModalbio");
+   // Get the button that opens the modal
+   var btnbio = document.getElementById("open-bio-modal");
+   // Get the <span> element that closes the modal
+   var span = document.getElementById("close-bio");
+   // When the user clicks on the button, open the modal
+   btnbio.onclick = function() {
+     modalbio.style.display = "block";
+   }
+   // When the user clicks on <span> (x), close the modal
+   span.onclick = function() {
+     modalbio.style.display = "none";
+   }
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+     if (event.target == modalbio) {
+       modalbio.style.display = "none";
+     }
+   }
+     // modales biografias alex
+     var modalbioe = document.getElementById("myModalbioe");
+     // Get the button that opens the modal
+     var btnbioe = document.getElementById("open-bio-modale");
+     // Get the <span> element that closes the modal
+     var span = document.getElementById("close-bioe");
+     // When the user clicks on the button, open the modal
+     btnbioe.onclick = function() {
+       modalbioe.style.display = "block";
+     }
+     // When the user clicks on <span> (x), close the modal
+     span.onclick = function() {
+       modalbioe.style.display = "none";
+     }
+     // When the user clicks anywhere outside of the modal, close it
+     window.onclick = function(event) {
+       if (event.target == modalbioe) {
+         modalbioe.style.display = "none";
+       }
+     }
+      // modales biografias luis
+      var modalluis = document.getElementById("myModalluis");
+      // Get the button that opens the modal
+      var btnluis = document.getElementById("open-bio-luis");
+      // Get the <span> element that closes the modal
+      var span = document.getElementById("close-luis");
+      // When the user clicks on the button, open the modal
+      btnluis.onclick = function() {
+        modalluis.style.display = "block";
+      }
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modalluis.style.display = "none";
+      }
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modalluis) {
+          modalluis.style.display = "none";
+        }
+      }
+       // modales biografias salva
+       var modalsalva = document.getElementById("myModalsalva");
+       // Get the button that opens the modal
+       var btnsalva = document.getElementById("open-bio-salva");
+       // Get the <span> element that closes the modal
+       var span = document.getElementById("close-salva");
+       // When the user clicks on the button, open the modal
+       btnsalva.onclick = function() {
+         modalsalva.style.display = "block";
+       }
+       // When the user clicks on <span> (x), close the modal
+       span.onclick = function() {
+         modalsalva.style.display = "none";
+       }
+       // When the user clicks anywhere outside of the modal, close it
+       window.onclick = function(event) {
+         if (event.target == modalsalva) {
+           modalsalva.style.display = "none";
+         }
+       }
+    
 
 //correo
 

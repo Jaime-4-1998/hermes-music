@@ -45,55 +45,13 @@ hr{
 a{
     text-decoration:none
 }
-h1::selection{
-    background:var(--yellow);
-    color:#000;
-    
+::selection {
+	color: #000;
+	background-color: var(--yellow);
 }
-h2::selection{
-    background:var(--yellow);
-    color:#000;
-    
-}
-h3::selection{
-    background:var(--yellow);
-    color:#000;
-    
-}
-p::selection{
-    background:var(--yellow);
-    color:#000;
-    
-}
-span::selection{
-    background:var(--yellow);
-    color:#000;
-    
-}
-h1::-moz-selection{
-    background:var(--yellow);
-    color:#000;
-    
-}
-h2::-moz-selection{
-    background:var(--yellow);
-    color:#000;
-    
-}
-h3::-moz-selection{
-    background:var(--yellow);
-    color:#000;
-    
-}
-p::-moz-selection{
-    background:var(--yellow);
-    color:#000;
-    
-}
-span::-moz-selection{
-    background:var(--yellow);
-    color:#000;
-    
+::-moz-selection {
+	color: #000;
+	background-color: var(--yellow);
 }
 .section{
     padding:4rem 0 2rem
@@ -1280,7 +1238,7 @@ textarea{
     height: 100%;
 }
 .item{
-    padding: 0.5rem;
+    padding: 0rem;
     border-radius: 5px;
     /*border: 1px solid #000;*/
     -webkit-border-radius: 5px;
@@ -1440,7 +1398,7 @@ div.noticia i.derecha{
 }
 /***modales**/
   /* The Modal (background) */
-  .modal,.modale,.modaler,.modalere {
+  .modal,.modale,.modaler,.modalere,.modalbio,.modalbioe,.modalluis,.modalsalva {
     display:none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -1453,7 +1411,7 @@ div.noticia i.derecha{
     background-color: rgba(0, 0, 0, 0.70); /* Black w/ opacity */
   }
   /* Modal Content/Box */
-  .modal-content,.modal-contente,.modal-contenter,.modal-contentere {
+  .modal-content,.modal-contente,.modal-contenter,.modal-contentere,.modal-bio,.modal-bioe,.modal-luis,.modal-salva{
     background-color: #fefefe;
     top:50%;
     left:50%;
@@ -1539,6 +1497,17 @@ overflow-y: hidden;
   #modal-contentere.animation-4{
     animation: animation-1 0.5s forwards;
   }
+  #modal-bio.animation-bio{
+    animation: animation-1 0.5s forwards;
+}
+#modal-bio.animation-bioe{
+    animation: animation-1 0.5s forwards;
+}#modal-bio.animation-luis{
+    animation: animation-1 0.5s forwards;
+}
+#modal-bio.animation-salva{
+    animation: animation-1 0.5s forwards;
+}
   .modal-body{
     padding: 2rem;
   }
@@ -1599,6 +1568,62 @@ overflow-y: hidden;
     }
   }
   @keyframes animation-4{
+    0% {
+      transform: translate(-50%,-50%) scale(0);
+    }
+    50% {
+      transform: translate(-50%,-50%) scale(1.2);
+    }
+    70% {
+      transform: translate(-50%,-50%) scale(0.9);
+    }
+    100% {
+      transform: translate(-50%,-50%) scale(1);
+    }
+  }
+  @keyframes animation-bio{
+    0% {
+      transform: translate(-50%,-50%) scale(0);
+    }
+    50% {
+      transform: translate(-50%,-50%) scale(1.2);
+    }
+    70% {
+      transform: translate(-50%,-50%) scale(0.9);
+    }
+    100% {
+      transform: translate(-50%,-50%) scale(1);
+    }
+  }
+  @keyframes animation-bioe{
+    0% {
+      transform: translate(-50%,-50%) scale(0);
+    }
+    50% {
+      transform: translate(-50%,-50%) scale(1.2);
+    }
+    70% {
+      transform: translate(-50%,-50%) scale(0.9);
+    }
+    100% {
+      transform: translate(-50%,-50%) scale(1);
+    }
+  }
+  @keyframes animation-luis{
+    0% {
+      transform: translate(-50%,-50%) scale(0);
+    }
+    50% {
+      transform: translate(-50%,-50%) scale(1.2);
+    }
+    70% {
+      transform: translate(-50%,-50%) scale(0.9);
+    }
+    100% {
+      transform: translate(-50%,-50%) scale(1);
+    }
+  }
+  @keyframes animation-salva{
     0% {
       transform: translate(-50%,-50%) scale(0);
     }
@@ -1727,4 +1752,21 @@ overflow-y: hidden;
         width:2rem;
         height:2rem
     }
+}
+.modal__contact{
+    color: #000;
+    text-decoration: none;
+}
+.modal__face{
+    font-size: 1.5rem;
+}
+.lee__bio{
+    background: var(--yellow);
+    color: var(--black) !important;
+    font-size: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
