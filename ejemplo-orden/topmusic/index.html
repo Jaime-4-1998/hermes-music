@@ -1,0 +1,523 @@
+<nav class="navbar">
+    <a href="#" class="navbar__logo" aria-label="TOP MUSIC">
+      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0357/4723/3925/files/topmusic_x35.png?v=1592255994" alt="TOP MUSIC">
+      </a>
+    <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="navbar__menu">
+        
+      <ul >
+        <li>
+           {% for link in linklists[section.settings.primary_navigation].links%}
+              {% assign child_list_handle = link.title | handleize %}
+              {% if link.links != blank %}
+               
+              {% else %}
+                <li>
+                  <a class="navbar__link" href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+        </li>
+      </ul>
+    </div>
+</nav>
+<style>
+    html{
+    scrollbar-color: #e60010 #000 !important;
+    scrollbar-width: auto !important;
+  }
+  /*Webkit*/
+  html::-webkit-scrollbar {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  html::-webkit-scrollbar-track {
+    background-color: #000 !important;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: #e60010 !important;
+  }
+ul{
+  list-style:none !important; 
+  }
+  li{
+  list-style:none !important; 
+      display: inline-block;
+  }
+  .navbar{
+    background: #000;
+    height: 10vh;
+    padding: 0.5rem calc((100vw - 1770px) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navbar__logo{
+    color: #fff;
+    text-decoration: none;
+    padding-left:1rem;
+    font-size: 1.5rem;
+}
+.navbar__link{
+    color:#fff;
+    text-decoration: none;
+    padding: 0rem 1rem;
+    transition: 0.3s all ease-in;
+}
+.navbar__link:hover{
+    color: #e60010;
+    transition: 0.3s all ease-in-out;
+}
+@media screen and (max-width:1400px){
+	  .navbar{
+   
+    height: 15vh;
+    padding: 0.5rem calc((100vw - 1370px) / 2);
+      }
+  .navbar__logo {
+
+  padding-left: 2rem;
+  font-size: 3.5rem;
+	}
+  ul {
+  text-align: center;
+  }
+}
+@media screen and (max-width:1000px){
+    body.active{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    li{
+      justify-content: center;
+      display: flex !important;
+    }
+  ul {
+  text-align: inherit !important;
+  }
+  .navbar{
+   
+    height: 10vh;
+      }
+    .navbar__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      margin-left: -3rem !important;
+      padding: 0.3rem !important;
+font-size: 2rem;
+    }
+
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,100px);
+        position: absolute;
+        width: 100%;
+        top: -1000px;
+    }
+    .navbar__menu.active{
+        top: 100%;
+        opacity: 1;
+        z-index: 99;
+        height: 100vh;
+        font-size: 1.5rem;
+        background: #000;
+    }
+
+    .navbar__toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        background: #fff;
+        display: block;
+        cursor: pointer;
+    }
+}
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%,20%) ;
+        -webkit-transform: translate(5%,20%) ;
+        -moz-transform: translate(5%,20%) ;
+        -ms-transform: translate(5%,20%) ;
+        -o-transform: translate(5%,20%) ;
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+        -webkit-transform:translateY(8px) rotate(45deg);
+        -moz-transform:translateY(8px) rotate(45deg);
+        -ms-transform:translateY(8px) rotate(45deg);
+        -o-transform:translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        -moz-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+        -o-transform: translateY(-8px) rotate(-45deg);
+}
+</style>
+<!--le menu mejorado-->
+<div class="site-header{% if request.page_type == 'index' %} site-header--homepage{% if section.settings.enable_transparent %} site-header--transparent{% endif %}{% endif %}" data-section-id="{{ section.id }}" data-section-type="header-section" data-drawer-push {% if section.settings.enable_transparent and request.page_type == 'index' %} data-transparent-header="true"{% endif %}>
+  <header class="site-header__wrapper" role="banner">
+    {% if section.settings.show_announcement %}
+      {% if section.settings.home_page_only == false or request.page_type == 'index' %}
+        <style>
+          .announcement-bar {
+            background-color: {{ section.settings.announcement_color_bg }};
+          }
+
+          .announcement-bar--link:hover {
+            {% assign brightness = section.settings.announcement_color_bg | color_brightness %}
+
+            {% if brightness <= 192 %}
+              {% assign lightenAmount = 255 | minus: brightness | divided_by: 255 | times: 16 %}
+              background-color: {{ section.settings.announcement_color_bg | color_lighten: lightenAmount }};
+            {% else %}
+              {% assign darkenAmount = 255 | divided_by: brightness | times: 8 %}
+              background-color: {{ section.settings.announcement_color_bg | color_darken: darkenAmount }};
+            {% endif %}
+          }
+
+          .announcement-bar__message,
+          .announcement-bar__close {
+            color: {{ section.settings.announcement_color_text }};
+          }
+        </style>
+
+        {% if section.settings.announcement_link == blank %}
+          <div class="announcement-bar">
+        {% else %}
+          <a href="{{ section.settings.announcement_link }}" class="announcement-bar announcement-bar--link">
+        {% endif %}
+
+          <p class="announcement-bar__message page-width">
+            {% if section.settings.announcement_icon != 'none' %}
+              {%- assign icon = 'icon-' | append: section.settings.announcement_icon -%}
+              {% include icon %}
+            {% endif %}
+            {{ section.settings.announcement_text | escape }}
+          </p>
+          <button class="announcement-bar__close btn btn--clear" aria-expanded="true">{% include 'icon-close' %}</button>
+
+        {% if section.settings.announcement_link == blank %}
+          </div>
+        {% else %}
+          </a>
+        {% endif %}
+
+      {% endif %}
+    {% endif %}
+
+    <div class="site-header-sections page-width">
+      <nav class="site-header__section site-header__section--button"
+        data-site-navigation role="navigation"
+      >
+        <button class="site-header__navigation btn btn--clear btn--square"
+          aria-expanded="false"
+          data-navigation-button
+        >
+          <span class="burger-icon burger-icon--top"></span>
+          <span class="burger-icon burger-icon--mid"></span>
+          <span class="burger-icon burger-icon--bottom"></span>
+          <span class="icon__fallback-text">{{ 'general.header.menu' | t }}</span>
+        </button>
+        <div class="navigation supports-no-js critical-hide" data-section-id="{{ section.id }}" data-section-type="navigation" aria-hidden=true>
+          <div class="navigation__container">
+            <ul class="navigation__links">
+              {% for link in linklists[section.settings.primary_navigation].links%}
+                {% assign child_list_handle = link.title | handleize %}
+                {% if link.links != blank %}
+                  <li class="navigation__link navigation__has-sublinks navigation__has-sublinks--collapsed navigation__entrance-animation">
+                    <button class="navigation__expand-sublinks" aria-expanded="{% if link.active %}true{% else %}false{% endif %}">
+                      <span aria-hidden="true">{{ link.title }}</span>
+                      <span class="visually-hidden">{{ 'general.navigation.toggle_sublinks' | t: link_title: link.title }}</span>
+                      {% include 'icon-arrow-down' %}
+                    </button>
+                    <div class="navigation__sublinks-container">
+                      <ul class="navigation__sublinks">
+                        {% for childlink in link.links %}
+                          <li class="navigation__sublink{% if childlink.links != blank %} navigation__has-sublinks navigation__has-sublinks--collapsed{% endif %}">
+                            {% if childlink.links != blank %}
+                              <button class="navigation__expand-sublinks navigation__expand-sublinks--third-level" aria-expanded="{% if link.active %}true{% else %}false{% endif %}">
+                                <span aria-hidden="true">{{ childlink.title }}</span>
+                                <span class="visually-hidden">{{ 'general.navigation.toggle_sublinks' | t: link_title: childlink.title }}</span>
+                                {% include 'icon-arrow-down' %}
+                              </button>
+                              <div class="navigation__sublinks-container">
+                                <ul class="navigation__sublinks navigation__sublinks--third-level">
+                                  {% for grandchildlink in childlink.links %}
+                                    <li class="navigation__sublink--third-level">
+                                      <a href="{{ grandchildlink.url }}"{% if grandchildlink.active %} aria-current="page"{% endif %}>{{ grandchildlink.title | escape }}</a>
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              </div>
+                            {% else %}
+                              <a href="{{ childlink.url }}"{% if childlink.active %} aria-current="page"{% endif %}>{{ childlink.title | escape }}</a>
+                            {% endif %}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </li>
+                {% else %}
+                  <li class="navigation__link navigation__entrance-animation{% if link.active %} navigation__link--active{% endif %}">
+                    <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+
+            <ul class="navigation__links">
+              {% if shop.customer_accounts_enabled %}
+                {% if customer %}
+                  <li class="navigation__link navigation__link--secondary navigation__entrance-animation">
+                    {% if customer.first_name != blank %}
+                      {% capture first_name %}{{ customer.first_name }}{% endcapture %}
+                      <a href="{{ routes.account_url }}">{{ 'layout.customer.logged_in_as_html' | t: first_name: first_name }}</a>
+                    {% else %}
+                      <a href="{{ routes.account_url }}">{{ 'layout.customer.account' | t }}</a>
+                    {% endif %}
+                  </li>
+                  <li class="navigation__link navigation__link--secondary navigation__entrance-animation">
+                    <a href="{{ routes.account_logout_url }}">{{ 'layout.customer.log_out' | t }}</a>
+                  </li>
+                {% else %}
+                  <li class="navigation__link navigation__link--secondary navigation__entrance-animation">
+                    <a href="{{ routes.account_login_url }}">{{ 'layout.customer.log_in' | t }}</a>
+                  </li>
+                  <li class="navigation__link navigation__link--secondary navigation__entrance-animation">
+                    <a href="{{ routes.account_register_url }}">{{ 'layout.customer.create_account' | t }}</a>
+                  </li>
+                {% endif %}
+              {% endif %}
+              {% for link in linklists[section.settings.secondary_navigation].links %}
+                <li class="navigation__link navigation__link--secondary navigation__entrance-animation{% if link.active %} navigation__link--active{% endif %}">
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+
+            {% if section.settings.show_social_icons %}
+              <div class="navigation__social-sharing navigation__entrance-animation">
+                {% include 'social-links', disableTab: true, largeIcons: true %}
+              </div>
+            {% endif %}
+
+            {% include 'search-bar', animate: true, disableTab: true %}
+          </div>
+        </div>
+      </nav>
+      <div class="site-header__section site-header__section--title">
+        {% comment %}
+        Use the uploaded logo from theme settings if enabled.
+        Site name gets precedence with `h1` tag on homepage, div on other pages.
+        {% endcomment %}
+        {% if request.page_type == 'index' %}
+          <h1 class="site-header__logo-wrapper h4" itemscope itemtype="http://schema.org/Organization">
+        {% else %}
+          <div class="site-header__logo-wrapper h4" itemscope itemtype="http://schema.org/Organization">
+        {% endif %}
+
+        <a href="{{ routes.root_url }}" itemprop="url" class="site-header__logo">
+          {%- capture image_size %}x{{ section.settings.logo_max_height }}{% endcapture -%}
+
+          {% if section.settings.logo %}
+            <style>
+              .site-header__logo-image {
+                height: {{ section.settings.logo_max_height | append: 'px' }};
+              }
+            </style>
+
+            <img class="site-header__logo-image" src="{{ section.settings.logo | img_url: image_size }}" srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x" alt="{{ section.settings.logo.alt | default: shop.name }}" itemprop="logo">
+
+            {% if request.page_type == 'index' and section.settings.enable_transparent %}
+              {% if section.settings.transparent_logo == blank %}
+                {%- assign transparent_logo = section.settings.logo -%}
+              {% else %}
+                {%- assign transparent_logo = section.settings.transparent_logo -%}
+              {% endif %}
+
+              <img class="site-header__logo-image site-header__logo-image--transparent" src="{{ transparent_logo | img_url: image_size }}" srcset="{{ transparent_logo | img_url: image_size }} 1x, {{ transparent_logo | img_url: image_size, scale: 2 }} 2x" alt="{{ section.settings.logo.alt | default: shop.name }}"
+                      itemprop="logo">
+            {% endif %}
+          {% else %}
+            {{ shop.name }}
+          {% endif %}
+        </a>
+
+        {% if request.page_type == 'index' %}
+          </h1>
+        {% else %}
+          </div>
+        {% endif %}
+      </div>
+      <div class="site-header__section site-header__section--button">
+        <a href="{{ routes.cart_url }}" class="btn btn--clear btn--square btn--hover-scale site-header__cart ajax-cart__toggle" aria-expanded="false">
+          {%- assign icon = 'icon-header-' | append: section.settings.icon %}
+          {% include icon %}
+          <span class="icon__fallback-text">{{ 'general.header.view_cart' | t }}</span>
+          <span class="site-header__cart-bubble{% if cart.item_count > 0 %} site-header__cart-bubble--visible{% endif %}"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+
+
+
+
+
+
+
+
+
+<nav>
+  <a href="/" class="logo">
+  <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0357/4723/3925/files/topmusic_x35.png?v=1592255994" alt="TOP MUSIC" width="100%" height="100%">
+  </a>
+  <label for="drop" class="toggle">
+  <i class='bx bx-menu ico_men'></i>
+  </label>
+  <input type="checkbox" id="drop" />
+  <ul class="menu">
+    {% for link in linklists[section.settings.primary_navigation].links%}
+        {% assign child_list_handle = link.title | handleize %}
+        {% if link.links != blank %}
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-1" class="toggle">Web Design +</label>
+          <a href="#">Web Design</a>
+          <input type="checkbox" id="drop-1"/>
+          <ul>
+             <li><a href="#">Resources</a></li>
+             <li><a href="#">Links</a></li>
+             <li>
+                <!-- Second Tier Drop Down -->        
+                <label for="drop-3" class="toggle">Tutorials +</label>
+                <a href="#">Tutorials</a>         
+                <input type="checkbox" id="drop-3"/>
+                <ul>
+                   <li><a href="#">HTML/CSS</a></li>
+                   <li><a href="#">jQuery</a></li>
+                   <li><a href="#">Other</a></li>
+                </ul>
+             </li>
+          </ul>
+       </li>
+        {% else %}
+     <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+    
+     {% endif %}
+      {% endfor %}
+  </ul>
+</nav>
+
+
+
+
+<div class="navigation__sublinks-container">
+  <ul class="navigation__sublinks">
+    {% for childlink in link.links %}
+      <li class="navigation__sublink{% if childlink.links != blank %} navigation__has-sublinks navigation__has-sublinks--collapsed{% endif %}">
+        {% if childlink.links != blank %}
+          <button class="navigation__expand-sublinks navigation__expand-sublinks--third-level" aria-expanded="{% if link.active %}true{% else %}false{% endif %}">
+            <span aria-hidden="true">{{ childlink.title }}</span>
+            <span class="visually-hidden">{{ 'general.navigation.toggle_sublinks' | t: link_title: childlink.title }}</span>
+            {% include 'icon-arrow-down' %}
+          </button>
+          <div class="navigation__sublinks-container">
+            <ul class="navigation__sublinks navigation__sublinks--third-level">
+              {% for grandchildlink in childlink.links %}
+                <li class="navigation__sublink--third-level">
+                  <a href="{{ grandchildlink.url }}"{% if grandchildlink.active %} aria-current="page"{% endif %}>{{ grandchildlink.title | escape }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% else %}
+          <a href="{{ childlink.url }}"{% if childlink.active %} aria-current="page"{% endif %}>{{ childlink.title | escape }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+<div style="background:pink;">
+  {% for link in linklists.main-menu.links %}
+  <a href="{{ link.url }}"
+    {% if link.current %}aria-current="page" class="highlight"{% endif %}
+  >
+   {{ link.title }}
+  </a>
+{% endfor %}
+  
+</div>
+
+
+
+
+
+
+
+<nav>
+  <a href="/" class="logo">
+  <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0357/4723/3925/files/topmusic_x35.png?v=1592255994" alt="TOP MUSIC" width="100%" height="100%">
+  </a>
+
+  <label for="drop" class="toggle">
+  <i class='bx bx-menu ico_men'></i>
+  </label>
+  <input type="checkbox" id="drop" />
+  <ul class="menu">
+    {% for link in linklists[section.settings.primary_navigation].links%}
+        {% assign child_list_handle = link.title | handleize %}
+        {% if link.links != blank %}
+          <li>
+            
+                <label for="drop-{{ link.title }}" class="toggle">{{ link.title }}+</label>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+                  <input type="checkbox" id="drop-{{ link.title }}"/>
+                  <ul>
+                     {% for childlink in link.links %}
+                     <li>
+                       {% if childlink.links != blank %}
+                        <!-- Second Tier Drop Down -->        
+                        <label for="drop-{{ childlink.url }}" class="toggle">{{ childlink.title }}</label>
+                        <a href="#">{{ childlink.title }}</a>         
+                        <input type="checkbox" id="drop-{{ childlink.url }}"/>
+                        <ul>
+                          {% for grandchildlink in childlink.links %}
+                           <li>
+                             <a href="{{ grandchildlink.url }}"{% if grandchildlink.active %} aria-current="page"{% endif %}>{{ grandchildlink.title | escape }}</a>
+                          </li>
+                           {% endfor %}
+                        </ul>
+                       {% endif %}
+                     </li>
+                    {% endfor %}
+                </ul>
+          </li>
+        {% else %}
+    
+     {% endif %}
+      {% endfor %}
+  </ul>
+</nav>
