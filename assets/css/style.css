@@ -1423,7 +1423,7 @@ div.noticia i.derecha{
     width: 95%;
     /*Couldbemoreorless,dependingonscreensize*/transform: translate(-50% , -50%);
     scrollbar-width: thin;
-overflow-y: hidden;
+    overflow-y: auto;
     height: 80vh;
     -webkit-transform: translate(-50% , -50%);
     -moz-transform: translate(-50% , -50%);
