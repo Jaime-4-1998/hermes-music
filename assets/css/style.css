@@ -1770,3 +1770,8 @@ div.noticia i.derecha{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.rama__imge{
+    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+    width: 20%;
+  }
