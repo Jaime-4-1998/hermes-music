@@ -1,299 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="preload"  href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-	
-    <link rel="preload" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'  as="style" onload="this.rel='stylesheet'">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dropdown Menu</title>
+  <link type="image/x-icon" href="assets/img/icons/fundacion-hermes.png" rel="icon" />
+  <link type="image/x-icon" href="assets/img/icons/fundacion-hermes.png" rel="shortcut icon" />
+  <link rel="preload" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'  as="style" onload="this.rel='stylesheet'">
+  <link rel="preload"  href="assets/css/styles.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet"> 
 </head>
 <body>
-	
-	<nav class="l-header l-header-webp ">
-		<ul class="menu">
-		  <li class="logo">
-			<picture>
-				<source srcset="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 800w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 400w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 200w" type="image/png" sizes="50vw">
-				<img class="navf__imagen" src="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png" alt="Fundación Hermes Music" loading="lazy" title="Fundación Hermes Music" />
-			  </picture> 
-			</li>
-		  <li class="item"><a href="#">Home</a></li>
-		  <li class="item"><a href="#">About</a></li>
-		  
-		  <li class="item has-submenu">
-			<a tabindex="0">Plans</a>
-			<ul class="submenu">
-			  <li class="subitem"><a href="#">Freelancer</a></li>
-			  <li class="subitem"><a href="#">Startup</a></li>
-			  <li class="subitem"><a href="#">Enterprise</a></li>
-			</ul>
-		  </li>
-		  
-		  <li class="item"><a href="#">Blog</a></li>
-		  <li class="item submenu">
-			  <a class="subitem" href="#contacto">Contact</a>
-		  </li>
-		
-		  <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-		</ul>
-	</nav>
-	  <style>
-		  /* Basic styling */
+<div class="header header__web">
+    <div class="logo">
+      <picture>
+        <source srcset="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 800w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 400w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 200w" type="image/png" sizes="50vw">
+        <img class="nav__imagen" src="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png" alt="Fundación Hermes Music" loading="lazy" title="Fundación Hermes Music" />
+      </picture> 
+    </div>
+    <input type="checkbox" id="toggle">
+    <label for="toggle">
+      <i class='bx bx-menu'></i>
+    </label>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Donativos</a></li>
+        <li>
+          <a href="#">Proyectos</a>
+          <ul>
+              <li>
+                <a href="#">Proyecto 1</a>
+              </li>
+              <li>
+                <a href="#">Proyecto 1</a>
+              </li>
+              <li>
+                <a href="#">Proyecto 1</a>
+              </li>
+          </ul>
+        </li>
+        <li><a href="#">Festivales y Musicales</a></li>
+        <li><a href="#">Artistas y Amigos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+</div>
+<div class="swiper mySwiper2">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <picture>
+            <source srcset="assets/img/slides/Slide-Libro-Fundacion.webp 800w, assets/img/slides/Slide-Libro-Fundacion.webp 400w, assets/img/slides/Slide-Libro-Fundacion.webp 200w" type="image/webp" sizes="50vw" />
+            <source srcset="assets/img/slides/Slide-Libro-Fundacion.jpg 800w, assets/img/slides/Slide-Libro-Fundacion.jpg 400w, assets/img/slides/Slide-Libro-Fundacion.jpg 200w" type="image/jpg" sizes="50vw" />
+            <img loading="lazy" src="assets/img/slides/Slide-Libro-Fundacion.jpg" alt="Fundación Hermes Music" title="Fundación Hermes Music" />
+          </picture> 
+    </div>
+    <div class="swiper-slide">
+        <picture>
+            <source srcset="assets/img/slides/Slide-1.webp 800w, assets/img/slides/Slide-1.webp 400w, assets/img/slides/Slide-1.webp 200w" type="image/webp" sizes="50vw" />
+            <source srcset="assets/img/slides/Slide-1.jpg 800w, assets/img/slides/Slide-1.jpg 400w, assets/img/slides/Slide-1.jpg 200w" type="image/jpg" sizes="50vw" />
+            <img loading="lazy" src="assets/img/slides/Slide-1.jpg" alt="Hermes Music Mexico" title="Hermes Music Mexico" />
+          </picture> 
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+<section>
+  <div class="fundacion__presenta bd-container bd-grid">
+  <h1 class="fundacion__title">Fundación Hermes Music</h1>
+  </div>
+</section>
+<footer class="footer section">
+  <div class="footer__container bd-containere bd-grid">
+  
+  <div class="footer__content dere">
+      <h3 class="footer__title">
+          Fundación Hermes Music
+      </h3>
+      <p class="footer__description">Hemos participado en infinidad de eventos y actividades altruistas, realizando donaciones y sumándose también durante los casos desastres naturales en México para ofrecer ayuda humanitaria.</p>
+  </div>
+  
+  <div class="footer__content dere">
+      <h3 class="footer__title">Mapa del sitio</h3>
+      <ul>
+          <li><a href="#" class="footer__link">Inicio</a></li>
+          <li><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Nosotros/" class="footer__link">Nosotros</a></li>
+          <li><a href="#" class="footer__link">Donativos</a></li>
+          <li><a href="#" class="footer__link">Contacto</a></li>
+      </ul>
+  </div>
+  <div class="footer__content dere">
+      <h3 class="footer__title">Mapa del sitio</h3>
+      <ul>
+      <li><a href="#" class="footer__link">We Never Give UP</a></li>
+      <li><a href="#" class="footer__link">Todos Somos Inmigrantes</a></li>
+      <li><a href="#" class="footer__link">Orgullo</a></li>
+      <li><a href="#" class="footer__link">Amor</a></li>
+      </ul>
+  </div>
+  <div class="footer__content dere">
+  <h3 class="footer__title">Oficina</h3>
+  <p class="footer__description">
+      Naranjo 76, Santa María La Ribera, 06400, México, CDMX. <br><br>
+  </p>
+  <ul>
+      <li><a href="tel:5550022200" class="footer__link"> CDMX: +52(55) 5002 2200, ext. 1151 </a></li>
+      <li><a href="mailto:contacto@fundacionhermesmusic.org" class="footer__link">contacto@fundacionhermesmusic.org</a></li>
 
-.navf__imagen{
-	width: 5rem;
-  object-fit: cover;
-  background-color: black;
-}
-nav {
-  background: #222;
-  padding: 0 15px;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
-.menu,
-.submenu {
-  list-style-type: none;
-}
-.logo {
-  font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
-}
-.item {
-  padding: 10px;
-}
-.item.button {
-  padding: 9px 5px;
-}
-.item:not(.button) a:hover,
-.item a:hover::after {
-  color: #ccc;
-}
-/* Mobile menu */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu li a {
-  display: block;
-  padding: 15px 5px;
-}
-.menu li.subitem a {
-  padding: 15px;
-}
-.toggle {
-  order: 1;
-  font-size: 20px;
-}
-.item.button {
-  order: 2;
-}
-.item {
-  order: 3;
-  width: 100%;
-  text-align: center;
-  display: none;
-}
-.active .item {
-  display: block;
-}
-.button.secondary {
-  /* divider between buttons and menu links */
-  border-bottom: 1px #444 solid;
-}
-/* Submenu up from mobile screens */
-.submenu {
-  display: none;
-}
-.submenu-active .submenu {
-  display: block;
-}
-.has-submenu i {
-  font-size: 12px;
-}
-.has-submenu > a::after {
-  font-family: "Font Awesome 5 Free";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 900;
-  content: "\f078";
-  color: white;
-  padding-left: 5px;
-}
-.subitem a {
-  padding: 10px 15px;
-}
-.submenu-active {
-  background-color: #111;
-  border-radius: 3px;
-}
+  </ul>
+  </div>
+  <div class="footer__content dere">
+      <h3 class="footer__title">Redes Sociales</h3>
+      <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+      <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Youtube"><i class='bx bxl-youtube'></i></a>
+      <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+  </div>
+  </div>
 
-/* Tablet menu */
-@media all and (min-width: 700px) {
-  .menu {
-    justify-content: center;
-  }
-  .logo {
-    flex: 1;
-  }
-  .item.button {
-    width: auto;
-    order: 1;
-    display: block;
-  }
-  .toggle {
-    flex: 1;
-    text-align: right;
-    order: 2;
-  }
-  /* Button up from tablet screen */
-  .menu li.button a {
-    padding: 10px 15px;
-    margin: 5px 0;
-  }
-  .button a {
-    background: #0080ff;
-    border: 1px royalblue solid;
-  }
-  .button.secondary {
-    border: 0;
-  }
-  .button.secondary a {
-    background: transparent;
-    border: 1px #0080ff solid;
-  }
-  .button a:hover {
-    text-decoration: none;
-  }
-  .button:not(.secondary) a:hover {
-    background: royalblue;
-    border-color: darkblue;
-  }
-}
-/* Desktop menu */
-@media all and (min-width: 960px) {
-  .menu {
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    background: none;
-  }
-  .logo {
-    order: 0;
-  }
-  .item {
-    order: 1;
-    position: relative;
-    display: block;
-    width: auto;
-  }
-  .button {
-    order: 2;
-  }
-  .submenu-active .submenu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 68px;
-    background: #111;
-  }
-  .toggle {
-    display: none;
-  }
-  .submenu-active {
-    border-radius: 0;
-  }
-}
-
-	  </style>
-	  <script>
-		  const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
-const items = document.querySelectorAll(".item");
-
-/* Toggle mobile menu */
-function toggleMenu() {
-  if (menu.classList.contains("active")) {
-    menu.classList.remove("active");
-    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-  } else {
-    menu.classList.add("active");
-    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-  }
-}
-
-/* Activate Submenu */
-function toggleItem() {
-  if (this.classList.contains("submenu-active")) {
-    this.classList.remove("submenu-active");
-  } else if (menu.querySelector(".submenu-active")) {
-    menu.querySelector(".submenu-active").classList.remove("submenu-active");
-    this.classList.add("submenu-active");
-  } else {
-    this.classList.add("submenu-active");
-  }
-}
-
-/* Close Submenu From Anywhere */
-function closeSubmenu(e) {
-  let isClickInside = menu.contains(e.target);
-
-  if (!isClickInside && menu.querySelector(".submenu-active")) {
-    menu.querySelector(".submenu-active").classList.remove("submenu-active");
-  }
-}
-/* Event Listeners */
-toggle.addEventListener("click", toggleMenu, false);
-for (let item of items) {
-  if (item.querySelector(".submenu")) {
-    item.addEventListener("click", toggleItem, false);
-  }
-  item.addEventListener("keypress", toggleItem, false);
-}
-document.addEventListener("click", closeSubmenu, false);
-
-	  </script>
-	  <div class="l-header l-header-webp" id="header">
-		<div class="nav bd-container">
-		   <a href="https://jaime-4-1998.github.io/hermes-music/fundacion/" class="nav__logo fondo__logo">
-			  <picture>
-				<source srcset="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 800w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 400w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 200w" type="image/png" sizes="50vw">
-				<img class="nav__imagen" src="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png" alt="Fundación Hermes Music" loading="lazy" title="Fundación Hermes Music" />
-			  </picture> 
-		   </a>
-		   <div class="nav__menu" id="nav-menu">
-			  <ul class=" nav__list">
-				 <li class="nav__item"><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/" class="nav__link ">Inicio</a></li>
-				 <li class="nav__item"><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Nosotros/" class="nav__link ">Nosotros</a></li>
-				 <li class="nav__item "><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Donativos/" class="nav__link ">Donativos </a></li>
-				 <li class="dropdown nav__item nav__link ">Proyectos <i class='bx bx-chevron-down down__icon nav__color'></i>
-					<ul class="dropdown-content">
-					  <li>
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					  </li>
-					</ul>
-				  </li>
-			   
-				 <li class="nav__item"><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Festivales-Musicales/" class="nav__link ">Festivales y Musicales</a></li>
-				 <li class="nav__item"><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Artistas-Amigos/" class="nav__link ">Artistas y Amigos</a></li>
-
-				 <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
-			  </ul>
-		   </div>
-		   <div class="nav__toggle" id="nav-toggle">
-			<i class='bx bx-menu'></i>
-		   </div>
-		</div>
-	</div> 
-	  
+</footer> 
+<p class="footer__copy footer__copy__web">&#169; Copyright 2022, Fundfación Hermes Music</p>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>
