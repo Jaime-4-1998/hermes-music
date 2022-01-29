@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
   <title>Fundación Hermes Music</title>
   <link type="image/x-icon" href="assets/img/icons/fundacion-hermes.png" rel="icon" />
   <link type="image/x-icon" href="assets/img/icons/fundacion-hermes.png" rel="shortcut icon" />
-  <link rel="preload" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'  as="style" onload="this.rel='stylesheet'">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preload"  href="assets/css/styles.css" as="style" onload="this.rel='stylesheet'">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet"> 
@@ -75,6 +75,76 @@
     <h1 class="fundacion__title">Fundación Hermes Music</h1>
     </div>
   </section>
+  <!--fondo-->
+  <div class="fondo fondo__webp">
+      <section class="section bd-containere">
+          <div class="second__container pad__none bd-grid-ciudad">
+              <div class="second__data">
+                  <h3 class="fondo__title">¿Qué Hacemos?</h3>
+                  <p class="fondo__parr">
+                      La fundación está creando conciencia sobre la cultura del
+                          pueblo Wixárika de México, brindando apoyo a través de
+                          la educación y la promoción para crear empleo promoviendo su cultura
+                  </p>
+              </div>
+                  <iframe class="video" src="https://www.youtube.com/embed/A6kOHi_yaVU" title="Fundación Hermes Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+      </section> 
+  </div>
+  <!--Contacto-->
+  <section class="whoher" id="contacto">
+      <h2 class="whoher__heading animate-title top">Contáctanos</h2>
+      <div class="whoher__container">
+          <div>
+              <iframe class="mapa" title="Ubicación de Hermes Music" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.2214777734334!2d-99.16166764922669!3d19.44601558681233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c50818d2b9%3A0x7528be1c92bc013e!2sHermes%20Music%2C%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1635795973881!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <span class="espacio"></span>
+              <p class="whoher__par">
+              Fundación Hermes Music, 
+              tiene sede en la Ciudad de México, además tiene también oficinas en Guadalajara, 
+              Jalisco, México. Puede comunicarse con nosotros a través del siguiente formulario de 
+              contacto o vía telefónica a través de los siguientes números:
+              </p>
+              <div class="contac__colu">
+              <p class="whoher__par">
+                  <span>Oficinas en CDMX</span><br><br>
+                  Naranjo 76, Santa María La Ribera, 06400, México, CDMX.
+              </p>
+              <p class="whoher__par">
+                  <span>Teléfono</span><br><br>
+                  CDMX: +52(55)5002-2200 <br> Ext. 1151
+              </p>
+              <p class="whoher__par">
+                  <span>Correo Electrónico</span><br><br>
+                  <a href="mailto:contacto@fundacionhermesmusic.org">contacto@fundacionhermesmusic.org</a>
+              </p>
+              </div>
+          </div>
+          <div>
+          
+              <div class="whoher__features">
+              <form id="form-data" action="" method="post">
+                  <input class="text" type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
+                  <b class="requerido" id="err_nom"></b> 
+                  
+                  <input class="text" type="email" name="corr" id="corr" placeholder="Correo Electrónico" required>
+                  <b class="requerido" id="err_corr"></b> 
+      
+                  <input class="text" type="tel" name="tel" id="tel" placeholder="Numero Telefónico" required>
+                  <b class="requerido" id="err_tel"></b> 
+      
+                  <input class="textes" type="text" name="texto" id="tex" placeholder="Escribe aquí tu mensaje" required>
+                  <b class="requerido" id="err_tex"></b>
+                  <br>
+                  <center>
+                  <button type="button" class="btn__mas" id="submit">Enviar</button>
+                  </center>
+                  
+              </form>
+              
+              </div>
+          </div>
+      </div>
+  </section>
   <footer class="footer section">
     <div class="footer__container bd-containere bd-grid">
     
@@ -126,5 +196,5 @@
   <p class="footer__copy footer__copy__web">&#169; Copyright 2022, Fundfación Hermes Music</p>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/index.js"></script>
-  </body>
+</body>
 </html>
