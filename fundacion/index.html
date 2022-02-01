@@ -1,231 +1,303 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Fundación Hermes Music es una fundación que realiza acciones sociales a través de la música, en favor de ayudar a quienes más lo necesitan." />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundación Hermes Music</title>
     <link type="image/x-icon" href="assets/img/icons/fundacion-hermes.png" rel="icon" />
     <link type="image/x-icon" href="assets/img/icons/fundacion-hermes.png" rel="shortcut icon" />
     <link rel="preload" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'  as="style" onload="this.rel='stylesheet'">
-    <link rel="preload"  href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/css/index.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload"  href="assets/css/styles.css" as="style" onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet"> 
-   </head>
-   <body>
-      <main class="l-main">
-        <header class="header__grid">
-            <div class="areaB">
-              <center>
-                
-                <li class="nav__item redes__nav">
-                  <a aria-label="Facebook" href="https://es-la.facebook.com/FundacionHermesMusic/" target="_blank" class="nav__link redes" title="Facebook"><i class='bx bxl-facebook-circle iconos__funda'></i></a>
-                </li>
-                <li class="nav__item redes__nav">
-                 <a aria-label="Instagram" href="https://www.instagram.com/fundacion_hermesmusic/?hl=es" target="_blank" class="nav__link redes" title="Instagram"><i class='bx bxl-instagram-alt iconos__funda'></i></a>
-               </li>
-               <li class="nav__item redes__nav">
-                 <a aria-label="Youtube" href="https://www.youtube.com/c/Fundaci%C3%B3nHermesMusicMexico/featured" target="_blank" class="nav__link redes" title="Youtube"><i class='bx bxl-youtube iconos__funda'></i></a>
-               </li>
-               <li class="nav__item redes__nav">
-                <a aria-label="Youtube" href="https://www.youtube.com/c/Fundaci%C3%B3nHermesMusicMexico/featured" target="_blank" class="nav__link redes" title="PayPal"><i class='bx bxl-paypal iconos__funda'></i></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header__grid">
+        <div class="areaB">
+          <center>
+          <ul>
+            <li class="nav__item redes__nav">
+                <a aria-label="Facebook" href="https://es-la.facebook.com/FundacionHermesMusic/" target="_blank" class="nav__link redes" title="Facebook"><i class='bx bxl-facebook-circle iconos__funda'></i></a>
               </li>
               <li class="nav__item redes__nav">
-                <a aria-label="Linkedin" href="https://www.linkedin.com/company/hermes-music/" target="_blank" class="nav__link redes" title="Linkedin"><i class='bx bxl-linkedin-square iconos__funda'></i></a>
+               <a aria-label="Instagram" href="https://www.instagram.com/fundacion_hermesmusic/?hl=es" target="_blank" class="nav__link redes" title="Instagram"><i class='bx bxl-instagram-alt iconos__funda'></i></a>
+             </li>
+             <li class="nav__item redes__nav">
+               <a aria-label="Youtube" href="https://www.youtube.com/c/Fundaci%C3%B3nHermesMusicMexico/featured" target="_blank" class="nav__link redes" title="Youtube"><i class='bx bxl-youtube iconos__funda'></i></a>
+             </li>
+             <li class="nav__item redes__nav">
+              <a aria-label="Youtube" href="https://www.youtube.com/c/Fundaci%C3%B3nHermesMusicMexico/featured" target="_blank" class="nav__link redes" title="PayPal"><i class='bx bxl-paypal iconos__funda'></i></a>
+            </li>
+            <li class="nav__item redes__nav">
+              <a aria-label="Linkedin" href="https://www.linkedin.com/company/hermes-music/" target="_blank" class="nav__link redes" title="Linkedin"><i class='bx bxl-linkedin-square iconos__funda'></i></a>
+            </li>
+          </ul>
+          </center>
+          </div>
+    </header>
+    <div class="navigation navigation__web">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="https://jaime-4-1998.github.io/hermes-music/fundacion/">
+              <img class="nav__imagen" loading="lazy" src="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png" alt="Fundación Hermes Music" width="100%" height="100%">
+            </a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list nav-list__web">
+              <li>
+                <a href="https://jaime-4-1998.github.io/hermes-music/fundacion/">Inicio</a>
               </li>
-              </center>
-              </div>
-        </header>
-        <div class="l-header l-header-webp" id="header">
-            <nav class="nav bd-container">
-               <a href="https://jaime-4-1998.github.io/hermes-music/fundacion/" class="nav__logo fondo__logo">
-                  <picture>
-                    <source srcset="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 800w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 400w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 200w" type="image/png" sizes="50vw">
-                    <img class="nav__imagen" src="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png" alt="Fundación Hermes Music" loading="lazy" title="Fundación Hermes Music" />
-                  </picture> 
-               </a>
-               <div class="nav__menu" id="nav-menu">
-                  <ul class=" nav__list">
-                     <li class="nav__item"><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/" class="nav__link ">Inicio</a></li>
-                     <li class="nav__item"><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Nosotros/" class="nav__link ">Nosotros</a></li>
-                     <li class="nav__item "><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Donativos/" class="nav__link ">Donativos </a></li>
-                     <li class="dropdown nav__item nav__link ">Proyectos <i class='bx bx-chevron-down down__icon nav__color'></i>
-                        <ul class="dropdown-content">
-                          <li>
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </li>
-                        </ul>
-                      </li>
-                   
-                     <li class="nav__item"><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Festivales-Musicales/" class="nav__link ">Festivales y Musicales</a></li>
-                     <li class="nav__item"><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Artistas-Amigos/" class="nav__link ">Artistas y Amigos</a></li>
-
-                     <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
-                  </ul>
-               </div>
-               <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-               </div>
-            </nav>
-        </div> 
-        <div class="swiper mySwiper2">
-         <div class="swiper-wrapper">
-           <div class="swiper-slide">
-               <picture>
-                   <source srcset="assets/img/slides/Slide-Libro-Fundacion.webp 800w, assets/img/slides/Slide-Libro-Fundacion.webp 400w, assets/img/slides/Slide-Libro-Fundacion.webp 200w" type="image/webp" sizes="50vw" />
-                   <source srcset="assets/img/slides/Slide-Libro-Fundacion.jpg 800w, assets/img/slides/Slide-Libro-Fundacion.jpg 400w, assets/img/slides/Slide-Libro-Fundacion.jpg 200w" type="image/jpg" sizes="50vw" />
-                   <img loading="lazy" src="assets/img/slides/Slide-Libro-Fundacion.jpg" alt="Fundación Hermes Music" title="Fundación Hermes Music" />
-                 </picture> 
-           </div>
-           <div class="swiper-slide">
-               <picture>
-                   <source srcset="assets/img/slides/Slide-1.webp 800w, assets/img/slides/Slide-1.webp 400w, assets/img/slides/Slide-1.webp 200w" type="image/webp" sizes="50vw" />
-                   <source srcset="assets/img/slides/Slide-1.jpg 800w, assets/img/slides/Slide-1.jpg 400w, assets/img/slides/Slide-1.jpg 200w" type="image/jpg" sizes="50vw" />
-                   <img loading="lazy" src="assets/img/slides/Slide-1.jpg" alt="Hermes Music Mexico" title="Hermes Music Mexico" />
-                 </picture> 
-           </div>
-         </div>
-         <div class="swiper-button-next"></div>
-         <div class="swiper-button-prev"></div>
-         <div class="swiper-pagination"></div>
-        </div>
-        <section>
-                <div class="fundacion__presenta bd-container bd-grid">
-                <h1 class="fundacion__title">Fundación Hermes Music</h1>
-                </div>
-        </section>
-        <!--fondo-->
-        <div class="fondo fondo__webp">
-            <section class="section bd-containere">
-                <div class="second__container pad__none bd-grid">
-                    <div class="second__data">
-                        <h3 class="fondo__title">¿Qué Hacemos?</h3>
-                        <p class="fondo__parr">
-                            La fundación está creando conciencia sobre la cultura del
-                                pueblo Wixárika de México, brindando apoyo a través de
-                                la educación y la promoción para crear empleo promoviendo su cultura
-                        </p>
-                    </div>
-                    
-                        <iframe class="video" src="https://www.youtube.com/embed/A6kOHi_yaVU" title="Fundación Hermes Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   
-                    </div>
-            </section> 
-        </div>
-        <!--Contacto-->
-        <section class="whoher" id="contacto">
-        
-            <h2 class="whoher__heading animate-title top">Contáctanos</h2>
-            <div class="whoher__container">
-                
-                <div>
-                    <iframe class="mapa" title="Ubicación de Hermes Music" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.2214777734334!2d-99.16166764922669!3d19.44601558681233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c50818d2b9%3A0x7528be1c92bc013e!2sHermes%20Music%2C%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1635795973881!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <span class="espacio"></span>
-                    <p class="whoher__par">
-                    Fundación Hermes Music, 
-                    tiene sede en la Ciudad de México, además tiene también oficinas en Guadalajara, 
-                    Jalisco, México. Puede comunicarse con nosotros a través del siguiente formulario de 
-                    contacto o vía telefónica a través de los siguientes números:
-                    </p>
-                    <div class="contac__colu">
-                    <p class="whoher__par">
-                        <span>Oficinas en CDMX</span><br><br>
-                        Naranjo 76, Santa María La Ribera, 06400, México, CDMX.
-                    </p>
-                    <p class="whoher__par">
-                        <span>Teléfono</span><br><br>
-                        CDMX: +52(55)5002-2200 <br> Ext. 1151
-                    </p>
-                    <p class="whoher__par">
-                        <span>Correo Electrónico</span><br><br>
-                        <a href="mailto:contacto@fundacionhermesmusic.org">contacto@fundacionhermesmusic.org</a>
-                    </p>
-                    </div>
-                </div>
-                <div>
-                
-                    <div class="whoher__features">
-                    <form id="form-data" action="" method="post">
-                        <input class="text" type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
-                        <b class="requerido" id="err_nom"></b> 
-                        
-                        <input class="text" type="email" name="corr" id="corr" placeholder="Correo Electrónico" required>
-                        <b class="requerido" id="err_corr"></b> 
-            
-                        <input class="text" type="tel" name="tel" id="tel" placeholder="Numero Telefónico" required>
-                        <b class="requerido" id="err_tel"></b> 
-            
-                        <input class="textes" type="text" name="texto" id="tex" placeholder="Escribe aquí tu mensaje" required>
-                        <b class="requerido" id="err_tex"></b>
-                        <br>
-                        <center>
-                        <button type="button" class="btn__mas" id="submit">Enviar</button>
-                        </center>
-                        
-                    </form>
-                    
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--footer-->
-        <footer class="footer section">
-            <div class="footer__container bd-containere bd-grid">
-            
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    Fundación Hermes Music
-                </h3>
-                <p class="footer__description">Hemos participado en infinidad de eventos y actividades altruistas, realizando donaciones y sumándose también durante los casos desastres naturales en México para ofrecer ayuda humanitaria.</p>
-            </div>
-            
-            <div class="footer__content dere">
-                <h3 class="footer__title">Mapa del sitio</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Inicio</a></li>
-                    <li><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Nosotros/" class="footer__link">Nosotros</a></li>
-                    <li><a href="#" class="footer__link">Donativos</a></li>
-                    <li><a href="#" class="footer__link">Contacto</a></li>
+              <li>
+                <a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Nosotros/">Nosotros</a>
+              </li>
+              <li>
+                <a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Donativos/">Donativos</a>
+              </li>
+              <li>
+                <a href="#!">Proyectos</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a class="sub__link" href="#!">Proyecto Orugllo</a>
+                  </li>
+                  <li>
+                    <a class="sub__link" href="#!">Proyecto de Amor</a>
+                  </li>
+                  <li>
+                    <a class="sub__link" href="#!">We Never Give Up</a>
+                  </li>
                 </ul>
-            </div>
-            <div class="footer__content dere">
-                <h3 class="footer__title">Mapa del sitio</h3>
-                <ul>
-                <li><a href="#" class="footer__link">We Never Give UP</a></li>
-                <li><a href="#" class="footer__link">Todos Somos Inmigrantes</a></li>
-                <li><a href="#" class="footer__link">Orgullo</a></li>
-                <li><a href="#" class="footer__link">Amor</a></li>
-                </ul>
-            </div>
-            <div class="footer__content dere">
-            <h3 class="footer__title">Oficina</h3>
-            <p class="footer__description">
-                Naranjo 76, Santa María La Ribera, 06400, México, CDMX. <br><br>
-            </p>
-            <ul>
-                <li><a href="tel:5550022200" class="footer__link"> CDMX: +52(55) 5002 2200, ext. 1151 </a></li>
-                <li><a href="mailto:contacto@fundacionhermesmusic.org" class="footer__link">contacto@fundacionhermesmusic.org</a></li>
-        
+              </li>
+              <li>
+                <a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Festivales-Musicales/">Festivales y Musica</a>
+              </li>
+              <li>
+                <a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Artistas-Amigos/">Artistas y Amigos</a>
+              </li>
+              <li class="close__link">
+                <a href="#contacto">Contacto</a>
+              </li>
             </ul>
+          </nav>
+        </div>
+    </div>
+    <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <picture>
+                  <source srcset="assets/img/slides/Slide-Libro-Fundacion.webp 800w, assets/img/slides/Slide-Libro-Fundacion.webp 400w, assets/img/slides/Slide-Libro-Fundacion.webp 200w" type="image/webp" sizes="50vw" />
+                  <source srcset="assets/img/slides/Slide-Libro-Fundacion.jpg 800w, assets/img/slides/Slide-Libro-Fundacion.jpg 400w, assets/img/slides/Slide-Libro-Fundacion.jpg 200w" type="image/jpg" sizes="50vw" />
+                  <img loading="lazy" src="assets/img/slides/Slide-Libro-Fundacion.jpg" alt="Fundación Hermes Music" title="Fundación Hermes Music" width="100%" height="100%" />
+                </picture> 
+          </div>
+          <div class="swiper-slide">
+              <picture>
+                  <source srcset="assets/img/slides/Slide-1.webp 800w, assets/img/slides/Slide-1.webp 400w, assets/img/slides/Slide-1.webp 200w" type="image/webp" sizes="50vw" />
+                  <source srcset="assets/img/slides/Slide-1.jpg 800w, assets/img/slides/Slide-1.jpg 400w, assets/img/slides/Slide-1.jpg 200w" type="image/jpg" sizes="50vw" />
+                  <img loading="lazy" src="assets/img/slides/Slide-1.jpg" alt="Hermes Music Mexico" title="Hermes Music Mexico" width="100%" height="100%" />
+                </picture> 
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <section>
+        <div class="fundacion__presenta bd-container bd-grid">
+        <h1 class="fundacion__title">Fundación Hermes Music</h1>
+        </div>
+    </section>
+    <section class="bd-containerp">
+        <div class="grid__text">
+           <p>
+            <strong>Alberto Kreimerman</strong>, fundador de <strong>Hermes Music</strong>, crea
+            la <strong>Fundación Hermes Music</strong>, tanto en México como en
+            EE.UU. en 2006, luego de más de 20 años de labor altruista,
+            que llevó a cabo de forma individual y con diferentes
+            fundaciones y asociaciones civiles, con el propósito de
+            ayudar a los que menos tienen, así como promover la
+            cultura mexicana con una enorme sensibilidad
+           </p>
+            <p>
+                Hemos colaborado con otras fundaciones y asociaciones
+                benéficas como <strong>Teletón</strong>, <strong>Juguetón</strong>, <strong>Dulce Camino</strong>, 
+                <strong>DIF</strong>, <strong>Secretaría de Cultura</strong>, entre otras. El lema de Hermes
+                Music: <strong>Porque amamos la música</strong> resume la filosofía
+                de la empresa y sus proyectos sociales, incluido el 
+                <strong>Proyecto de Amor</strong>, que empezó entregando juguetes a 
+                niños de familias de bajos ingresos en la frontera norte de México.
+            </p>
+          </div>
+         
+    </section>
+    <section class="gallery-container  bd-containerp">
+        <div class="gallery__item">
+          <picture>
+              <img loading="lazy" src="assets/img/deta/prueba.png" alt="Arte Huichol Fundación Hermes Music" title="Arte Huichol Fundación Hermes Music" class="gallery__img" width="100%" height="100%" />
+           </picture>
+        </div>
+        <div class="gallery__item">
+            <picture>
+                <img loading="lazy" src="assets/img/deta/prueba.png" alt="Arte Huichol Fundación Hermes Music" title="Arte Huichol Fundación Hermes Music" class="gallery__img" width="100%" height="100%" />
+             </picture>
+          </div>
+          <div class="gallery__item">
+            <picture>
+                <source srcset="../assets/img/orgu/huichol06.webp 800w, ../assets/img/orgu/huichol06.webp 400w, ../assets/img/orgu/huichol06.webp 200w" type="image/webp" sizes="50vw" />
+                <source srcset="../assets/img/orgu/huichol06.png 800w, ../assets/img/orgu/huichol06.png 400w, ../assets/img/orgu/huichol06.png 200w" type="image/png" sizes="50vw" />
+                <img loading="lazy" src="../assets/img/orgu/huichol06.png" alt="Arte Huichol Fundación Hermes Music" title="Arte Huichol Fundación Hermes Music" class="gallery__img" width="100%" height="100%" />
+              </picture>
+          </div>
+          <div class="gallery__item">
+            <picture>
+                <img loading="lazy" src="assets/img/deta/prueba__1.png" alt="Arte Huichol Fundación Hermes Music" title="Arte Huichol Fundación Hermes Music" class="gallery__img" width="100%" height="100%" />
+             </picture>
+          </div>
+          
+    </section>
+    <section>
+        <div class="bd-containerp bd-grid">
+            <p class="ulti__text">También han existido proyectos de <strong>educación musical</strong>,
+                donando miles de instrumentos y becas, <strong>programas de
+                salud</strong> y apoyo para fundaciones que comparten la misma
+                misión. Este trabajo cuenta con el apoyo de importantes
+                estrellas de la música y el deporte al igual que
+                líderes de opinión.</p>
+               
+        </div>
+        <div class="grid__but">
+            <a href="#jaime"><button type="button" class="btn__mas">Festivales y Musica</button> </a>
+            <a href="#jaime"> <button type="button" class="btn__mas">¿Como hacer una donación?</button></a>
+           <a href="#jaime"> <button type="button" class="btn__mas">Artistas y Amigos</button></a>
+           <a href="#jaime"> <button type="button" class="btn__mas">Saber más de Fundación</button></a>
+        </div>
+    </section>
+      <!--fondo-->
+    <div class="fondo fondo__webp">
+          <section class="section bd-containere">
+              <div class="second__container pad__none bd-grid-ciudad">
+                  <div class="second__data">
+                      <h3 class="fondo__title">¿Qué Hacemos?</h3>
+                      <p class="fondo__parr">
+                          La fundación está creando conciencia sobre la cultura del
+                              pueblo Wixárika de México, brindando apoyo a través de
+                              la educación y la promoción para crear empleo promoviendo su cultura
+                      </p>
+                      <center>
+                        <button type="button" class="btn__cono" id="submit">Leer Más</button>
+                        </center>
+                  </div>
+                      <iframe class="video" src="https://www.youtube.com/embed/A6kOHi_yaVU" title="Fundación Hermes Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+          </section> 
+    </div>
+    <!--Contacto-->
+    <section class="whoher" id="contacto">
+        <h2 class="whoher__heading animate-title top">Contáctanos</h2>
+        <div class="whoher__container">
+            <div>
+                <iframe class="mapa" title="Ubicación de Hermes Music" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.2214777734334!2d-99.16166764922669!3d19.44601558681233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c50818d2b9%3A0x7528be1c92bc013e!2sHermes%20Music%2C%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1635795973881!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <span class="espacio"></span>
+                <p class="whoher__par">
+                Fundación Hermes Music, 
+                tiene sede en la Ciudad de México, además tiene también oficinas en Guadalajara, 
+                Jalisco, México. Puede comunicarse con nosotros a través del siguiente formulario de 
+                contacto o vía telefónica a través de los siguientes números:
+                </p>
+                <div class="contac__colu">
+                <p class="whoher__par">
+                    <span>Oficinas en CDMX</span><br><br>
+                    Naranjo 76, Santa María La Ribera, 06400, México, CDMX.
+                </p>
+                <p class="whoher__par">
+                    <span>Teléfono</span><br><br>
+                    CDMX: +52(55)5002-2200 <br> Ext. 1151
+                </p>
+                <p class="whoher__par">
+                    <span>Correo Electrónico</span><br><br>
+                    <a href="mailto:contacto@fundacionhermesmusic.org">contacto@fundacionhermesmusic.org</a>
+                </p>
+                </div>
             </div>
-            <div class="footer__content dere">
-                <h3 class="footer__title">Redes Sociales</h3>
-                <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
-                <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Youtube"><i class='bx bxl-youtube'></i></a>
-                <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
-            </div>
-            </div>
+            <div>
+            
+                <div class="whoher__features">
+                <form id="form-data" action="" method="post">
+                    <input class="text" type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
+                    <b class="requerido" id="err_nom"></b> 
+                    
+                    <input class="text" type="email" name="corr" id="corr" placeholder="Correo Electrónico" required>
+                    <b class="requerido" id="err_corr"></b> 
         
-        </footer> 
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
-        </a>
-        <p class="footer__copy">&#169; Copyright 2021, Fundfación Hermes Music</p>
-      </main>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="assets/js/index.js"></script>
-    </body>
+                    <input class="text" type="tel" name="tel" id="tel" placeholder="Numero Telefónico" required>
+                    <b class="requerido" id="err_tel"></b> 
+        
+                    <input class="textes" type="text" name="texto" id="tex" placeholder="Escribe aquí tu mensaje" required>
+                    <b class="requerido" id="err_tex"></b>
+                    <br>
+                    <center>
+                    <button type="button" class="btn__mas btn__mas__web" id="submit">Enviar</button>
+                    </center>
+                    
+                </form>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer section">
+    <div class="footer__container bd-containere bd-grid">
+    
+    <div class="footer__content dere">
+        <h3 class="footer__title">
+            Fundación Hermes Music
+        </h3>
+        <p class="footer__description">Hemos participado en infinidad de eventos y actividades altruistas, realizando donaciones y sumándose también durante los casos desastres naturales en México para ofrecer ayuda humanitaria.</p>
+    </div>
+    
+    <div class="footer__content dere">
+        <h3 class="footer__title">Mapa del sitio</h3>
+        <ul>
+            <li><a href="#" class="footer__link">Inicio</a></li>
+            <li><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Nosotros/" class="footer__link">Nosotros</a></li>
+            <li><a href="#" class="footer__link">Donativos</a></li>
+            <li><a href="#" class="footer__link">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="footer__content dere">
+        <h3 class="footer__title">Mapa del sitio</h3>
+        <ul>
+        <li><a href="#" class="footer__link">We Never Give UP</a></li>
+        <li><a href="#" class="footer__link">Todos Somos Inmigrantes</a></li>
+        <li><a href="#" class="footer__link">Orgullo</a></li>
+        <li><a href="#" class="footer__link">Amor</a></li>
+        </ul>
+    </div>
+    <div class="footer__content dere">
+    <h3 class="footer__title">Oficina</h3>
+    <p class="footer__description">
+        Naranjo 76, Santa María La Ribera, 06400, México, CDMX. <br><br>
+    </p>
+    <ul>
+        <li><a href="tel:5550022200" class="footer__link"> CDMX: +52(55) 5002 2200, ext. 1151 </a></li>
+        <li><a href="mailto:contacto@fundacionhermesmusic.org" class="footer__link">contacto@fundacionhermesmusic.org</a></li>
+
+    </ul>
+    </div>
+    <div class="footer__content dere">
+        <h3 class="footer__title">Redes Sociales</h3>
+        <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+        <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Youtube"><i class='bx bxl-youtube'></i></a>
+        <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+    </div>
+    </div>
+
+    </footer> 
+    <p class="footer__copy footer__copy__web">&#169; Copyright 2022, Fundfación Hermes Music</p>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/dex.js"></script>
+</body>
 </html>
