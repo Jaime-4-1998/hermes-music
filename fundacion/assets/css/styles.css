@@ -254,7 +254,7 @@ html::-webkit-scrollbar-thumb {
  
  @media screen and (min-width: 576px) {
     .first__container,
-    .second__container {
+    .second__container{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }.second__data {
@@ -597,6 +597,7 @@ html::-webkit-scrollbar-thumb {
      max-width: 1500px;
      width: calc(100% - 3rem);
    }
+  
    .bd-grid {
       display: grid;
       gap: 1.5rem;
