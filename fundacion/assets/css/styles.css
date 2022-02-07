@@ -402,6 +402,14 @@ html::-webkit-scrollbar-thumb {
       padding: 2rem calc(100vw - 1260px) !important;
       margin-bottom: 2rem;
     }
+    .grid__text p{
+      color: #000;
+      text-align: justify;
+      font-size: 18px;
+    }
+    .ulti__text{
+      font-size: 18px;
+    }
   }
   @media screen and (max-width:1080px) {
     .whoher {
@@ -570,7 +578,9 @@ html::-webkit-scrollbar-thumb {
     height: 3rem;
     padding: 1rem;
     background:var(--yellow);
-	background-image: url(../img/deta/foot__copy.png);
+    font-weight: 800;
+    color: #fff !important;
+	 background-image: url(../img/deta/foot__copy__web.jpg);
     object-fit: cover;
   }
   .footer__copy__web{
@@ -578,7 +588,8 @@ html::-webkit-scrollbar-thumb {
     height: 3rem;
     padding: 1rem;
     background:var(--yellow);
-	background-image: url(../img/deta/foot__copy.webp);
+    color: #fff !important;
+	  background-image: url(../img/deta/foot__copy__web.webp);
     object-fit: cover;
   }
   .bd-container {
