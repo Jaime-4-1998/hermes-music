@@ -1,200 +1,113 @@
 <!DOCTYPE html>
-<html lang=es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fundación Hermes Music</title>
-  <link type="image/x-icon" href="assets/img/icons/fundacion-hermes.png" rel="icon" />
-  <link type="image/x-icon" href="assets/img/icons/fundacion-hermes.png" rel="shortcut icon" />
-  <link rel="preload" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'  as="style" onload="this.rel='stylesheet'">
-  <link rel="preload"  href="assets/css/styles.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet"> 
-</head>
-<body>
-  <div class="header header__web">
-      <div class="logo">
-        <picture>
-          <source srcset="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 800w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 400w, assets/img/icons/5fa32b20198820ab86acff06_fundacion.png 200w" type="image/png" sizes="50vw">
-          <img class="nav__imagen" src="assets/img/icons/5fa32b20198820ab86acff06_fundacion.png" alt="Fundación Hermes Music" loading="lazy" title="Fundación Hermes Music" />
-        </picture> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
       </div>
-      <input type="checkbox" id="toggle">
-      <label for="toggle">
-        <i class='bx bx-menu'></i>
-      </label>
-      <nav class="navigation">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Donativos</a></li>
-          <li>
-            <a href="#">Proyectos <i class='bx bx-chevron-down'></i></a>
-            <ul>
-                <li>
-                  <a href="#">Proyecto 1</a>
-                </li>
-                <li>
-                  <a href="#">Proyecto 1</a>
-                </li>
-                <li>
-                  <a href="#">Proyecto 1</a>
-                </li>
-            </ul>
-          </li>
-          <li><a href="#">Festivales y Musicales</a></li>
-          <li><a href="#">Artistas y Amigos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-  </div>
-  <div class="swiper mySwiper2">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-          <picture>
-              <source srcset="assets/img/slides/Slide-Libro-Fundacion.webp 800w, assets/img/slides/Slide-Libro-Fundacion.webp 400w, assets/img/slides/Slide-Libro-Fundacion.webp 200w" type="image/webp" sizes="50vw" />
-              <source srcset="assets/img/slides/Slide-Libro-Fundacion.jpg 800w, assets/img/slides/Slide-Libro-Fundacion.jpg 400w, assets/img/slides/Slide-Libro-Fundacion.jpg 200w" type="image/jpg" sizes="50vw" />
-              <img loading="lazy" src="assets/img/slides/Slide-Libro-Fundacion.jpg" alt="Fundación Hermes Music" title="Fundación Hermes Music" />
-            </picture> 
-      </div>
-      <div class="swiper-slide">
-          <picture>
-              <source srcset="assets/img/slides/Slide-1.webp 800w, assets/img/slides/Slide-1.webp 400w, assets/img/slides/Slide-1.webp 200w" type="image/webp" sizes="50vw" />
-              <source srcset="assets/img/slides/Slide-1.jpg 800w, assets/img/slides/Slide-1.jpg 400w, assets/img/slides/Slide-1.jpg 200w" type="image/jpg" sizes="50vw" />
-              <img loading="lazy" src="assets/img/slides/Slide-1.jpg" alt="Hermes Music Mexico" title="Hermes Music Mexico" />
-            </picture> 
-      </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-  <section>
-    <div class="fundacion__presenta bd-container bd-grid">
-    <h1 class="fundacion__title">Fundación Hermes Music</h1>
-    </div>
-  </section>
-  <!--fondo-->
-  <div class="fondo fondo__webp">
-      <section class="section bd-containere">
-          <div class="second__container pad__none bd-grid-ciudad">
-              <div class="second__data">
-                  <h3 class="fondo__title">¿Qué Hacemos?</h3>
-                  <p class="fondo__parr">
-                      La fundación está creando conciencia sobre la cultura del
-                          pueblo Wixárika de México, brindando apoyo a través de
-                          la educación y la promoción para crear empleo promoviendo su cultura
-                  </p>
-              </div>
-                  <iframe class="video" src="https://www.youtube.com/embed/A6kOHi_yaVU" title="Fundación Hermes Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-      </section> 
-  </div>
-  <!--Contacto-->
-  <section class="whoher" id="contacto">
-      <h2 class="whoher__heading animate-title top">Contáctanos</h2>
-      <div class="whoher__container">
-          <div>
-              <iframe class="mapa" title="Ubicación de Hermes Music" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.2214777734334!2d-99.16166764922669!3d19.44601558681233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c50818d2b9%3A0x7528be1c92bc013e!2sHermes%20Music%2C%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1635795973881!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              <span class="espacio"></span>
-              <p class="whoher__par">
-              Fundación Hermes Music, 
-              tiene sede en la Ciudad de México, además tiene también oficinas en Guadalajara, 
-              Jalisco, México. Puede comunicarse con nosotros a través del siguiente formulario de 
-              contacto o vía telefónica a través de los siguientes números:
-              </p>
-              <div class="contac__colu">
-              <p class="whoher__par">
-                  <span>Oficinas en CDMX</span><br><br>
-                  Naranjo 76, Santa María La Ribera, 06400, México, CDMX.
-              </p>
-              <p class="whoher__par">
-                  <span>Teléfono</span><br><br>
-                  CDMX: +52(55)5002-2200 <br> Ext. 1151
-              </p>
-              <p class="whoher__par">
-                  <span>Correo Electrónico</span><br><br>
-                  <a href="mailto:contacto@fundacionhermesmusic.org">contacto@fundacionhermesmusic.org</a>
-              </p>
-              </div>
-          </div>
-          <div>
-          
-              <div class="whoher__features">
-              <form id="form-data" action="" method="post">
-                  <input class="text" type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
-                  <b class="requerido" id="err_nom"></b> 
-                  
-                  <input class="text" type="email" name="corr" id="corr" placeholder="Correo Electrónico" required>
-                  <b class="requerido" id="err_corr"></b> 
-      
-                  <input class="text" type="tel" name="tel" id="tel" placeholder="Numero Telefónico" required>
-                  <b class="requerido" id="err_tel"></b> 
-      
-                  <input class="textes" type="text" name="texto" id="tex" placeholder="Escribe aquí tu mensaje" required>
-                  <b class="requerido" id="err_tex"></b>
-                  <br>
-                  <center>
-                  <button type="button" class="btn__mas" id="submit">Enviar</button>
-                  </center>
-                  
-              </form>
-              
-              </div>
-          </div>
-      </div>
-  </section>
-  <footer class="footer section">
-    <div class="footer__container bd-containere bd-grid">
-    
-    <div class="footer__content dere">
-        <h3 class="footer__title">
-            Fundación Hermes Music
-        </h3>
-        <p class="footer__description">Hemos participado en infinidad de eventos y actividades altruistas, realizando donaciones y sumándose también durante los casos desastres naturales en México para ofrecer ayuda humanitaria.</p>
-    </div>
-    
-    <div class="footer__content dere">
-        <h3 class="footer__title">Mapa del sitio</h3>
-        <ul>
-            <li><a href="#" class="footer__link">Inicio</a></li>
-            <li><a href="https://jaime-4-1998.github.io/hermes-music/fundacion/Nosotros/" class="footer__link">Nosotros</a></li>
-            <li><a href="#" class="footer__link">Donativos</a></li>
-            <li><a href="#" class="footer__link">Contacto</a></li>
-        </ul>
-    </div>
-    <div class="footer__content dere">
-        <h3 class="footer__title">Mapa del sitio</h3>
-        <ul>
-        <li><a href="#" class="footer__link">We Never Give UP</a></li>
-        <li><a href="#" class="footer__link">Todos Somos Inmigrantes</a></li>
-        <li><a href="#" class="footer__link">Orgullo</a></li>
-        <li><a href="#" class="footer__link">Amor</a></li>
-        </ul>
-    </div>
-    <div class="footer__content dere">
-    <h3 class="footer__title">Oficina</h3>
-    <p class="footer__description">
-        Naranjo 76, Santa María La Ribera, 06400, México, CDMX. <br><br>
-    </p>
-    <ul>
-        <li><a href="tel:5550022200" class="footer__link"> CDMX: +52(55) 5002 2200, ext. 1151 </a></li>
-        <li><a href="mailto:contacto@fundacionhermesmusic.org" class="footer__link">contacto@fundacionhermesmusic.org</a></li>
-  
-    </ul>
-    </div>
-    <div class="footer__content dere">
-        <h3 class="footer__title">Redes Sociales</h3>
-        <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
-        <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Youtube"><i class='bx bxl-youtube'></i></a>
-        <a  href="#" target="_blank" rel="noopener" class="footer__social" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
-    </div>
-    </div>
-  
-  </footer> 
-  <p class="footer__copy footer__copy__web">&#169; Copyright 2022, Fundfación Hermes Music</p>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/index.js"></script>
-</body>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>

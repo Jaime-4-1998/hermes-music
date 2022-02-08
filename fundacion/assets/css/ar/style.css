@@ -1,0 +1,121 @@
+.bd-containero{
+    max-width: 1700px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width:1500px) {
+    .bd-containero{
+        max-width: 1300px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:1000px) {
+    .bd-containero{
+        max-width: 700px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fundacion__title{
+        line-height: inherit;
+        font-size: 25px !important;
+    }
+    .artistas__nombre{
+        font-size: 1rem;
+    }
+    .name__swi{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .bd-containero{
+        max-width: 400px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.artistas__fundacion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:1rem;
+    margin-top: 2rem;
+}
+.artistas__img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.artistas__nombre{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.artis__swi{
+    width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.swiper {
+    background: #000;
+    padding: 2rem !important;
+  }
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 1rem !important;
+    display: block !important;
+    margin: auto !important;
+}
+.swiper-pagination-bullet {
+    background: #f8bb31 !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background-color: #f8bb31 !important;
+}
+.name__swi{
+    color: #fff !important;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+@media screen and (max-width:600px) {
+    .swiper-pagination-bullet {
+        background: #f8bb31 !important;
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+    .name__swi{
+        color: #fff !important;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .artistas__fundacion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:0.5rem;
+        margin-top: 2rem;
+    }
+    .artistas__img{
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+}
