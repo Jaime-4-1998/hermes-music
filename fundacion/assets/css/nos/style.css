@@ -98,6 +98,10 @@
     .first__data{
         margin-left: 3rem !important;
     }
+    .botones__container {
+        text-align: center;
+    }
+       
     
 }
 @media screen and (max-width:820px) {
