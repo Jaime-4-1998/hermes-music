@@ -87,6 +87,9 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.conte__grid{
+    color: #000 !important;
+}
 @media screen and (max-width:1500px) {
   .nos__imagen {
       margin-left: 4rem;
@@ -289,6 +292,18 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.fondes__mejor{
+    background-image: url(../../img/fescla/pageTOP_mpumm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 .claro__fes{
     margin-top: 3rem;
     font-size: 60px;
@@ -318,10 +333,11 @@
 .grid__claro {
     display: grid;
     gap: 2.5rem;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(3,auto);
     grid-template-rows: auto auto;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .grid__claro p{
     text-align: center;
@@ -334,6 +350,10 @@
 .icono_des{
     font-size: 1.5rem;
     color: #178394;
+}
+.icono_tempo{
+    font-size: 1.5rem;
+    color: #571f4f;
 }
 .grid__demos{
     display: grid;
@@ -396,6 +416,18 @@
         grid-template-columns: repeat(2,auto);
         margin-top: 2rem;
     }
+    .img__conte {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3,auto);
+        margin-top: 0rem !important;
+        margin-bottom: 2rem !important;
+      }
+      .grid__end {
+        display: grid;
+        grid-template-columns: repeat(1,auto) !important;
+        grid-gap: 2rem;
+      }
 }
 @media screen and (max-width:800px) {
     .bd-containeron,.bd-containerp{
@@ -435,6 +467,25 @@
     margin-left: 0.1rem;
     margin-bottom: 1.5rem;
     height: 15rem;
+    }
+    .fondes__claro {
+        height: 27rem;
+    }
+    .fondes__mejor {
+        height: 23rem;
+    }  
+    .img__conte {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(1,auto) !important;
+        margin-top: -2rem;
+        margin-bottom: 2rem !important;
+    }
+    .musi__text {
+        color: #000 !important;
+        display: block;
+        margin: auto;
+        font-size: 16px !important;
     }
 }
 @media screen and (max-width:500px) {
@@ -492,13 +543,145 @@
         margin-bottom: 1.5rem;
         height: 15rem;
     }
-    .video__claro{
-       display: none !important;
-    }
     .cla__img {
-        width: 90%;
-        display: block;
-        margin: auto;
-        object-fit: cover;
+        display: none !important;
     }
+    .des__img{
+        display: none !important;
+    }
+    .video__claro{
+        width: 100%;
+        height: 100% !important;
+        order: -1;
+    }
+    .fondes__claro {
+        height: 38rem !important;
+    }
+       
+    .claro__fes {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 22px;
+        text-align: center;
+    }
+    .botones__container {
+        margin-left: 1rem;
+    }
+    .fondes__mejor {
+        height: 31rem !important;
+    }
+    p.conte__grid:nth-child(1) {
+        margin-top: -1rem;
+    }
+    .grid__videos{
+        display: grid;
+        grid-template-columns: repeat(1,auto) !important;
+        grid-gap: 1rem;
+        margin-top: 2rem;
+    }
+    .grid__txtvi{
+        text-align: center;
+        margin-top: 0.5rem !important;
+        margin-bottom: 1rem;
+        font-size: 16px !important;
+    }
+       
+       
+   
+
+}
+@media screen and (max-width:380px) {
+    .section-title-center-head {
+        margin-top: -5rem;
+        font-size: 29px !important;
+        margin-left: -4rem !important;
+      }
+      .first__description {
+        font-size: 16px;
+        margin-top: -1rem;
+        margin-left: -4rem !important;
+      }
+      .botones__container {
+        margin-left: -1rem;
+       }
+       .claro__fes {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 19px;
+        text-align: center;
+      }
+      .bd-containeron {
+        max-width: 303px !important;
+      }
+      .fondo__claro {
+        padding: 0.2rem;
+        height: 32rem;
+      }
+      .video__claro{
+        width: 100%;
+        height: 100% !important;
+      }
+      .fondes__claro {
+        height: 47rem;
+      }
+      .botones__container {
+        margin-left: -1rem;
+    }  
+    .fondes__claro {
+        height: 48rem !important;
+    }
+    .fondes__mejor {
+        height: 38rem !important;
+    }
+       
+}
+.img__conte{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,auto);
+    margin-top: -2rem;
+    margin-bottom: 2rem !important;
+}
+.ima__conte{
+    width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.musi__text{
+    color: #000 !important;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+}
+.img__musi{
+    width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.grid__end{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 2rem;
+}
+.grid__videos{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+.end__video{
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 20rem;
+    border-radius: 10px;
+}
+.grid__txtvi{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }

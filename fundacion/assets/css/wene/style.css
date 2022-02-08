@@ -127,12 +127,23 @@
         font-size: 30px !important;
         margin-left: 0rem;
     }
+    h2.fundacion__nos:nth-child(2) {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+    h2.fundacion__nos:nth-child(1) {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }       
 }
 @media screen and (max-width:360px) {
-  .section-title-center-head{
-      margin-top: -5rem;
-      font-size: 29px !important;
-      margin-left: -3rem;
+  .section-title-center-head {
+    margin-top: 2rem;
+    font-size: 29px !important;
+    margin-left: -1rem;
   }
 }
 /*finde nosostros head*/
