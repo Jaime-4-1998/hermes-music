@@ -438,11 +438,11 @@ html{
 /**footer**/
 .footer{
     background-color:var(--black);
-    background-image: url(../img/orgu/Textura-2.png);
+    background-image: url(../../assets/img/deta/fondo__carr.png);
   }
-  .footer{
+  .footer__web{
     background-color:var(--black);
-    background-image: url(../img/orgu/Textura-2.webp);
+    background-image: url(../../assets/img/deta/fondo__carr.webp);
   }
   .footer__container{
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
