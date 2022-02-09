@@ -1,6 +1,7 @@
 .bd-containeren {
     width: 100%;
     background-color: #26378f;
+    background-image: url(../../img/ar/det/Fondo-1920x1080.png);
 }
 @media screen and (min-width: 576px) {
   .first__container,
@@ -199,17 +200,36 @@
   border-radius: 10px;
 }
 .black__card{
-    background-image: url(../../img/orgu/Textura-2.png) !important;    
+    background-image: url(../../img/don/deta/card.png) !important;
+    background: #000;    
 }
 .black__cardweb{
-    background-image: url(../../img/orgu/Textura-2.webp) !important;    
+    background-image: url(../..//img/don/deta/card.webp) !important;
+    background: #000;    
 }
 .red__card{
     background-color: #2196f3;
+    background-image: url(../../img/don/deta/card.png) !important; 
+}
+.red__cardweb{
+  background-color: #2196f3;
+  background-image: url(../../img/don/deta/card.webp) !important; 
 }
 .green__card{
     background-color: #999966;
+    background-image: url(../../img/don/deta/card.png) !important;
 }
+.green__cardweb{
+  background-color: #999966;
+    background-image: url(../../img/don/deta/card.webp) !important;
+}
+div.card:nth-child(3) > h3:nth-child(1) {
+  color: black;
+ }
+ div.card:nth-child(1) > h3:nth-child(1) {
+  color: floralwhite;
+ }
+  
 .card__title{
   color: var(--yellow);
   text-align: center;
@@ -219,7 +239,7 @@
   padding: 1rem;
   text-align: justify;
   margin-top: 1rem;
-  font-size: 25px;
+  font-size: 20px;
 }
 .card__line{
   width: 50%;
