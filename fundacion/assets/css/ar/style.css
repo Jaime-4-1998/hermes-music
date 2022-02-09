@@ -3,6 +3,85 @@
     margin-left: auto;
     margin-right: auto;
 }
+.bd-containeren {
+    width: 100%;
+    background-color: #8e1818;
+    background-image: url(../../img/ar/det/Fondo-1920x1080.png);
+}
+@media screen and (min-width: 576px) {
+    .first__container,
+    .second__container,.nos__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .section-title-center-head,
+    .first__data,.second__data {
+        text-align: initial;
+    }
+    .nos__container{
+      padding: 1rem;
+    }
+  }
+  .bd-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .nos__container{
+    row-gap:.5rem
+  }
+  .nos__container{
+    column-gap:5rem
+  }
+  .nos__img{
+    order:1;
+  }
+  .nos__imagen {
+      width: 70%;
+      height: auto;
+      display: block;
+      margin: auto;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+  .first__data{
+    margin-left: 12rem !important;
+    width: 90%;
+  }
+  .first__description{
+    width: 80%;
+  }
+  .section-title-center-head{
+    font-weight: normal;
+    font-size: 60px;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  .color__head{
+    color: #F8BB31;
+}
+.btn__dona{
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 3rem;
+  }
+  .btn__orgu{
+      padding: 1rem;
+      color: #fff;
+      text-decoration: none;
+      background-color: #000;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+  }
 @media screen and (max-width:1500px) {
     .bd-containero{
         max-width: 1300px !important;

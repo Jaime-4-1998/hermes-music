@@ -1,6 +1,6 @@
 :root {
    
-    --yellow: #F8BB31;
+    --yellow: #fdc32d;
     --black:#000;
     --white:#fff;
 }
@@ -109,18 +109,22 @@ html{
 /*botones*/
 .grid__but > a:nth-child(1) > button:nth-child(1) {
   background: #7dbb34 !important;
+  background-image: url(../img/deta/botones__home.png) !important;
   color: #fff;
  }
  .grid__but > a:nth-child(2) > button:nth-child(1) {
   background: #1f2b7d !important;
+  background-image: url(../img/deta/botones__home.png) !important;
   color: #fff;
  }
  .grid__but > a:nth-child(3) > button:nth-child(1) {
   background: #ff8000 !important;
+  background-image: url(../img/deta/botones__home.png) !important;
   color: #fff;
  }
  .grid__but > a:nth-child(4) > button:nth-child(1) {
   background: #662d90 !important;
+  background-image: url(../img/deta/botones__home.png) !important;
   color: #fff;
  }
  
