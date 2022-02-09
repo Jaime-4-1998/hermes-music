@@ -219,6 +219,7 @@
   padding: 1rem;
   text-align: justify;
   margin-top: 1rem;
+  font-size: 25px;
 }
 .card__line{
   width: 50%;
@@ -258,7 +259,7 @@
 }
 .fundacion__nos {
 	margin-top: 3rem;
-	font-size: 50px;
+	font-size: 60px;
 	line-height: 92px;
 	display: flex;
 	align-items: center;
@@ -267,28 +268,35 @@
 	letter-spacing: -0.015em;
 	color: #000000;
 }
+.fundacion__text{
+  font-size: 25px;
+  text-align: center;
+}
 .nos__bar{
     border: 1px solid #F8BB31;
     width: 60%;
     display: block;
     margin: auto;
 }
-.fundacion__nos {
-  font-size: 25px;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  line-height: inherit;
-}
+
 @media screen and (max-width:450px) {
-    .fundacion__nos{
-        font-size: 25px;
-        margin-top: 0.5rem;
-    }
+  .fundacion__nos {
+    font-size: 25px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: inherit;
+  }
     .fundacion__text{
       font-size: 15px;
         margin-top: -2rem;
     }
     .card__container{
         margin-top: 1.5rem;
+    }
+    .card__description{
+      padding: 1rem;
+      text-align: justify;
+      margin-top: 1rem;
+      font-size: 15px;
     }
 }
