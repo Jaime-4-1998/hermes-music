@@ -1,6 +1,7 @@
 .bd-containeren {
     width: 100%;
     background-color: #e3a7c0;
+    background-image: url(../../img/orgu/det/fon__home.png);
 }
 @media screen and (min-width: 576px) {
   .first__container,
