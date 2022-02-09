@@ -1,6 +1,8 @@
 .bd-containeren {
     width: 100%;
     background-color: #d20370;
+    
+    background-image: url(../../img/ar/det/Fondo-1920x1080.png);
 }
 @media screen and (min-width: 576px) {
   .first__container,
@@ -60,7 +62,7 @@
   color: #000;
 }
 .first__description,.second__description{
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 5rem;
   color: #fff;
 }

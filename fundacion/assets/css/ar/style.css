@@ -61,7 +61,7 @@
 }
 .btn__dona{
     padding: 1rem;
-    border: 1px solid #fff;
+    border: 1px solid #F8BB31;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -73,9 +73,9 @@
   }
   .btn__orgu{
       padding: 1rem;
-      color: #fff;
+      color: #000;
       text-decoration: none;
-      background-color: #000;
+      background-color: #F8BB31;
       border-radius: 10px;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -148,6 +148,7 @@
 }
 .swiper {
     background: #000;
+    background-image: url(../../img/orgu/det/fondo__carr.png);
     padding: 2rem !important;
   }
 .swiper-button-prev::after,
