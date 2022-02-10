@@ -1,7 +1,12 @@
-.bd-containeren {
+.bd-containeren{
     width: 100%;
     background-color: #441b1b;
-    background-image: url(../../img/ar/det/Fondo-1920x1080.png);
+    background-image: url(../../img/deta/fon__top.png);
+}
+.bd-containerenweb{
+    width: 100%;
+    background-color: #441b1b;
+    background-image: url(../../img/deta/fon__top.webp);
 }
 .amor__container {
     display: grid;
@@ -133,6 +138,12 @@
     padding: 1rem;
     border-radius: 10px;
 }
+.fondo__amorweb{
+    background:#a62323;
+    background-image: url(../../img/deta/fondo__carr.webp);
+    padding: 1rem;
+    border-radius: 10px;
+}
 p.parr__amor:nth-child(1) {
     margin: auto;
     color: #fff !important;
@@ -177,5 +188,10 @@ p.parr__amor:nth-child(6) {
         
         text-align: justify;
     }
+}
+@media screen and (max-width:370px) {
+        .section-title-center-head {
+            font-size: 35px;
+        }
 }
    
