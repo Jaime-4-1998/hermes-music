@@ -89,6 +89,22 @@
         margin-right: auto;
     }
 }
+@media screen and (max-width:1030px) {
+    .first__data {
+        margin-left: 4rem !important;
+        width: 90%;
+      }
+      .section-title-center-head {
+        font-weight: normal;
+        font-size: 50px;
+        color: #fff;
+    }
+    .bd-containero {
+        max-width: 950px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media screen and (max-width:1000px) {
     .bd-containero{
         max-width: 700px !important;
@@ -105,12 +121,46 @@
     .name__swi{
         font-size: 1rem;
     }
+    .first__data {
+        margin-left: 5rem !important;
+        width: 90%;
+        margin-top: -3rem;
+    }
+    .section-title-center-head{
+        font-weight: normal;
+        font-size: 40px;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+    .nos__container {
+        padding: 0rem;
+    }
 }
 @media screen and (max-width:600px) {
     .bd-containero{
         max-width: 400px !important;
         margin-left: auto;
         margin-right: auto;
+    }
+    .section-title-center-head {
+        font-weight: normal;
+        font-size: 27px;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+    .first__data {
+        margin-left: 2rem !important;
+        width: 90%;
+        margin-top: -2rem;
+    }
+    .botones__container {
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:380px) {
+    .bd-containero {
+        max-width: 340px !important;
     }
 }
 .artistas__fundacion{
@@ -148,7 +198,7 @@
 }
 .swiper {
     background: #000;
-    background-image: url(../../img/orgu/det/fondo__carr.png);
+    background-image: url(../../img/deta/fondo__carr.png);
     padding: 2rem !important;
   }
 .swiper-button-prev::after,
