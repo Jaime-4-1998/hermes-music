@@ -299,6 +299,11 @@ html{
     font-size: 1rem;
     font-family: 'Allerta', sans-serif;
   }
+  @media screen and (max-width:1500px) {
+   .whoher{
+    padding: 2rem calc(100vw - 1300px) !important;
+   }    
+  }
   @media screen and (max-width:1370px){
     .whoher {
       padding: 2rem calc(100vw - 1260px) !important;
