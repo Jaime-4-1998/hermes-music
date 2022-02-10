@@ -6,7 +6,12 @@
 .bd-containeren {
     width: 100%;
     background-color: #124015;
-    background-image: url(../../img/ar/det/Fondo-1920x1080.png);
+    background-image: url(../../img/orgu/det/fon__home.png);
+}
+.bd-containerenweb{
+  width: 100%;
+  background-color: #124015;
+  background-image: url(../../img/orgu/det/fon__home.webp);
 }
 @media screen and (min-width: 576px) {
     .first__container,
