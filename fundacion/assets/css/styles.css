@@ -168,11 +168,6 @@ html{
     height: auto;
     background-color: #32084a;
   }
-  .fondo__webp{
-    background-image: url(../img/hm/boxed-bg.webp);
-    height: auto;
-    background-color: #32084a;
-  }
   .fondo__title{
     color: var(--white);
     font-size: 54px;
@@ -218,7 +213,12 @@ html{
   }
   @media screen and (max-width:500px) {
     .video {
-      height: 10rem !important;
+      height: 12rem !important;
+    }
+    .fondo{
+      background-image: url(../img/hm/ciudad.jpg);
+      height: auto;
+      background-color: #32084a;
     }
   }
 /*fondo fin de la ciudad*/
@@ -494,15 +494,7 @@ html{
 	 background-image: url(../img/deta/foot__copy__web.jpg);
     object-fit: cover;
   }
-  .footer__copy__web{
-    text-align:center;
-    height: 3rem;
-    padding: 1rem;
-    background:var(--yellow);
-    color: #fff !important;
-	  background-image: url(../img/deta/foot__copy__web.webp);
-    object-fit: cover;
-  }
+
   .bd-container {
       width: calc(100% - 3rem);
       margin-left: auto;
