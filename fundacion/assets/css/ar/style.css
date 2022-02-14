@@ -1,72 +1,50 @@
-.bd-containero{
-    max-width: 1700px !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-.bd-containeren {
+.bd-containeren{
     width: 100%;
-    background-color: #124015;
-    background-image: url(../../img/orgu/det/fon__home.png);
-}
-.bd-containerenweb{
-  width: 100%;
-  background-color: #124015;
-  background-image: url(../../img/orgu/det/fon__home.webp);
-}
-@media screen and (min-width: 576px) {
-    .first__container,
-    .second__container,.nos__container{
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-    .section-title-center-head,
-    .first__data,.second__data {
-        text-align: initial;
-    }
-    .nos__container{
-      padding: 1rem;
-    }
+    background-image: url(../../img/ar/det/fon__arr.jpg);
   }
-  .bd-grid {
+  .amor__container {
     display: grid;
     gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 1500px;
+    padding: 1rem;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
   }
-  .nos__container{
-    row-gap:.5rem
+  .img__amor{
+    width: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    height: 21rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  .section {
+    padding: 3rem 0 3rem;
   }
-  .nos__container{
-    column-gap:5rem
-  }
-  .nos__img{
-    order:1;
-  }
-  .nos__imagen {
-      width: 70%;
-      height: auto;
-      display: block;
-      margin: auto;
-      object-fit: cover;
-      border-radius: 10px;
-  }
-  .first__data{
-    margin-left: 12rem !important;
-    width: 90%;
-  }
-  .first__description{
-    width: 80%;
-  }
-  .section-title-center-head{
+  .section-title-center-head {
     font-weight: normal;
     font-size: 60px;
     margin-bottom: 2rem;
     color: #fff;
   }
   .color__head{
-    color: #F8BB31;
-}
-.btn__dona{
+    color: #f8bb31;
+  }
+  .first__description{
+    font-size: 18px;
+    margin-bottom: 5rem;
+    color: #fff;
+  }
+  .btn__dona{
     padding: 1rem;
-    border: 1px solid #F8BB31;
+    border: 1px solid #f8bb31;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -78,96 +56,106 @@
   }
   .btn__orgu{
       padding: 1rem;
-      color: #000;
+      color: #fff;
       text-decoration: none;
-      background-color: #F8BB31;
+      background-color: #f8bb31;
       border-radius: 10px;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
   }
-@media screen and (max-width:1500px) {
-    .bd-containero{
-        max-width: 1300px !important;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media screen and (max-width:1030px) {
-    .first__data {
-        margin-left: 4rem !important;
-        width: 90%;
+  .amor__img{
+    order: -initial !important;
+    width: 100%;
+  }
+  @media screen and (max-width:1500px) {
+    .amor__container {
+        max-width: 1300px;
       }
-      .section-title-center-head {
-        font-weight: normal;
-        font-size: 50px;
-        color: #fff;
+      .artistas__fundacion {
+        max-width: 1250px;
+        margin: auto;
     }
-    .bd-containero {
-        max-width: 950px !important;
-        margin-left: auto;
-        margin-right: auto;
+  }
+  
+  @media screen and (max-width:1280px) {
+    .amor__container {
+        max-width: 1160px;
+      }
+      .artistas__fundacion {
+        max-width: 1160px;
+        margin: auto;
     }
-}
-@media screen and (max-width:1000px) {
-    .bd-containero{
-        max-width: 700px !important;
-        margin-left: auto;
-        margin-right: auto;
+  }
+  @media screen and (max-width:1030px) {
+    .amor__container {
+        max-width: 940px;
     }
-    .fundacion__title{
-        line-height: inherit;
-        font-size: 25px !important;
+    .artistas__fundacion {
+        max-width: 940px;
+        margin: auto;
     }
-    .artistas__nombre{
-        font-size: 1rem;
-    }
-    .name__swi{
-        font-size: 1rem;
-    }
-    .first__data {
-        margin-left: 5rem !important;
-        width: 90%;
-        margin-top: -3rem;
-    }
-    .section-title-center-head{
+    .section-title-center-head {
         font-weight: normal;
         font-size: 40px;
         margin-bottom: 2rem;
         color: #fff;
     }
-    .nos__container {
-        padding: 0rem;
+    
+  }
+  @media screen and (max-width:780px) {
+    .amor__container{
+        grid-template-columns: repeat(1, 1fr);
     }
-}
-@media screen and (max-width:600px) {
-    .bd-containero{
-        max-width: 400px !important;
-        margin-left: auto;
-        margin-right: auto;
+    .img__amor {
+        width: 100%;
     }
-    .section-title-center-head {
-        font-weight: normal;
-        font-size: 27px;
-        margin-bottom: 2rem;
+    .first__description{
+        font-size: 18px;
+        margin-bottom: 3rem;
         color: #fff;
-    }
-    .first__data {
-        margin-left: 2rem !important;
-        width: 90%;
-        margin-top: -2rem;
     }
     .botones__container {
         margin-bottom: 3rem;
-        margin-top: 3rem;
     }
-}
-@media screen and (max-width:380px) {
-    .bd-containero {
-        max-width: 340px !important;
+    .amor__img {
+        width: 100%;
     }
-}
+    .amor__img{
+        order: 1 !important;
+    }
+    .artistas__fundacion {
+        max-width: 700px;
+        margin: auto;
+    }
+    
+  }
+  @media screen and (max-width:500px) {
+    .amor__img {
+        width: 100%;
+    }
+    .img__amor {
+        width: 100%;
+    }
+    .botones__container {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .artistas__fundacion {
+        max-width: 400px;
+        margin: auto;
+    }
+  }
+  @media screen and (max-width:370px) {
+    .artistas__fundacion {
+        max-width: 350px;
+        margin: auto;
+    }
+  }
 .artistas__fundacion{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
