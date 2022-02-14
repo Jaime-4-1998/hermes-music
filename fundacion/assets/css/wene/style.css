@@ -316,12 +316,13 @@
     object-fit: cover;
     display: block;
     margin: auto;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)) !important;
+    -webkit-filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)) !important;
 }
 .about__weneverevu{
     display: grid;
@@ -390,6 +391,15 @@
     }
     .about__weneverevu {
         grid-gap: 1rem;
+    }
+    .plata__img{
+        width: 80%;
+    }
+    .plataformas__wene {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        margin-top: 2rem;
     }
 }
 @media screen and (max-width:450px) {
