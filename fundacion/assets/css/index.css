@@ -155,13 +155,7 @@ nav ul li ul li .sub__link {
     padding: 5rem 0 15px;
   }
   nav .nav-list {
-    background-image: url(../img/deta/foot__copy.png);
-    position: absolute;
-    z-index: 99;
-    width: 100%;
-  }
-  nav .nav-list__web {
-    background-image: url(../img/deta/foot__copy.webp);
+    background-image: url(../img/deta/nav/fondo__nav.jpg);
     position: absolute;
     z-index: 99;
     width: 100%;
@@ -283,7 +277,7 @@ article {
 
 .areaB {
   background-color: #502074;
-  background-image: url(../img/deta/top__text.png);
+  background-image: url(../img/deta/top__texto.jpg);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
