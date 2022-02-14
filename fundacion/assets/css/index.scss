@@ -15,12 +15,13 @@ $link-hover-color: #000;
 // Outer navigation wrapper
 .navigation {
   height: $nav-height;
-  background-image: url(../img/deta/foot__copy.png);
 }
-.navigation__web{
-  height: $nav-height;
-  background-image: url(../img/deta/foot__copy.webp);
+.navi{
+  background: #fdc32d;
+  background-image: url(../img/deta/top__text.png);
 }
+
+
 @media screen and (max-width:500px) {
   .navigation__web {
     height: 6rem !important;

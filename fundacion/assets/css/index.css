@@ -9,14 +9,11 @@
 
 .navigation {
   height: 5rem;
-  background: #fdc32d;
-  background-image: url(../img/deta/top__text.png);
 }
 
-.navigation__web {
-  height: 5rem;
+.navi {
   background: #fdc32d;
-  background-image: url(../img/deta/top__text.webp);
+  background-image: url(../img/deta/top__text.png);
 }
 
 @media screen and (max-width: 500px) {
@@ -158,15 +155,13 @@ nav ul li ul li .sub__link {
     padding: 5rem 0 15px;
   }
   nav .nav-list {
-    background: #fdc32d;
-    background-image: url(../img/deta/txt__movil.png);
+    background-image: url(../img/deta/foot__copy.png);
     position: absolute;
     z-index: 99;
     width: 100%;
   }
   nav .nav-list__web {
-    background-color: #fdc32d;
-    background-image: url(../img/deta/txt__movil.webp) !important;
+    background-image: url(../img/deta/foot__copy.webp);
     position: absolute;
     z-index: 99;
     width: 100%;
