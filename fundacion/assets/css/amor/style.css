@@ -1,12 +1,7 @@
 .bd-containeren{
     width: 100%;
     background-color: #441b1b;
-    background-image: url(../../img/deta/fon__top.png);
-}
-.bd-containerenweb{
-    width: 100%;
-    background-color: #441b1b;
-    background-image: url(../../img/deta/fon__top.webp);
+    background-image: url(../../img/amo/fon__amor.jpg);
 }
 .amor__container {
     display: grid;
@@ -134,13 +129,7 @@
 }
 .fondo__amor{
     background:#a62323;
-    background-image: url(../../img/deta/fondo__carr.png);
-    padding: 1rem;
-    border-radius: 10px;
-}
-.fondo__amorweb{
-    background:#a62323;
-    background-image: url(../../img/deta/fondo__carr.webp);
+    background-image: url(../../img/amo/fondo__carr.jpg);
     padding: 1rem;
     border-radius: 10px;
 }
