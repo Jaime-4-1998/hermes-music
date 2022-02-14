@@ -47,6 +47,11 @@
       height: 430px !important;
     }
   }
+  @media screen and (max-width:770px) {
+    .mySwiper2 {
+      margin-top: 0rem !important;
+    }
+  }
   @media screen and (max-width:600px) {
     .mySwiper2 {
       width: 100%;
