@@ -211,6 +211,13 @@ html{
       height: 15rem !important;
     }
   }
+  @media screen and (max-width:800px) {
+    .second__container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+  }
+  }
   @media screen and (max-width:500px) {
     .video {
       height: 12rem !important;
