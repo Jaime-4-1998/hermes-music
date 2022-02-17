@@ -3,6 +3,14 @@
     margin:0;
     padding:0;
 }
+::selection {
+	color: #fff;
+	background-color: #000;
+}
+::-moz-selection {
+	color: #fff;
+	background-color: #000;
+}
 .hero__albert{
     background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0,0,0,0.5)), url(../img/albert__dek.jpg);
     height: 100vh;
@@ -36,6 +44,7 @@
     margin: auto;
     margin-top: -5rem;
     object-fit: cover;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 .hero__content{
     color: #fff;
@@ -49,6 +58,7 @@
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 4rem;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 .albert__titu{
     font-size: 4rem;
@@ -56,17 +66,19 @@
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
-.albert__line {
-    width: 30%;
-    margin: auto;
-    display: block;
-    border: 1px solid #fff;
+.albert__tite{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 @media screen and (max-width:1500px) {
     .albert__img{
-        width: 80%;
-        margin-top: -6rem;
+        width: 70%;
+        margin-top: -5rem;
     }
     .albert__tit{
         font-size: 5rem !important;
@@ -74,7 +86,7 @@
     }
     .albert__titu{
         font-size: 4rem;
-        margin-bottom: 0rem;
+        margin-bottom: 1rem;
     }
 }
 @media screen and (max-width:1030px) {
@@ -113,11 +125,16 @@
     }
     .albert__titu{
         font-size: 2rem;
+        margin-bottom: 4rem;
     }
     .albert__img{
         width: 90%;
         margin-top: -10rem;
     }
+    h3.albert__tite:nth-child(4) {
+        margin-bottom: 1rem;
+    }
+       
 }
 @media screen and (max-width:380px) {
     .hero__content {
@@ -129,4 +146,12 @@
     .albert__titu{
         font-size: 2rem;
     }
+    .albert__tite{
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+    }
+    h3.albert__tite:nth-child(4) {
+        margin-top: 3rem;
+    }
+       
 }
