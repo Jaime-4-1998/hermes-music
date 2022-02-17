@@ -446,6 +446,10 @@ html{
     -ms-transition: 0.3s all ease-in-out;
     -o-transition: 0.3s all ease-in-out;
 }
+.btn__leer{
+  text-decoration: none;
+  color: #fff;
+}
 /*fin de contacto*/
 /**footer**/
   .footer__web{
