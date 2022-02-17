@@ -4,7 +4,8 @@
 }
 .amor__container {
     display: grid;
-    gap: 1.5rem;
+    
+    gap: 4.5rem;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     max-width: 1500px;
@@ -283,6 +284,9 @@ p.end__description:nth-child(3) {
       .end__artes{
           grid-gap: 1rem !important;
           margin-top: -1rem;
+      }
+      .amor__container {
+        gap: 1.5rem;
       }
 }
    
