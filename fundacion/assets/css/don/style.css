@@ -134,7 +134,7 @@
 }
 .card__container{
   display: grid;
-  grid-template-columns: repeat(3,400px);
+  grid-template-columns: repeat(2,400px);
   justify-content: center;
   margin-top: 3rem;
 }
