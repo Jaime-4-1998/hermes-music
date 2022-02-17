@@ -4,7 +4,7 @@
   }
   .amor__container {
     display: grid;
-    gap: 1.5rem;
+    gap: 4.5rem;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     max-width: 1500px;
@@ -69,6 +69,10 @@
     order: -initial !important;
     width: 100%;
   }
+  .artistas__fundacion {
+    max-width: 1650px;
+    margin: auto;
+}
   @media screen and (max-width:1500px) {
     .amor__container {
         max-width: 1300px;
@@ -240,5 +244,7 @@
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
 }
-
+.amor__container {
+  gap: 1.5rem;
+}
 }
