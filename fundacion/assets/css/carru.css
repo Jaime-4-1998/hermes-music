@@ -38,7 +38,13 @@
   @media screen and (max-width:1500px) {
     .mySwiper2 {
       width: 100%;
-      height: 450px !important;
+      height: 520px !important;
+    }
+  }
+  @media screen and (max-width:1380px) {
+    .mySwiper2 {
+      width: 100%;
+      height: 480px !important;
     }
   }
   @media screen and (max-width:1080px) {
@@ -110,3 +116,50 @@
     }
   }
   /*fin de carrusel*/
+  .caption-text{
+    width:20%;
+    color:#000;
+    font-size:12px;
+    padding:15px 10px;
+    position:absolute;
+    left:48rem;
+    bottom:4rem;
+    background:var(--yellow);
+    text-align:center;
+    display:block;
+    margin:auto;
+    text-decoration: none;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+@media screen and (max-width:1370px){
+  .imare{
+      height:510px
+  }
+  .caption-text{
+      left:34rem
+  }
+}
+@media screen and (max-width:1050px){
+  .caption-text{
+      left:26rem
+  }
+}
+@media screen and (max-width:900px){
+  .caption-text{
+    left: auto;
+    width: auto;
+    bottom: 1rem;
+  }
+}
+@media screen and (max-width:500px){
+  .caption-text{
+    left: auto;
+    width: auto;
+    bottom: 1rem;
+  }
+}
