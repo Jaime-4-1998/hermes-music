@@ -26,7 +26,7 @@
         background: linear-gradient(to right, rgba(0,0,0,0.75),
         rgba(0,0,0,0.3)), url(../img/albert__movi.jpg) !important;
         background-repeat: no-repeat !important;
-        background-size: inherit !important;
+        background-size: 100% !important;
     }
 }
 .hero__content{
