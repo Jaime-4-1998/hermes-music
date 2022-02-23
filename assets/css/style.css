@@ -1440,7 +1440,7 @@ div.noticia i.derecha{
         position: relative;
         border-radius: 10px;
         border: 1px solid #ccc;
-        width: 80%;
+        width: 100%;
         transform: translate(-50% , -50%);
         -ms-overflow-style: none;
         scrollbar-width: thin;
@@ -2007,3 +2007,26 @@ section.sectione:nth-child(9) > div:nth-child(1) > div:nth-child(1) {
         margin-left: -2rem !important;
     }
 }
+.d-none{
+    display: none;
+}
+@media screen and (max-width:500px) {
+    .ima__modale{
+        display: none !important;
+    }
+    #closeere {
+        margin-top: 0rem;
+    }
+    .d-none{
+        display: block;
+    } 
+    .collapsed-height {
+        height: 86px !important;
+        right: 10px !important;
+        display: block !important;
+        background-color: transparent !important;
+        max-width: 251px !important;
+    }
+}
+
+   
