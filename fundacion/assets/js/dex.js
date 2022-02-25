@@ -40,3 +40,62 @@ var swiper = new Swiper(".mySwiper2", {
      
     }); // end DOM ready
   })(jQuery); // end jQuery
+//corr
+//correo
+
+$("#submit").click(function(e){
+  e.preventDefault();
+  $("#err_nom").html('');
+  $("#err_tel").html('');
+  $("#err_tex").html('');
+  $("#err_corr").html('');
+  if($("#nombre").val() == ''){
+    $("#err_nom").html('* Tu Nombre Requerido');
+    return false;
+  }else if($("#tel").val()== ''){
+        $("#err_tel").html('* El Telefono Requerido');
+        return false;
+  }else if($("#tel").val().length < 9){
+        $("#err_tel").html('* Te hacen falta mÃ¡s numeros');
+        return false;
+  }else if($("#tex").val()== ''){
+        $("#err_tex").html('* Mensaje Requerido');
+        return false;    
+  }else if($("#corr").val()== ''){
+        $("#err_corr").html('* Correo Requerido');
+        return false;    
+  }else{
+    $.ajax({
+        url:'http://www.fundacionhermesmusic.org/assets/js/corr.php',
+        method:'post',
+        data:$("#form-data").serialize(),
+        success:function(response){
+          document.getElementById("form-data").reset();
+          Swal.fire({
+            icon: 'success',
+            title: 'Fundacion Music Mexico',
+            text: 'Te da las !Gracias¡ por ponerte en contacto con nosotros',
+            confirmButtonColor: '#fdc416',
+            confirmButtonText:
+            '<a class="text-white"  href="http://www.fundacionhermesmusic.org/">Entiendo</a>'
+                                       
+          })
+        }
+    });
+  }
+        
+  });
+//scroll
+function scrollHeader() {
+  const nav = document.getElementById('header')
+  if (this.scrollY >= 200) nav.classList.add('scroll-header');
+  else nav.classList.remove('scroll-header')
+  }
+  window.addEventListener('scroll', scrollHeader)
+  
+  function scrollTop() {
+  const scrollTop = document.getElementById('scroll-top');
+  if (this.scrollY >= 560) scrollTop.classList.add('show-scroll');
+  else scrollTop.classList.remove('show-scroll')
+  }
+  window.addEventListener('scroll', scrollTop)

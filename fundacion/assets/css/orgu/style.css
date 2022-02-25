@@ -165,13 +165,13 @@
         margin-bottom: 2rem;
         font-size: 25px !important;
         line-height: inherit;
-        text-align: justify;
+        text-align: initial;
         color: #000000;
     }
     .fundacion__text{
         font-size: 1rem !important;
         margin-top: -2rem;
-        text-align: justify;
+        text-align: initial;
     }
     .card__container{
         margin-top: 1.5rem;
@@ -180,7 +180,7 @@
         color: #000;
         margin-bottom: 2rem;
         font-size: 1rem !important;
-        text-align: justify;
+        text-align: initial;
     }
     p.nosotros__description:nth-child(8) {
         margin-bottom: -4rem;
