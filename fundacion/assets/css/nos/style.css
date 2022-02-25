@@ -267,19 +267,20 @@ p.end__description:nth-child(3) {
 }
 @media screen and (max-width:420px) {
     .nosotros__description {
-        margin-bottom: 4rem;
-        margin-top: -2rem;
-        text-align: justify;
+        margin-bottom: 2rem;
+        margin-top: -1rem;
+        text-align: initial;
       }
       .nosotros__imagen {
         width: 100%;
-        margin-top: -4rem;
+        margin-top: -2rem;
       }
       .card__description{
           text-align: justify;
       }
       .end__description{
-          text-align: justify;
+          text-align: initial;
+          margin-bottom: -2rem;
       }
       .end__artes{
           grid-gap: 1rem !important;

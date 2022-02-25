@@ -124,6 +124,7 @@
     }
     
   }
+
   @media screen and (max-width:500px) {
     .amor__img {
         width: 100%;
@@ -139,6 +140,20 @@
         align-items: center;
     }
   }
+@media screen and (max-width:380px) {
+    .section-title-center-head {
+        margin-top: 0rem !important;
+        font-size: 29px !important;
+        margin-left: -0rem !important;
+      }
+      .first__description {
+        font-size: 16px;
+        margin-top: -1rem;
+        margin-left: 0rem !important;
+      }
+}
+
+       
 /*finde nosostros head*/
 .bd-containero{
     max-width: 1390px !important;
@@ -532,16 +547,7 @@
 
 }
 @media screen and (max-width:380px) {
-    .section-title-center-head {
-        margin-top: -5rem;
-        font-size: 29px !important;
-        margin-left: -4rem !important;
-      }
-      .first__description {
-        font-size: 16px;
-        margin-top: -1rem;
-        margin-left: -4rem !important;
-      }
+    
       .botones__container {
         margin-left: -1rem;
        }

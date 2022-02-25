@@ -70,7 +70,6 @@
 }
 .nos__imagen{
     width: 100%;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 .wene__marg{
     margin-top: 1rem !important;
@@ -108,6 +107,7 @@
 }
 .color__head{
   color: #F8BB31;
+  font-weight: bold;
 }
 .first__description,.second__description{
   font-size: 18px;
@@ -136,14 +136,15 @@
     h2.fundacion__nos:nth-child(1) {
         width: 100%;
         font-size: 20px;
-        text-align: center;
-    }       
+        text-align: initial;
+        margin-left: 1rem;
+    }  
 }
 @media screen and (max-width:360px) {
   .section-title-center-head {
     margin-top: 2rem;
     font-size: 29px !important;
-    margin-left: -1rem;
+    margin-left: 0rem;
   }
 }
 /*finde nosostros head*/
@@ -411,7 +412,7 @@
     }
     .section-title-center-head {
         font-size: 25px !important;
-        text-align: center;
+        text-align: initial;
     }
     .second__description {
         font-size: 16px;

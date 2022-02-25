@@ -164,23 +164,32 @@ p.parr__amor:nth-child(6) {
     }
     .text__head {
         font-size: 40px;
-    }
+    }     
 }
 @media screen and (max-width:500px) {
     .bd-containero{
-        max-width: 315px !important;
+        max-width: 355px !important;
+    }
+    .parr__amor{
+        text-align: initial;
+        font-size: 17px;
     }
     .text__head {
         font-size: 30px;
+        text-align: initial;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
-    .parr__amor{
-        
-        text-align: justify;
-    }
+    .whoher {
+        margin-top: -6rem;
+      }
 }
 @media screen and (max-width:370px) {
         .section-title-center-head {
             font-size: 35px;
+        }
+        .bd-containero{
+            max-width: 315px !important;
         }
 }
    
