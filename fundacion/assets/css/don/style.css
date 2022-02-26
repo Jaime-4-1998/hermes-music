@@ -170,10 +170,16 @@ div.card:nth-child(3) > h3:nth-child(1) {
 }
 .card__description{
   padding: 1rem;
-  text-align: justify;
   margin-top: 1rem;
-  font-size: 20px;
+  font-size: 18px;
+  direction: ltr;
+  margin-bottom: -1rem;
+  
 }
+p.card__description:nth-child(5) {
+  margin-bottom: 1rem;
+ }
+ 
 .card__line{
   width: 50%;
   margin: auto;
@@ -207,7 +213,10 @@ div.card:nth-child(3) > h3:nth-child(1) {
 }
 @media screen and (max-width:420px) {
     .card__description{
-        text-align: initial !important;
+      direction: ltr !important;
+      text-align: justify !important;
+      
+      hyphens: auto !important;
     }
     .card__title{
       text-align: initial;
@@ -225,8 +234,8 @@ div.card:nth-child(3) > h3:nth-child(1) {
 	color: #000000;
 }
 .fundacion__text{
-  font-size: 25px;
-  text-align: initial;
+  font-size: 20px;
+  text-align: center;
 }
 .nos__bar{
     border: 1px solid #F8BB31;
@@ -253,10 +262,12 @@ div.card:nth-child(3) > h3:nth-child(1) {
     }
     .card__description{
       padding: 1rem;
-      text-align: initial !important;
       margin-top: 1rem;
       margin-bottom: 1rem;
       font-size: 17px;
+      direction: ltr !important;
+      text-align: justify !important;
+      hyphens: auto !important;
     }
     .card__line{
       width: 90%;
