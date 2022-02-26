@@ -18,7 +18,7 @@ elseif(empty($_POST['texto'])){
 }else{
 
 // Datos para el correo
-$destinatario = "jaime.ramirez@hermes-music.com.mx,david.martinez@hermes-music.com.mx,mkt@hermes-music.com.mx";
+$destinatario = "jaime.ramirez@hermes-music.com.mx,david.martinez@hermes-music.com.mx,mkt@hermes-music.com.mx,pablo@fundacionhermesmusic.org";
 $asunto = "Contacto Fundacion Hermes Music";
 
 

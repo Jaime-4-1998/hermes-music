@@ -186,7 +186,7 @@
 }
 .card__description{
     padding: 1rem;
-    text-align: center;
+    text-align: justify;
     margin-top: 1rem;
 }
 .card__line{

@@ -552,7 +552,6 @@ html{
   }
   @media screen and (max-width:650px) {
     .bd-containere {
-      max-width: 300px;
       width: calc(100% - 3rem);
    }
    .footer__container {

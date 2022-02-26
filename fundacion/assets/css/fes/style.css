@@ -296,8 +296,9 @@
     margin-bottom: 2rem;
 }
 .grid__claro p{
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
+    text-align-last: left;
 }
 .icono_claro{
     font-size: 1.5rem;
@@ -344,7 +345,6 @@
         padding: 1rem;
     }
     .grid__claro p {
-        text-align: center;
         font-size: 18px;
       }
 }
@@ -486,6 +486,7 @@
     .grid__claro p {
         text-align: justify;
         font-size: 16px;
+        text-align-last: left;
     }
     .grid__demos{
         display: grid;
