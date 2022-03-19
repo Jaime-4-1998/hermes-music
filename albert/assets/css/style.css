@@ -77,7 +77,6 @@ html{
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 .hero__content{
-    color: #fff;
     padding: 1rem 1rem;
     line-height: 1;
 }
@@ -88,7 +87,11 @@ html{
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 4rem;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)) !important;
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    margin-top: -2rem;
 }
 .albert__titu{
     font-size: 4rem;
@@ -97,6 +100,7 @@ html{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    color: #fff;
 }
 .albert__tite{
     text-align: center;
@@ -104,6 +108,7 @@ html{
     font-weight: 400;
     font-size: 2rem;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    color: #fff;
 }
 @media screen and (max-width:1500px) {
     .albert__img{
