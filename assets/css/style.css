@@ -719,6 +719,7 @@ font-size: 1rem;
     background-image:url(../images/back.png);
     background-repeat:no-repeat;
     background-attachment:fixed;
+    background-size: cover;
 }
 .profesi__webp{
     color:var(--white);
@@ -727,6 +728,7 @@ font-size: 1rem;
     background-image:url(../images/back.webp);
     background-repeat:no-repeat;
     background-attachment:fixed;
+    background-size: cover;
 }
 .profesi h2{
     color:var(--white);
